@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/sleep/',include('SleepManage.urls')),
     path('api/auth/',include('UserManage.urls')),
+    path('api/sport/',include('SportManage.urls')),
 ]

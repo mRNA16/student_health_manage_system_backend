@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 import yaml
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -47,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'UserManage',
     'SleepManage',
+    'SportManage',
 ]
 
 REST_FRAMEWORK = {

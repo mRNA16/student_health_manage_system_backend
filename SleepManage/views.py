@@ -11,10 +11,10 @@ class SleepRecordViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         user = self.request.user
         qs = SleepRecord.objects.filter(user=user)
-        start_date = self.request.query_params.get('start_date')
-        end_date = self.request.query_params.get('end_date')
-        if start_date and end_date:
-            qs = qs.filter(date__range=[start_date, end_date])
+        # start_date = self.request.query_params.get('start_date')
+        # end_date = self.request.query_params.get('end_date')
+        # if start_date and end_date:
+            # qs = qs.filter(date__range=[start_date, end_date])
         return qs
 
     def perform_create(self, serializer):

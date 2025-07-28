@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/sleep/',include('SleepManage.urls')),
     path('api/auth/',include('UserManage.urls')),
     path('api/sport/',include('SportManage.urls')),
+    path('api/diet/',include('DietManage.urls')),
 ]

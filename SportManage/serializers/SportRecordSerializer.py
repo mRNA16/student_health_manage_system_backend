@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import SportRecord
+from SportManage.models import SportRecord
 
 class SportRecordSerializer(serializers.ModelSerializer):
     class Meta:

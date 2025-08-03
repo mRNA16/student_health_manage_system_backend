@@ -1,6 +1,7 @@
 from rest_framework.routers import DefaultRouter
 from django.urls import path, include
-from .views import MealRecordViewSet, food_list
+from DietManage.views.DietRecordView import MealRecordViewSet, food_list
+from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
 router.register(r'records', MealRecordViewSet, basename='mealrecord')

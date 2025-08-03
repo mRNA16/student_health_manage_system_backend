@@ -13,6 +13,7 @@ class MealRecord(models.Model):
         choices=[('manual', '手动录入'), ('ai', '系统推荐')],
         default='manual'
     )
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return f"{self.user.username} 的 {self.get_meal_display()} ({self.date})"

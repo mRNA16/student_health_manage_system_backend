@@ -22,4 +22,6 @@ urlpatterns = [
     path('api/auth/',include('UserManage.urls')),
     path('api/sport/',include('SportManage.urls')),
     path('api/diet/',include('DietManage.urls')),
+    path('api/friend/',include('UserManage.urls')),
+    path('api/comments/',include('ActivityComment.urls')),
 ]

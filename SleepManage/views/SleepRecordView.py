@@ -1,6 +1,6 @@
 from rest_framework import viewsets, permissions
-from .models import SleepRecord
-from .serializers import SleepRecordSerializer
+from SleepManage.models.SleepRecord import SleepRecord
+from SleepManage.serializers.SleepRecordSerializer import SleepRecordSerializer
 from datetime import timedelta, date
 from rest_framework.response import Response
 

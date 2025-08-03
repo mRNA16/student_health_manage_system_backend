@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'SleepManage',
     'SportManage',
     'DietManage',
+    'ActivityComment',
 ]
 
 REST_FRAMEWORK = {

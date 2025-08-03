@@ -1,5 +1,7 @@
 from rest_framework import serializers
-from .models import MealItem, MealRecord, NutritionFood
+from DietManage.models.MealItem import MealItem
+from DietManage.models.MealRecord import MealRecord
+from DietManage.models.NutritionFood import NutritionFood
 
 class MealItemSerializer(serializers.ModelSerializer):
     food = serializers.PrimaryKeyRelatedField(

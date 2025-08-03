@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import SleepRecord
+from SleepManage.models.SleepRecord import SleepRecord
 
 class SleepRecordSerializer(serializers.ModelSerializer):
     class Meta:

@@ -13,6 +13,7 @@ class SportRecord(models.Model):
     duration = models.PositiveIntegerField()
     calories = models.FloatField(default=0)
     note = models.CharField(max_length=255, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         ordering = ['-date']

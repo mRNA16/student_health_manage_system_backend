@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import SportRecordViewSet,sport_list
+from SportManage.views.SportRecordView import SportRecordViewSet,sport_list
 
 router = DefaultRouter()
 router.register(r'records', SportRecordViewSet, basename='sportrecord')

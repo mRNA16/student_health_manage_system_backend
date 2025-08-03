@@ -2,8 +2,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import viewsets, permissions
-from .models import SportRecord
-from .serializers import SportRecordSerializer
+from SportManage.models import SportRecord
+from SportManage.serializers.SportRecordSerializer import SportRecordSerializer
 import json
 import os
 
@@ -58,7 +58,7 @@ class SportRecordViewSet(viewsets.ModelViewSet):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def sport_list(request):
-    met_path = os.path.join(os.path.dirname(__file__), 'met.json')
+    met_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'met.json')
     with open(met_path, 'r', encoding='utf-8') as f:
         sports = json.load(f)
     return Response({

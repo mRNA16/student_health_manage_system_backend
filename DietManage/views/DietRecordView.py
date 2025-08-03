@@ -1,7 +1,9 @@
 from rest_framework import viewsets, permissions
 from rest_framework.response import Response
-from .models import MealRecord, MealItem, NutritionFood
-from .serializers import MealRecordSerializer, MealItemSerializer, NutritionFoodSerializer
+from DietManage.models.MealRecord import MealRecord
+from DietManage.models.MealItem import MealItem
+from DietManage.models.NutritionFood import NutritionFood
+from DietManage.serializers.DietRecordSerializer import MealRecordSerializer, MealItemSerializer, NutritionFoodSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 

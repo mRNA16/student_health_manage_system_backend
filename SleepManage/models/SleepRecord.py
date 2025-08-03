@@ -8,6 +8,7 @@ class SleepRecord(models.Model):
     wake_time = models.TimeField()
     duration = models.FloatField(help_text="睡眠时长（小时）", blank=True)
     note = models.CharField(max_length=255, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
         from datetime import datetime, timedelta

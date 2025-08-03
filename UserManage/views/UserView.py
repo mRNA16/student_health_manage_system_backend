@@ -1,7 +1,7 @@
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions,viewsets, filters
 from django.contrib.auth.models import User
-from .models import UserProfile
-from .serializers import UserSerializer, RegisterSerializer, UserProfileSerializer
+from UserManage.models import UserProfile
+from UserManage.serializers.UserSerializer import UserSerializer, RegisterSerializer, UserProfileSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -68,4 +68,28 @@ class CodeView(APIView):
             "code": 0,
             "data": [],
             "message": "成功"
+        })
+
+class UserViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['=username']  # 精确匹配
+    
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        serializer = self.get_serializer(queryset, many=True)
+        return Response({
+            "code": 0,
+            "data": serializer.data,
+            "message": "获取成功"
+        })
+    
+    def retrieve(self, request, *args, **kwargs):
+        instance = request.user
+        serializer = self.get_serializer(instance)
+        return Response({
+            'code': 0,
+            'data': serializer.data,
+            'message': '获取成功'
         })

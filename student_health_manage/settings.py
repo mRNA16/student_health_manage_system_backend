@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'SportManage',
     'DietManage',
     'ActivityComment',
+    'DataAnalysis',
 ]
 
 REST_FRAMEWORK = {

@@ -1,3 +1,4 @@
+from contextlib import nullcontext
 from rest_framework import viewsets, permissions, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -43,6 +44,7 @@ class FriendViewSet(viewsets.ModelViewSet):
         friend_id = self.kwargs.get('pk')
         user = User.objects.get(pk = friend_id)
         activities = []
+        last_active = None
         sport_records = SportRecord.objects.filter(user=user)
         met_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'SportManage', 'met.json')
         with open(met_path, 'r', encoding='utf-8') as f:
@@ -76,6 +78,8 @@ class FriendViewSet(viewsets.ModelViewSet):
             'code': 0,
             'data': {
                 # **serializer.data,
+                'friendId': friend_id,
+                'friendName': user.username,
                 'activities': activities
             },
             'message': '获取好友详情成功'

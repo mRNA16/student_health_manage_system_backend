@@ -9,6 +9,9 @@ class UserProfile(models.Model):
     birthday = models.DateField(verbose_name="生日")
     realName = models.CharField(max_length=150, verbose_name="真实姓名", blank=True, null=True)
     roles = models.JSONField(default=list, verbose_name="角色", blank=True, null=True)
+    daily_calories_burn_goal = models.FloatField(default=500, verbose_name="每日运动消耗卡路里目标（千卡）")
+    daily_calories_intake_goal = models.FloatField(default=2000, verbose_name="每日摄入卡路里目标（千卡）")
+    daily_sleep_hours_goal = models.FloatField(default=8, verbose_name="每日睡眠时长目标（小时）")
 
     def __str__(self):
         return self.user.username

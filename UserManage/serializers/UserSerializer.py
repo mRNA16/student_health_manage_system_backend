@@ -5,7 +5,10 @@ from UserManage.models import UserProfile
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = UserProfile
-        fields = ['height', 'weight', 'gender', 'birthday', 'realName', 'roles']
+        fields = [
+            'height', 'weight', 'gender', 'birthday', 'realName', 'roles',
+            'daily_calories_burn_goal', 'daily_calories_intake_goal', 'daily_sleep_hours_goal',
+        ]
 
 class UserSerializer(serializers.ModelSerializer):
     profile = UserProfileSerializer()

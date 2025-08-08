@@ -44,10 +44,28 @@ class ProfileView(generics.RetrieveUpdateAPIView):
         })
 
     def update(self, request, *args, **kwargs):
-        response = super().update(request, *args, **kwargs)
+        # 允许部分字段更新（兼容 PUT/PATCH）
+        partial = True
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=partial)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
         return Response({
             'code': 0,
-            'data': response.data,
+            'data': serializer.data,
+            'message': '更新成功'
+        })
+
+    def partial_update(self, request, *args, **kwargs):
+        # 显式支持 PATCH，返回统一格式
+        kwargs['partial'] = True
+        instance = self.get_object()
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        self.perform_update(serializer)
+        return Response({
+            'code': 0,
+            'data': serializer.data,
             'message': '更新成功'
         })
 

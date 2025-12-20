@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.contrib.auth.models import User
+from django.core.cache import cache
 from ..services.HealthDataAnalyzer import HealthDataAnalyzer
 from ..serializers.AnalysisSerializer import AnalysisRequestSerializer, AnalysisResultSerializer
 from ..models.AnalysisResult import AnalysisResult
@@ -159,6 +160,21 @@ def get_health_summary(request):
     """获取健康数据摘要"""
     try:
         time_range = request.GET.get('time_range', '30d')
+        user_id = request.user.id
+        cache_key = f'health_summary_{user_id}_{time_range}'
+        
+        # Try to get from cache
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return api_response(
+                message='获取成功 (from cache)',
+                data={
+                    'data': cached_data,
+                    'success': True,
+                },
+                code=0
+            )
+
         days_map = {'7d': 7, '30d': 30, '90d': 90}
         days = days_map.get(time_range, 30)
         
@@ -171,37 +187,40 @@ def get_health_summary(request):
         
         summary = {
             'sleep': {
-                'total_records': len(sleep_df),
-                'avg_quality': sleep_df['quality_score'].mean() if len(sleep_df) > 0 else 0,
-                'avg_duration': sleep_df['duration'].mean() if len(sleep_df) > 0 else 0,
-                'best_day': sleep_df.loc[sleep_df['quality_score'].idxmax()]['date'] if len(sleep_df) > 0 else None
+                'total_records': int(len(sleep_df)),
+                'avg_quality': float(sleep_df['quality_score'].mean()) if len(sleep_df) > 0 else 0.0,
+                'avg_duration': float(sleep_df['duration'].mean()) if len(sleep_df) > 0 else 0.0,
+                'best_day': str(sleep_df.loc[sleep_df['quality_score'].idxmax()]['date']) if len(sleep_df) > 0 else None
             },
             'sport': {
-                'total_records': len(sport_df),
-                'avg_duration': sport_df['total_duration'].mean() if len(sport_df) > 0 else 0,
-                'total_calories': sport_df['total_calories'].sum() if len(sport_df) > 0 else 0,
-                'active_days': len(sport_df[sport_df['total_duration'] > 0])
+                'total_records': int(len(sport_df)),
+                'avg_duration': float(sport_df['total_duration'].mean()) if len(sport_df) > 0 else 0.0,
+                'total_calories': float(sport_df['total_calories'].sum()) if len(sport_df) > 0 else 0.0,
+                'active_days': int(len(sport_df[sport_df['total_duration'] > 0]))
             },
             'diet': {
-                'total_records': len(diet_df),
-                'avg_calories': diet_df['total_calories'].mean() if len(diet_df) > 0 else 0,
-                'avg_meals': diet_df['meal_count'].mean() if len(diet_df) > 0 else 0,
-                'avg_variety': diet_df['food_variety'].mean() if len(diet_df) > 0 else 0
+                'total_records': int(len(diet_df)),
+                'avg_calories': float(diet_df['total_calories'].mean()) if len(diet_df) > 0 else 0.0,
+                'avg_meals': float(diet_df['meal_count'].mean()) if len(diet_df) > 0 else 0.0,
+                'avg_variety': float(diet_df['food_variety'].mean()) if len(diet_df) > 0 else 0.0
             }
         }
         
         # 计算综合健康评分
-        overall_score = 0
+        overall_score = 0.0
         if summary['sleep']['avg_quality'] > 0:
             overall_score += summary['sleep']['avg_quality'] * 0.4
         if summary['sport']['avg_duration'] > 0:
-            sport_score = min(100, summary['sport']['avg_duration'] * 50)
+            sport_score = min(100.0, summary['sport']['avg_duration'] * 50.0)
             overall_score += sport_score * 0.3
         if summary['diet']['avg_calories'] > 0:
-            diet_score = 100 - abs(summary['diet']['avg_calories'] - 2000) / 20  # 假设理想卡路里为2000
-            overall_score += max(0, diet_score) * 0.3
+            diet_score = 100.0 - abs(summary['diet']['avg_calories'] - 2000.0) / 20.0
+            overall_score += max(0.0, diet_score) * 0.3
         
-        summary['overall_score'] = min(100, max(0, overall_score))
+        summary['overall_score'] = float(min(100.0, max(0.0, overall_score)))
+        
+        # Set to cache
+        cache.set(cache_key, summary, timeout=3600)
         
         return api_response(
             message='获取成功',

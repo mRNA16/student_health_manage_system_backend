@@ -8,10 +8,10 @@ class Friend(models.Model):
         ('rejected', '已拒绝'),
     )
 
-    from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='sent_friend_requests')
-    to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='received_friend_requests')
+    from_user = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='sent_friend_requests')
+    to_user = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='received_friend_requests')
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         unique_together = ('from_user', 'to_user', 'status')

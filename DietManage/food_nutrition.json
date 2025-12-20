@@ -1,0 +1,5726 @@
+[
+  {
+    "food_name": "小麦粉(标准粉)",
+    "edible_portion": "100%",
+    "water_content": "12.7g",
+    "energy": "1497kJ"
+  },
+  {
+    "food_name": "小麦粉(富强粉，特一粉)",
+    "edible_portion": "100%",
+    "water_content": "12.7g",
+    "energy": "1494kJ"
+  },
+  {
+    "food_name": "挂面(均值)",
+    "edible_portion": "100%",
+    "water_content": "12.3g",
+    "energy": "1483kJ"
+  },
+  {
+    "food_name": "挂面(标准粉)",
+    "edible_portion": "100%",
+    "water_content": "12.4g",
+    "energy": "1490kJ"
+  },
+  {
+    "food_name": "挂面(富强粉)",
+    "edible_portion": "100%",
+    "water_content": "12.7g",
+    "energy": "1477kJ"
+  },
+  {
+    "food_name": "面条(均值)",
+    "edible_portion": "100%",
+    "water_content": "28.5g",
+    "energy": "1219kJ"
+  },
+  {
+    "food_name": "面条(标准粉，切面)",
+    "edible_portion": "100%",
+    "water_content": "29.7g",
+    "energy": "1215kJ"
+  },
+  {
+    "food_name": "面条(富强粉，切面)",
+    "edible_portion": "100%",
+    "water_content": "29.2g",
+    "energy": "1217kJ"
+  },
+  {
+    "food_name": "面条(干切面)",
+    "edible_portion": "100%",
+    "water_content": "10.5g",
+    "energy": "1512kJ"
+  },
+  {
+    "food_name": "通心面[通心粉]",
+    "edible_portion": "100%",
+    "water_content": "11.8g",
+    "energy": "1495kJ"
+  },
+  {
+    "food_name": "花卷",
+    "edible_portion": "100%",
+    "water_content": "45.7g",
+    "energy": "921kJ"
+  },
+  {
+    "food_name": "空锅饼",
+    "edible_portion": "100%",
+    "water_content": "29.4g",
+    "energy": "1189kJ"
+  },
+  {
+    "food_name": "烙饼(标准粉)",
+    "edible_portion": "100%",
+    "water_content": "36.4g",
+    "energy": "1112kJ"
+  },
+  {
+    "food_name": "馒头(均值)",
+    "edible_portion": "100%",
+    "water_content": "43.9g",
+    "energy": "959kJ"
+  },
+  {
+    "food_name": "馒头(标准粉)",
+    "edible_portion": "100%",
+    "water_content": "40.5g",
+    "energy": "1016kJ"
+  },
+  {
+    "food_name": "馒头(富强粉)",
+    "edible_portion": "100%",
+    "water_content": "47.3g",
+    "energy": "901kJ"
+  },
+  {
+    "food_name": "烧饼(加糖)",
+    "edible_portion": "100%",
+    "water_content": "25.9g",
+    "energy": "1280kJ"
+  },
+  {
+    "food_name": "油饼",
+    "edible_portion": "100%",
+    "water_content": "24.8g",
+    "energy": "1702kJ"
+  },
+  {
+    "food_name": "油条",
+    "edible_portion": "100%",
+    "water_content": "21.8g",
+    "energy": "1636kJ"
+  },
+  {
+    "food_name": "水面筋",
+    "edible_portion": "100%",
+    "water_content": "63.5g",
+    "energy": "612kJ"
+  },
+  {
+    "food_name": "油面筋",
+    "edible_portion": "100%",
+    "water_content": "7.1g",
+    "energy": "2073kJ"
+  },
+  {
+    "food_name": "稻米(均值)",
+    "edible_portion": "100%",
+    "water_content": "13.3g",
+    "energy": "1480kJ"
+  },
+  {
+    "food_name": "粳米(标一)",
+    "edible_portion": "100%",
+    "water_content": "13.7g",
+    "energy": "1469kJ"
+  },
+  {
+    "food_name": "籼米(标准)[机米]",
+    "edible_portion": "100%",
+    "water_content": "12.6g",
+    "energy": "1488kJ"
+  },
+  {
+    "food_name": "香大米",
+    "edible_portion": "100%",
+    "water_content": "12.9g",
+    "energy": "1480kJ"
+  },
+  {
+    "food_name": "籼米",
+    "edible_portion": "100%",
+    "water_content": "13.1g",
+    "energy": "1441kJ"
+  },
+  {
+    "food_name": "糯米[江米](均值)",
+    "edible_portion": "100%",
+    "water_content": "12.6g",
+    "energy": "1492kJ"
+  },
+  {
+    "food_name": "紫红糯米[血糯米]",
+    "edible_portion": "100%",
+    "water_content": "13.8g",
+    "energy": "1481kJ"
+  },
+  {
+    "food_name": "米饭(蒸)(均值)",
+    "edible_portion": "100%",
+    "water_content": "70.9g",
+    "energy": "496kJ"
+  },
+  {
+    "food_name": "粳米粥",
+    "edible_portion": "100%",
+    "water_content": "88.6g",
+    "energy": "198kJ"
+  },
+  {
+    "food_name": "籼米粉[排米粉]",
+    "edible_portion": "100%",
+    "water_content": "10.7g",
+    "energy": "1515kJ"
+  },
+  {
+    "food_name": "籼米粉(干，细)",
+    "edible_portion": "100%",
+    "water_content": "12.3g",
+    "energy": "1471kJ"
+  },
+  {
+    "food_name": "籼米粥",
+    "edible_portion": "100%",
+    "water_content": "85.0g",
+    "energy": "251kJ"
+  },
+  {
+    "food_name": "玉米(鲜)",
+    "edible_portion": "46%",
+    "water_content": "71.3g",
+    "energy": "500kJ"
+  },
+  {
+    "food_name": "玉米(白，干)",
+    "edible_portion": "100%",
+    "water_content": "11.7g",
+    "energy": "1560kJ"
+  },
+  {
+    "food_name": "玉米(黄，干)",
+    "edible_portion": "100%",
+    "water_content": "13.2g",
+    "energy": "1530kJ"
+  },
+  {
+    "food_name": "玉米面(白)",
+    "edible_portion": "100%",
+    "water_content": "13.4g",
+    "energy": "1545kJ"
+  },
+  {
+    "food_name": "玉米面(黄)",
+    "edible_portion": "100%",
+    "water_content": "12.1g",
+    "energy": "1538kJ"
+  },
+  {
+    "food_name": "玉米糁(黄)",
+    "edible_portion": "100%",
+    "water_content": "12.8g",
+    "energy": "1530kJ"
+  },
+  {
+    "food_name": "玉米笋(罐头)",
+    "edible_portion": "100%",
+    "water_content": "93.0g",
+    "energy": "101kJ"
+  },
+  {
+    "food_name": "大麦[元麦]",
+    "edible_portion": "100%",
+    "water_content": "13.1g",
+    "energy": "1471kJ"
+  },
+  {
+    "food_name": "青稞",
+    "edible_portion": "100%",
+    "water_content": "12.4g",
+    "energy": "1468kJ"
+  },
+  {
+    "food_name": "小米",
+    "edible_portion": "100%",
+    "water_content": "11.6g",
+    "energy": "1544kJ"
+  },
+  {
+    "food_name": "小米面",
+    "edible_portion": "100%",
+    "water_content": "11.8g",
+    "energy": "1521kJ"
+  },
+  {
+    "food_name": "小米粥",
+    "edible_portion": "100%",
+    "water_content": "89.3g",
+    "energy": "193kJ"
+  },
+  {
+    "food_name": "大黄米[黍子]",
+    "edible_portion": "100%",
+    "water_content": "11.3g",
+    "energy": "1540kJ"
+  },
+  {
+    "food_name": "黄米",
+    "edible_portion": "100%",
+    "water_content": "11.1g",
+    "energy": "1528kJ"
+  },
+  {
+    "food_name": "高粱米",
+    "edible_portion": "100%",
+    "water_content": "10.3g",
+    "energy": "1561kJ"
+  },
+  {
+    "food_name": "糜子(带皮)",
+    "edible_portion": "100%",
+    "water_content": "9.4g",
+    "energy": "1479kJ"
+  },
+  {
+    "food_name": "苦荞麦粉",
+    "edible_portion": "100%",
+    "water_content": "19.3g",
+    "energy": "1387kJ"
+  },
+  {
+    "food_name": "荞麦",
+    "edible_portion": "100%",
+    "water_content": "13.0g",
+    "energy": "1484kJ"
+  },
+  {
+    "food_name": "莜麦面",
+    "edible_portion": "100%",
+    "water_content": "11.0g",
+    "energy": "1626kJ"
+  },
+  {
+    "food_name": "薏米[薏仁米，苡米]",
+    "edible_portion": "100%",
+    "water_content": "11.2g",
+    "energy": "1548kJ"
+  },
+  {
+    "food_name": "薏米面",
+    "edible_portion": "100%",
+    "water_content": "10.9g",
+    "energy": "1530kJ"
+  },
+  {
+    "food_name": "马铃薯[土豆，洋芋]",
+    "edible_portion": "94%",
+    "water_content": "79.8g",
+    "energy": "334kJ"
+  },
+  {
+    "food_name": "马铃薯粉",
+    "edible_portion": "100%",
+    "water_content": "12.0g",
+    "energy": "1457kJ"
+  },
+  {
+    "food_name": "甘薯(白心)[红皮山芋]",
+    "edible_portion": "86%",
+    "water_content": "72.6g",
+    "energy": "460kJ"
+  },
+  {
+    "food_name": "甘薯(红心)[山芋，红薯]",
+    "edible_portion": "90%",
+    "water_content": "73.4g",
+    "energy": "446kJ"
+  },
+  {
+    "food_name": "甘薯片[白薯干]",
+    "edible_portion": "100%",
+    "water_content": "12.1g",
+    "energy": "1478kJ"
+  },
+  {
+    "food_name": "甘薯粉[地瓜粉]",
+    "edible_portion": "100%",
+    "water_content": "14.5g",
+    "energy": "1429kJ"
+  },
+  {
+    "food_name": "木薯",
+    "edible_portion": "99%",
+    "water_content": "69.0g",
+    "energy": "519kJ"
+  },
+  {
+    "food_name": "玉米淀粉",
+    "edible_portion": "100%",
+    "water_content": "13.5g",
+    "energy": "1469kJ"
+  },
+  {
+    "food_name": "团粉[芡粉]",
+    "edible_portion": "100%",
+    "water_content": "12.6g",
+    "energy": "1484kJ"
+  },
+  {
+    "food_name": "藕粉",
+    "edible_portion": "100%",
+    "water_content": "6.4g",
+    "energy": "1584kJ"
+  },
+  {
+    "food_name": "魔芋精粉[鬼芋粉，南星粉]",
+    "edible_portion": "100%",
+    "water_content": "12.2g",
+    "energy": "1422kJ"
+  },
+  {
+    "food_name": "粉丝",
+    "edible_portion": "100%",
+    "water_content": "15.0g",
+    "energy": "1444kJ"
+  },
+  {
+    "food_name": "粉条",
+    "edible_portion": "100%",
+    "water_content": "14.3g",
+    "energy": "1444kJ"
+  },
+  {
+    "food_name": "黄豆[大豆]",
+    "edible_portion": "100%",
+    "water_content": "10.2g",
+    "energy": "1768kJ"
+  },
+  {
+    "food_name": "黑豆[黑大豆](干)",
+    "edible_portion": "100%",
+    "water_content": "9.9g",
+    "energy": "1772kJ"
+  },
+  {
+    "food_name": "青豆[青大豆](干)",
+    "edible_portion": "100%",
+    "water_content": "9.5g",
+    "energy": "1780kJ"
+  },
+  {
+    "food_name": "黄豆粉",
+    "edible_portion": "100%",
+    "water_content": "6.7g",
+    "energy": "1872kJ"
+  },
+  {
+    "food_name": "豆腐花[豆腐粉]",
+    "edible_portion": "100%",
+    "water_content": "1.6g",
+    "energy": "1699kJ"
+  },
+  {
+    "food_name": "豆浆粉",
+    "edible_portion": "100%",
+    "water_content": "1.5g",
+    "energy": "1818kJ"
+  },
+  {
+    "food_name": "豆粕",
+    "edible_portion": "100%",
+    "water_content": "11.5g",
+    "energy": "1445kJ"
+  },
+  {
+    "food_name": "豆腐(均值)",
+    "edible_portion": "100%",
+    "water_content": "82.8g",
+    "energy": "346kJ"
+  },
+  {
+    "food_name": "豆腐(北)",
+    "edible_portion": "100%",
+    "water_content": "80.0g",
+    "energy": "419kJ"
+  },
+  {
+    "food_name": "豆腐(南)[南豆腐]",
+    "edible_portion": "100%",
+    "water_content": "87.9g",
+    "energy": "242kJ"
+  },
+  {
+    "food_name": "豆腐(内酯)",
+    "edible_portion": "100%",
+    "water_content": "89.2g",
+    "energy": "211kJ"
+  },
+  {
+    "food_name": "豆腐脑[老豆腐]",
+    "edible_portion": "100%",
+    "water_content": "96.7g",
+    "energy": "62kJ"
+  },
+  {
+    "food_name": "豆浆",
+    "edible_portion": "100%",
+    "water_content": "96.4g",
+    "energy": "72kJ"
+  },
+  {
+    "food_name": "豆奶[豆乳]",
+    "edible_portion": "100%",
+    "water_content": "94.0g",
+    "energy": "127kJ"
+  },
+  {
+    "food_name": "豆汁(生)",
+    "edible_portion": "100%",
+    "water_content": "97.4g",
+    "energy": "43kJ"
+  },
+  {
+    "food_name": "豆腐丝",
+    "edible_portion": "100%",
+    "water_content": "58.4g",
+    "energy": "859kJ"
+  },
+  {
+    "food_name": "豆腐皮",
+    "edible_portion": "100%",
+    "water_content": "16.5g",
+    "energy": "1722kJ"
+  },
+  {
+    "food_name": "油豆腐",
+    "edible_portion": "100%",
+    "water_content": "58.8g",
+    "energy": "1024kJ"
+  },
+  {
+    "food_name": "腐竹",
+    "edible_portion": "100%",
+    "water_content": "7.9g",
+    "energy": "1940kJ"
+  },
+  {
+    "food_name": "千张[百页]",
+    "edible_portion": "100%",
+    "water_content": "52.0g",
+    "energy": "1102kJ"
+  },
+  {
+    "food_name": "豆腐干(均值)",
+    "edible_portion": "100%",
+    "water_content": "65.2g",
+    "energy": "604kJ"
+  },
+  {
+    "food_name": "素鸡",
+    "edible_portion": "100%",
+    "water_content": "64.3g",
+    "energy": "814kJ"
+  },
+  {
+    "food_name": "素什锦",
+    "edible_portion": "100%",
+    "water_content": "65.3g",
+    "energy": "757kJ"
+  },
+  {
+    "food_name": "烤麸",
+    "edible_portion": "100%",
+    "water_content": "68.6g",
+    "energy": "516kJ"
+  },
+  {
+    "food_name": "绿豆(干)",
+    "edible_portion": "100%",
+    "water_content": "12.3g",
+    "energy": "1451kJ"
+  },
+  {
+    "food_name": "赤小豆[小豆，红小豆](干)",
+    "edible_portion": "100%",
+    "water_content": "12.6g",
+    "energy": "1443kJ"
+  },
+  {
+    "food_name": "小豆粥",
+    "edible_portion": "100%",
+    "water_content": "84.4g",
+    "energy": "268kJ"
+  },
+  {
+    "food_name": "豆沙",
+    "edible_portion": "100%",
+    "water_content": "39.2g",
+    "energy": "1060kJ"
+  },
+  {
+    "food_name": "红豆沙",
+    "edible_portion": "100%",
+    "water_content": "37.9g",
+    "energy": "1051kJ"
+  },
+  {
+    "food_name": "红豆馅",
+    "edible_portion": "100%",
+    "water_content": "33.0g",
+    "energy": "1133kJ"
+  },
+  {
+    "food_name": "花豆(干，红)",
+    "edible_portion": "100%",
+    "water_content": "14.8g",
+    "energy": "1439kJ"
+  },
+  {
+    "food_name": "花豆(干，紫)",
+    "edible_portion": "97%",
+    "water_content": "13.2g",
+    "energy": "1463kJ"
+  },
+  {
+    "food_name": "芸豆(干，白)",
+    "edible_portion": "100%",
+    "water_content": "14.4g",
+    "energy": "1422kJ"
+  },
+  {
+    "food_name": "芸豆(干，红)",
+    "edible_portion": "100%",
+    "water_content": "11.1g",
+    "energy": "1474kJ"
+  },
+  {
+    "food_name": "芸豆(干，虎皮)",
+    "edible_portion": "100%",
+    "water_content": "10.2g",
+    "energy": "1478kJ"
+  },
+  {
+    "food_name": "芸豆(干，杂，带皮)",
+    "edible_portion": "100%",
+    "water_content": "9.8g",
+    "energy": "1479kJ"
+  },
+  {
+    "food_name": "蚕豆(带皮)",
+    "edible_portion": "93%",
+    "water_content": "11.5g",
+    "energy": "1477kJ"
+  },
+  {
+    "food_name": "蚕豆(去皮)",
+    "edible_portion": "100%",
+    "water_content": "11.3g",
+    "energy": "1492kJ"
+  },
+  {
+    "food_name": "扁豆(干)",
+    "edible_portion": "100%",
+    "water_content": "9.9g",
+    "energy": "1497kJ"
+  },
+  {
+    "food_name": "扁豆(干，白)",
+    "edible_portion": "100%",
+    "water_content": "19.4g",
+    "energy": "1316kJ"
+  },
+  {
+    "food_name": "眉豆[饭豇豆](干)",
+    "edible_portion": "100%",
+    "water_content": "12.0g",
+    "energy": "1472kJ"
+  },
+  {
+    "food_name": "豇豆(干)",
+    "edible_portion": "100%",
+    "water_content": "10.9g",
+    "energy": "1488kJ"
+  },
+  {
+    "food_name": "豌豆(干)",
+    "edible_portion": "100%",
+    "water_content": "10.4g",
+    "energy": "1504kJ"
+  },
+  {
+    "food_name": "鹰嘴豆[桃豆]",
+    "edible_portion": "100%",
+    "water_content": "11.3g",
+    "energy": "1536kJ"
+  },
+  {
+    "food_name": "荆豆(干)",
+    "edible_portion": "100%",
+    "water_content": "9.0g",
+    "energy": "1755kJ"
+  },
+  {
+    "food_name": "白萝卜[莱菔](鲜)",
+    "edible_portion": "95%",
+    "water_content": "93.4g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "变萝卜[红皮萝卜]",
+    "edible_portion": "94%",
+    "water_content": "91.6g",
+    "energy": "133kJ"
+  },
+  {
+    "food_name": "红旦旦萝卜",
+    "edible_portion": "95%",
+    "water_content": "94.4g",
+    "energy": "87kJ"
+  },
+  {
+    "food_name": "红萝卜",
+    "edible_portion": "97%",
+    "water_content": "93.8g",
+    "energy": "99kJ"
+  },
+  {
+    "food_name": "红心萝卜",
+    "edible_portion": "94%",
+    "water_content": "88.0g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "青萝卜",
+    "edible_portion": "95%",
+    "water_content": "91.0g",
+    "energy": "145kJ"
+  },
+  {
+    "food_name": "水萝卜[脆萝卜]",
+    "edible_portion": "93%",
+    "water_content": "92.9g",
+    "energy": "107kJ"
+  },
+  {
+    "food_name": "小水萝卜[算盘子，红皮萝卜]",
+    "edible_portion": "66%",
+    "water_content": "93.9g",
+    "energy": "97kJ"
+  },
+  {
+    "food_name": "心里美萝卜",
+    "edible_portion": "88%",
+    "water_content": "93.5g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "胡萝卜(红)[金笋，丁香萝卜]",
+    "edible_portion": "96%",
+    "water_content": "89.2g",
+    "energy": "174kJ"
+  },
+  {
+    "food_name": "胡萝卜(黄)",
+    "edible_portion": "97%",
+    "water_content": "87.4g",
+    "energy": "205kJ"
+  },
+  {
+    "food_name": "芥菜头[大头菜，水芥]",
+    "edible_portion": "83%",
+    "water_content": "89.6g",
+    "energy": "166kJ"
+  },
+  {
+    "food_name": "苤蓝[玉蔓菁，球茎甘蓝]",
+    "edible_portion": "78%",
+    "water_content": "90.8g",
+    "energy": "149kJ"
+  },
+  {
+    "food_name": "甜菜根[甜菜头，糖萝卜](鲜)",
+    "edible_portion": "90%",
+    "water_content": "74.8g",
+    "energy": "420kJ"
+  },
+  {
+    "food_name": "扁豆[月亮菜]",
+    "edible_portion": "91%",
+    "water_content": "88.3g",
+    "energy": "193kJ"
+  },
+  {
+    "food_name": "刀豆(鲜)",
+    "edible_portion": "92%",
+    "water_content": "89.0g",
+    "energy": "183kJ"
+  },
+  {
+    "food_name": "豆角",
+    "edible_portion": "96%",
+    "water_content": "90.0g",
+    "energy": "164kJ"
+  },
+  {
+    "food_name": "豆角(鲜,白)",
+    "edible_portion": "97%",
+    "water_content": "89.7g",
+    "energy": "171kJ"
+  },
+  {
+    "food_name": "荷兰豆",
+    "edible_portion": "88%",
+    "water_content": "91.9g",
+    "energy": "137kJ"
+  },
+  {
+    "food_name": "龙豆(鲜)",
+    "edible_portion": "98%",
+    "water_content": "90.0g",
+    "energy": "166kJ"
+  },
+  {
+    "food_name": "毛豆[青豆，菜用大豆](鲜)",
+    "edible_portion": "53%",
+    "water_content": "69.6g",
+    "energy": "586kJ"
+  },
+  {
+    "food_name": "四季豆[菜豆]",
+    "edible_portion": "96%",
+    "water_content": "91.3g",
+    "energy": "146kJ"
+  },
+  {
+    "food_name": "豌豆(带荚,鲜)[回回豆]",
+    "edible_portion": "42%",
+    "water_content": "70.2g",
+    "energy": "497kJ"
+  },
+  {
+    "food_name": "豌豆尖",
+    "edible_portion": "100%",
+    "water_content": "42.1g",
+    "energy": "969kJ"
+  },
+  {
+    "food_name": "油豆角[多花菜豆](鲜)",
+    "edible_portion": "99%",
+    "water_content": "92.2g",
+    "energy": "118kJ"
+  },
+  {
+    "food_name": "芸豆(鲜)",
+    "edible_portion": "96%",
+    "water_content": "91.1g",
+    "energy": "143kJ"
+  },
+  {
+    "food_name": "豇豆",
+    "edible_portion": "97%",
+    "water_content": "90.3g",
+    "energy": "161kJ"
+  },
+  {
+    "food_name": "豇豆(长)",
+    "edible_portion": "98%",
+    "water_content": "90.8g",
+    "energy": "152kJ"
+  },
+  {
+    "food_name": "黄豆芽",
+    "edible_portion": "100%",
+    "water_content": "88.8g",
+    "energy": "212kJ"
+  },
+  {
+    "food_name": "绿豆芽",
+    "edible_portion": "100%",
+    "water_content": "94.6g",
+    "energy": "89kJ"
+  },
+  {
+    "food_name": "豌豆苗",
+    "edible_portion": "86%",
+    "water_content": "89.6g",
+    "energy": "176kJ"
+  },
+  {
+    "food_name": "茄子(均值)",
+    "edible_portion": "93%",
+    "water_content": "93.4g",
+    "energy": "109kJ"
+  },
+  {
+    "food_name": "茄子(圆)",
+    "edible_portion": "95%",
+    "water_content": "91.2g",
+    "energy": "148kJ"
+  },
+  {
+    "food_name": "茄子(紫皮，长)",
+    "edible_portion": "96%",
+    "water_content": "93.1g",
+    "energy": "113kJ"
+  },
+  {
+    "food_name": "番茄[西红柿]",
+    "edible_portion": "97%",
+    "water_content": "94.4g",
+    "energy": "91kJ"
+  },
+  {
+    "food_name": "奶柿子[西红柿]",
+    "edible_portion": "100%",
+    "water_content": "95.6g",
+    "energy": "68kJ"
+  },
+  {
+    "food_name": "辣椒(红，尖，干)",
+    "edible_portion": "88%",
+    "water_content": "14.6g",
+    "energy": "1595kJ"
+  },
+  {
+    "food_name": "辣椒(红，小)",
+    "edible_portion": "80%",
+    "water_content": "88.8g",
+    "energy": "188kJ"
+  },
+  {
+    "food_name": "辣椒(青，尖)",
+    "edible_portion": "84%",
+    "water_content": "91.9g",
+    "energy": "133kJ"
+  },
+  {
+    "food_name": "甜椒[灯笼椒，柿子椒]",
+    "edible_portion": "82%",
+    "water_content": "93.0g",
+    "energy": "116kJ"
+  },
+  {
+    "food_name": "葫子",
+    "edible_portion": "85%",
+    "water_content": "92.2g",
+    "energy": "131kJ"
+  },
+  {
+    "food_name": "秋葵[黄秋葵，羊角豆]",
+    "edible_portion": "88%",
+    "water_content": "86.2g",
+    "energy": "225kJ"
+  },
+  {
+    "food_name": "樱桃番茄[小西红柿]",
+    "edible_portion": "98%",
+    "water_content": "92.5g",
+    "energy": "107kJ"
+  },
+  {
+    "food_name": "甜椒[灯笼椒、柿子椒]",
+    "edible_portion": "82%",
+    "water_content": "94.6g",
+    "energy": "77kJ"
+  },
+  {
+    "food_name": "彩椒",
+    "edible_portion": "83%",
+    "water_content": "91.5g",
+    "energy": "109kJ"
+  },
+  {
+    "food_name": "秋葵[黄秋葵、羊角豆]",
+    "edible_portion": "98%",
+    "water_content": "91.2g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "白瓜",
+    "edible_portion": "83%",
+    "water_content": "96.2g",
+    "energy": "59kJ"
+  },
+  {
+    "food_name": "菜瓜[生瓜，白瓜]",
+    "edible_portion": "88%",
+    "water_content": "95.0g",
+    "energy": "84kJ"
+  },
+  {
+    "food_name": "冬瓜",
+    "edible_portion": "80%",
+    "water_content": "96.6g",
+    "energy": "58kJ"
+  },
+  {
+    "food_name": "佛手瓜[棒瓜，菜肴梨]",
+    "edible_portion": "100%",
+    "water_content": "94.3g",
+    "energy": "89kJ"
+  },
+  {
+    "food_name": "葫芦[长瓜，蒲瓜，瓠瓜]",
+    "edible_portion": "87%",
+    "water_content": "95.3g",
+    "energy": "75kJ"
+  },
+  {
+    "food_name": "黄瓜[胡瓜](鲜)",
+    "edible_portion": "92%",
+    "water_content": "95.8g",
+    "energy": "70kJ"
+  },
+  {
+    "food_name": "节瓜[毛瓜]",
+    "edible_portion": "92%",
+    "water_content": "95.6g",
+    "energy": "72kJ"
+  },
+  {
+    "food_name": "金瓜",
+    "edible_portion": "82%",
+    "water_content": "95.6g",
+    "energy": "70kJ"
+  },
+  {
+    "food_name": "苦瓜[凉瓜，癞瓜](鲜)",
+    "edible_portion": "81%",
+    "water_content": "93.4g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "南瓜[倭瓜，番瓜](鲜)",
+    "edible_portion": "85%",
+    "water_content": "93.5g",
+    "energy": "106kJ"
+  },
+  {
+    "food_name": "南瓜粉",
+    "edible_portion": "100%",
+    "water_content": "6.2g",
+    "energy": "1552kJ"
+  },
+  {
+    "food_name": "蛇瓜[蛇豆，大豆角]",
+    "edible_portion": "89%",
+    "water_content": "94.1g",
+    "energy": "96kJ"
+  },
+  {
+    "food_name": "丝瓜",
+    "edible_portion": "83%",
+    "water_content": "94.3g",
+    "energy": "96kJ"
+  },
+  {
+    "food_name": "笋瓜[生瓜]",
+    "edible_portion": "91%",
+    "water_content": "96.1g",
+    "energy": "61kJ"
+  },
+  {
+    "food_name": "西葫芦",
+    "edible_portion": "73%",
+    "water_content": "94.9g",
+    "energy": "86kJ"
+  },
+  {
+    "food_name": "飞碟瓜",
+    "edible_portion": "91%",
+    "water_content": "94.1g",
+    "energy": "73kJ"
+  },
+  {
+    "food_name": "黄茎瓜",
+    "edible_portion": "100%",
+    "water_content": "95.4g",
+    "energy": "88kJ"
+  },
+  {
+    "food_name": "秋黄瓜[旱黄瓜]",
+    "edible_portion": "92%",
+    "water_content": "96.0g",
+    "energy": "57kJ"
+  },
+  {
+    "food_name": "南瓜(栗面)",
+    "edible_portion": "74%",
+    "water_content": "88.8g",
+    "energy": "153kJ"
+  },
+  {
+    "food_name": "大蒜[蒜头](鲜)",
+    "edible_portion": "85%",
+    "water_content": "66.6g",
+    "energy": "553kJ"
+  },
+  {
+    "food_name": "青蒜",
+    "edible_portion": "84%",
+    "water_content": "90.4g",
+    "energy": "157kJ"
+  },
+  {
+    "food_name": "蒜黄",
+    "edible_portion": "97%",
+    "water_content": "93.0g",
+    "energy": "115kJ"
+  },
+  {
+    "food_name": "蒜苗",
+    "edible_portion": "82%",
+    "water_content": "88.9g",
+    "energy": "186kJ"
+  },
+  {
+    "food_name": "蒜苔",
+    "edible_portion": "90%",
+    "water_content": "81.8g",
+    "energy": "300kJ"
+  },
+  {
+    "food_name": "大葱",
+    "edible_portion": "82%",
+    "water_content": "91.0g",
+    "energy": "151kJ"
+  },
+  {
+    "food_name": "细香葱[香葱，四季葱]",
+    "edible_portion": "",
+    "water_content": "90.0g",
+    "energy": "176kJ"
+  },
+  {
+    "food_name": "葱(小葱,鲜)",
+    "edible_portion": "73%",
+    "water_content": "92.7g",
+    "energy": "125kJ"
+  },
+  {
+    "food_name": "洋葱[葱头](鲜)",
+    "edible_portion": "90%",
+    "water_content": "89.2g",
+    "energy": "179kJ"
+  },
+  {
+    "food_name": "韭菜",
+    "edible_portion": "90%",
+    "water_content": "91.8g",
+    "energy": "134kJ"
+  },
+  {
+    "food_name": "韭黄[韭芽]",
+    "edible_portion": "88%",
+    "water_content": "93.2g",
+    "energy": "113kJ"
+  },
+  {
+    "food_name": "韭苔",
+    "edible_portion": "85%",
+    "water_content": "89.4g",
+    "energy": "174kJ"
+  },
+  {
+    "food_name": "薤[皎头](鲜)",
+    "edible_portion": "",
+    "water_content": "81.4g",
+    "energy": "316kJ"
+  },
+  {
+    "food_name": "薤白[小根蒜，山蒜，团蒜](鲜)",
+    "edible_portion": "",
+    "water_content": "68.0g",
+    "energy": "533kJ"
+  },
+  {
+    "food_name": "大白菜(均值)",
+    "edible_portion": "87%",
+    "water_content": "94.6g",
+    "energy": "84kJ"
+  },
+  {
+    "food_name": "苹果(均值)",
+    "edible_portion": "76%",
+    "water_content": "85.9g",
+    "energy": "240kJ"
+  },
+  {
+    "food_name": "苹果（国光苹果）",
+    "edible_portion": "78%",
+    "water_content": "85.9g",
+    "energy": "242kJ"
+  },
+  {
+    "food_name": "苹果（红富士苹果)",
+    "edible_portion": "85%",
+    "water_content": "86.9g",
+    "energy": "226kJ"
+  },
+  {
+    "food_name": "红香蕉苹果",
+    "edible_portion": "87%",
+    "water_content": "86.9g",
+    "energy": "223kJ"
+  },
+  {
+    "food_name": "红星苹果",
+    "edible_portion": "85%",
+    "water_content": "85.0g",
+    "energy": "254kJ"
+  },
+  {
+    "food_name": "红玉苹果",
+    "edible_portion": "84%",
+    "water_content": "84.7g",
+    "energy": "261kJ"
+  },
+  {
+    "food_name": "红元帅苹果",
+    "edible_portion": "84%",
+    "water_content": "84.9g",
+    "energy": "261kJ"
+  },
+  {
+    "food_name": "苹果（黄香蕉苹果)",
+    "edible_portion": "88%",
+    "water_content": "85.6g",
+    "energy": "245kJ"
+  },
+  {
+    "food_name": "苹果（黄元帅苹果)",
+    "edible_portion": "80%",
+    "water_content": "84.6g",
+    "energy": "264kJ"
+  },
+  {
+    "food_name": "金元帅苹果",
+    "edible_portion": "78%",
+    "water_content": "86.2g",
+    "energy": "233kJ"
+  },
+  {
+    "food_name": "青香蕉苹果",
+    "edible_portion": "80%",
+    "water_content": "86.3g",
+    "energy": "232kJ"
+  },
+  {
+    "food_name": "秋里蒙苹果",
+    "edible_portion": "85%",
+    "water_content": "87.5g",
+    "energy": "213kJ"
+  },
+  {
+    "food_name": "香玉苹果",
+    "edible_portion": "69%",
+    "water_content": "83.4g",
+    "energy": "279kJ"
+  },
+  {
+    "food_name": "印度苹果",
+    "edible_portion": "90%",
+    "water_content": "84.0g",
+    "energy": "269kJ"
+  },
+  {
+    "food_name": "祝光苹果",
+    "edible_portion": "86%",
+    "water_content": "86.7g",
+    "energy": "223kJ"
+  },
+  {
+    "food_name": "倭锦苹果",
+    "edible_portion": "86%",
+    "water_content": "85.8g",
+    "energy": "242kJ"
+  },
+  {
+    "food_name": "苹果(罐头)",
+    "edible_portion": "100%",
+    "water_content": "89.2g",
+    "energy": "186kJ"
+  },
+  {
+    "food_name": "梨(均值)",
+    "edible_portion": "82%",
+    "water_content": "85.8g",
+    "energy": "240kJ"
+  },
+  {
+    "food_name": "长把梨",
+    "edible_portion": "80%",
+    "water_content": "83.1g",
+    "energy": "297kJ"
+  },
+  {
+    "food_name": "冬果梨",
+    "edible_portion": "87%",
+    "water_content": "86.2g",
+    "energy": "232kJ"
+  },
+  {
+    "food_name": "鹅黄梨",
+    "edible_portion": "68%",
+    "water_content": "88.6g",
+    "energy": "191kJ"
+  },
+  {
+    "food_name": "红肖梨",
+    "edible_portion": "87%",
+    "water_content": "89.1g",
+    "energy": "182kJ"
+  },
+  {
+    "food_name": "锦丰梨",
+    "edible_portion": "92%",
+    "water_content": "85.5g",
+    "energy": "243kJ"
+  },
+  {
+    "food_name": "梨(京白梨)",
+    "edible_portion": "79%",
+    "water_content": "85.3g",
+    "energy": "255kJ"
+  },
+  {
+    "food_name": "梨(库尔勒梨)",
+    "edible_portion": "91%",
+    "water_content": "85.9g",
+    "energy": "233kJ"
+  },
+  {
+    "food_name": "梨(莱阳梨)",
+    "edible_portion": "80%",
+    "water_content": "84.8g",
+    "energy": "252kJ"
+  },
+  {
+    "food_name": "马蹄黄梨",
+    "edible_portion": "74%",
+    "water_content": "86.8g",
+    "energy": "221kJ"
+  },
+  {
+    "food_name": "明月梨",
+    "edible_portion": "81%",
+    "water_content": "85.9g",
+    "energy": "239kJ"
+  },
+  {
+    "food_name": "木梨",
+    "edible_portion": "80%",
+    "water_content": "91.0g",
+    "energy": "150kJ"
+  },
+  {
+    "food_name": "梨(苹果梨)",
+    "edible_portion": "94%",
+    "water_content": "85.4g",
+    "energy": "243kJ"
+  },
+  {
+    "food_name": "软梨",
+    "edible_portion": "68%",
+    "water_content": "87.4g",
+    "energy": "213kJ"
+  },
+  {
+    "food_name": "苏梅梨",
+    "edible_portion": "88%",
+    "water_content": "77.4g",
+    "energy": "376kJ"
+  },
+  {
+    "food_name": "苏木梨",
+    "edible_portion": "88%",
+    "water_content": "85.6g",
+    "energy": "244kJ"
+  },
+  {
+    "food_name": "酥梨",
+    "edible_portion": "72%",
+    "water_content": "88.0g",
+    "energy": "203kJ"
+  },
+  {
+    "food_name": "酸梨",
+    "edible_portion": "85%",
+    "water_content": "89.6g",
+    "energy": "172kJ"
+  },
+  {
+    "food_name": "梨(香梨)",
+    "edible_portion": "89%",
+    "water_content": "85.8g",
+    "energy": "240kJ"
+  },
+  {
+    "food_name": "梨(雪花梨)",
+    "edible_portion": "86%",
+    "water_content": "88.8g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "雪梨",
+    "edible_portion": "93%",
+    "water_content": "78.3g",
+    "energy": "362kJ"
+  },
+  {
+    "food_name": "梨(鸭梨)",
+    "edible_portion": "82%",
+    "water_content": "88.3g",
+    "energy": "200kJ"
+  },
+  {
+    "food_name": "梨(鳄梨)",
+    "edible_portion": "100%",
+    "water_content": "74.3g",
+    "energy": "726kJ"
+  },
+  {
+    "food_name": "梨(糖水罐头)",
+    "edible_portion": "100%",
+    "water_content": "90.4g",
+    "energy": "165kJ"
+  },
+  {
+    "food_name": "红果[山里红，大山楂]",
+    "edible_portion": "76%",
+    "water_content": "73.0g",
+    "energy": "457kJ"
+  },
+  {
+    "food_name": "红果(干)",
+    "edible_portion": "100%",
+    "water_content": "11.1g",
+    "energy": "1487kJ"
+  },
+  {
+    "food_name": "海棠果[楸子]",
+    "edible_portion": "86%",
+    "water_content": "79.9g",
+    "energy": "339kJ"
+  },
+  {
+    "food_name": "沙果",
+    "edible_portion": "95%",
+    "water_content": "81.3g",
+    "energy": "313kJ"
+  },
+  {
+    "food_name": "酸刺",
+    "edible_portion": "16%",
+    "water_content": "70.7g",
+    "energy": "492kJ"
+  },
+  {
+    "food_name": "蛇果",
+    "edible_portion": "84%",
+    "water_content": "84.4g",
+    "energy": "248kJ"
+  },
+  {
+    "food_name": "桃(均值)",
+    "edible_portion": "86%",
+    "water_content": "86.4g",
+    "energy": "226kJ"
+  },
+  {
+    "food_name": "桃（黄桃）",
+    "edible_portion": "93%",
+    "water_content": "85.2g",
+    "energy": "250kJ"
+  },
+  {
+    "food_name": "桃（久保桃）",
+    "edible_portion": "94%",
+    "water_content": "89.0g",
+    "energy": "184kJ"
+  },
+  {
+    "food_name": "蜜桃",
+    "edible_portion": "88%",
+    "water_content": "88.7g",
+    "energy": "189kJ"
+  },
+  {
+    "food_name": "蒲桃",
+    "edible_portion": "69%",
+    "water_content": "88.7g",
+    "energy": "189kJ"
+  },
+  {
+    "food_name": "桃(糖水罐头)",
+    "edible_portion": "100%",
+    "water_content": "84.9g",
+    "energy": "255kJ"
+  },
+  {
+    "food_name": "李子",
+    "edible_portion": "91%",
+    "water_content": "90.0g",
+    "energy": "167kJ"
+  },
+  {
+    "food_name": "李子杏",
+    "edible_portion": "92%",
+    "water_content": "89.9g",
+    "energy": "167kJ"
+  },
+  {
+    "food_name": "梅[青梅]",
+    "edible_portion": "93%",
+    "water_content": "91.1g",
+    "energy": "154kJ"
+  },
+  {
+    "food_name": "杏",
+    "edible_portion": "91%",
+    "water_content": "89.4g",
+    "energy": "174kJ"
+  },
+  {
+    "food_name": "杏(罐头)",
+    "edible_portion": "100%",
+    "water_content": "89.2g",
+    "energy": "182kJ"
+  },
+  {
+    "food_name": "杏干",
+    "edible_portion": "25%",
+    "water_content": "8.8g",
+    "energy": "1475kJ"
+  },
+  {
+    "food_name": "布朗",
+    "edible_portion": "87%",
+    "water_content": "88.0g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "西梅",
+    "edible_portion": "76%",
+    "water_content": "88.5g",
+    "energy": "177kJ"
+  },
+  {
+    "food_name": "枣(鲜)",
+    "edible_portion": "87%",
+    "water_content": "67.4g",
+    "energy": "548kJ"
+  },
+  {
+    "food_name": "枣(干)",
+    "edible_portion": "80%",
+    "water_content": "26.9g",
+    "energy": "1226kJ"
+  },
+  {
+    "food_name": "枣（金丝小枣）",
+    "edible_portion": "81%",
+    "water_content": "19.3g",
+    "energy": "1365kJ"
+  },
+  {
+    "food_name": "黑枣(无核)[乌枣]",
+    "edible_portion": "98%",
+    "water_content": "39.0g",
+    "energy": "1014kJ"
+  },
+  {
+    "food_name": "酒枣",
+    "edible_portion": "91%",
+    "water_content": "61.7g",
+    "energy": "642kJ"
+  },
+  {
+    "food_name": "蜜枣",
+    "edible_portion": "100%",
+    "water_content": "13.4g",
+    "energy": "1464kJ"
+  },
+  {
+    "food_name": "蜜枣(无核)",
+    "edible_portion": "100%",
+    "water_content": "16.6g",
+    "energy": "1413kJ"
+  },
+  {
+    "food_name": "冬枣",
+    "edible_portion": "93%",
+    "water_content": "69.5g",
+    "energy": "476kJ"
+  },
+  {
+    "food_name": "酸枣",
+    "edible_portion": "52%",
+    "water_content": "18.3g",
+    "energy": "1361kJ"
+  },
+  {
+    "food_name": "樱桃",
+    "edible_portion": "80%",
+    "water_content": "88.0g",
+    "energy": "200kJ"
+  },
+  {
+    "food_name": "葡萄(均值)",
+    "edible_portion": "86%",
+    "water_content": "88.7g",
+    "energy": "191kJ"
+  },
+  {
+    "food_name": "红玫瑰葡萄",
+    "edible_portion": "96%",
+    "water_content": "88.5g",
+    "energy": "196kJ"
+  },
+  {
+    "food_name": "葡萄(巨峰)",
+    "edible_portion": "84%",
+    "water_content": "87.0g",
+    "energy": "218kJ"
+  },
+  {
+    "food_name": "葡萄(马奶子)",
+    "edible_portion": "84%",
+    "water_content": "89.6g",
+    "energy": "178kJ"
+  },
+  {
+    "food_name": "葡萄(玫瑰香)",
+    "edible_portion": "86%",
+    "water_content": "86.9g",
+    "energy": "227kJ"
+  },
+  {
+    "food_name": "葡萄干",
+    "edible_portion": "100%",
+    "water_content": "11.6g",
+    "energy": "1475kJ"
+  },
+  {
+    "food_name": "石榴(均值)",
+    "edible_portion": "57%",
+    "water_content": "79.1g",
+    "energy": "349kJ"
+  },
+  {
+    "food_name": "柿",
+    "edible_portion": "87%",
+    "water_content": "80.6g",
+    "energy": "325kJ"
+  },
+  {
+    "food_name": "柿饼",
+    "edible_portion": "97%",
+    "water_content": "33.8g",
+    "energy": "1106kJ"
+  },
+  {
+    "food_name": "白果(干)[银杏]",
+    "edible_portion": "67%",
+    "water_content": "9.9g",
+    "energy": "1507kJ"
+  },
+  {
+    "food_name": "菠萝蜜子",
+    "edible_portion": "97%",
+    "water_content": "57.0g",
+    "energy": "718kJ"
+  },
+  {
+    "food_name": "核桃(鲜)",
+    "edible_portion": "43%",
+    "water_content": "49.8g",
+    "energy": "1428kJ"
+  },
+  {
+    "food_name": "核桃(干)[胡桃]",
+    "edible_portion": "43%",
+    "water_content": "5.2g",
+    "energy": "2754kJ"
+  },
+  {
+    "food_name": "山核桃(干)",
+    "edible_portion": "24%",
+    "water_content": "2.2g",
+    "energy": "2616kJ"
+  },
+  {
+    "food_name": "山核桃(熟)[小核桃]",
+    "edible_portion": "30%",
+    "water_content": "2.2g",
+    "energy": "2602kJ"
+  },
+  {
+    "food_name": "栗子(鲜)[板栗]",
+    "edible_portion": "80%",
+    "water_content": "52.0g",
+    "energy": "815kJ"
+  },
+  {
+    "food_name": "栗子(干)",
+    "edible_portion": "73%",
+    "water_content": "13.4g",
+    "energy": "1486kJ"
+  },
+  {
+    "food_name": "栗子(熟)[板栗]",
+    "edible_portion": "78%",
+    "water_content": "46.6g",
+    "energy": "919kJ"
+  },
+  {
+    "food_name": "松子(生)",
+    "edible_portion": "32%",
+    "water_content": "3.0g",
+    "energy": "2853kJ"
+  },
+  {
+    "food_name": "松子(炒)",
+    "edible_portion": "31%",
+    "water_content": "3.6g",
+    "energy": "2768kJ"
+  },
+  {
+    "food_name": "松子仁",
+    "edible_portion": "100%",
+    "water_content": "0.8g",
+    "energy": "3047kJ"
+  },
+  {
+    "food_name": "杏仁",
+    "edible_portion": "100%",
+    "water_content": "5.6g",
+    "energy": "2469kJ"
+  },
+  {
+    "food_name": "杏仁(大)",
+    "edible_portion": "100%",
+    "water_content": "6.2g",
+    "energy": "2398kJ"
+  },
+  {
+    "food_name": "杏仁(炒)",
+    "edible_portion": "91%",
+    "water_content": "2.1g",
+    "energy": "2642kJ"
+  },
+  {
+    "food_name": "橡实[橡子，青冈子]",
+    "edible_portion": "70%",
+    "water_content": "42.3g",
+    "energy": "1001kJ"
+  },
+  {
+    "food_name": "腰果",
+    "edible_portion": "100%",
+    "water_content": "2.4g",
+    "energy": "2359kJ"
+  },
+  {
+    "food_name": "榛子(干)",
+    "edible_portion": "27%",
+    "water_content": "7.4g",
+    "energy": "2411kJ"
+  },
+  {
+    "food_name": "榛子(炒)",
+    "edible_portion": "21%",
+    "water_content": "2.3g",
+    "energy": "2602kJ"
+  },
+  {
+    "food_name": "开心果(熟)",
+    "edible_portion": "82%",
+    "water_content": "0.8g",
+    "energy": "2610kJ"
+  },
+  {
+    "food_name": "胡麻籽",
+    "edible_portion": "98%",
+    "water_content": "6.9g",
+    "energy": "2132kJ"
+  },
+  {
+    "food_name": "花生(鲜)[落花生，长生果]",
+    "edible_portion": "53%",
+    "water_content": "48.3g",
+    "energy": "1365kJ"
+  },
+  {
+    "food_name": "花生(炒)",
+    "edible_portion": "71%",
+    "water_content": "4.1g",
+    "energy": "2550kJ"
+  },
+  {
+    "food_name": "花生仁(生)",
+    "edible_portion": "100%",
+    "water_content": "6.9g",
+    "energy": "2430kJ"
+  },
+  {
+    "food_name": "花生仁(炒)",
+    "edible_portion": "100%",
+    "water_content": "1.8g",
+    "energy": "2486kJ"
+  },
+  {
+    "food_name": "葵花子(生)",
+    "edible_portion": "50%",
+    "water_content": "2.4g",
+    "energy": "2577kJ"
+  },
+  {
+    "food_name": "葵花子(炒)",
+    "edible_portion": "52%",
+    "water_content": "2.0g",
+    "energy": "2632kJ"
+  },
+  {
+    "food_name": "葵花子仁",
+    "edible_portion": "100%",
+    "water_content": "7.8g",
+    "energy": "2584kJ"
+  },
+  {
+    "food_name": "莲子(干)",
+    "edible_portion": "100%",
+    "water_content": "9.5g",
+    "energy": "1509kJ"
+  },
+  {
+    "food_name": "南瓜子(炒)[白瓜子]",
+    "edible_portion": "68%",
+    "water_content": "4.1g",
+    "energy": "2452kJ"
+  },
+  {
+    "food_name": "南瓜子仁",
+    "edible_portion": "100%",
+    "water_content": "9.2g",
+    "energy": "2427kJ"
+  },
+  {
+    "food_name": "西瓜子(炒)",
+    "edible_portion": "43%",
+    "water_content": "4.3g",
+    "energy": "2455kJ"
+  },
+  {
+    "food_name": "西瓜子仁",
+    "edible_portion": "100%",
+    "water_content": "9.2g",
+    "energy": "2395kJ"
+  },
+  {
+    "food_name": "芝麻籽(白)",
+    "edible_portion": "100%",
+    "water_content": "5.3g",
+    "energy": "2314kJ"
+  },
+  {
+    "food_name": "芝麻籽(黑)",
+    "edible_portion": "100%",
+    "water_content": "5.7g",
+    "energy": "2438kJ"
+  },
+  {
+    "food_name": "芡实米(鲜)[鸡头米]",
+    "edible_portion": "47%",
+    "water_content": "63.4g",
+    "energy": "618kJ"
+  },
+  {
+    "food_name": "花生(烤，勤俭牌)",
+    "edible_portion": "72%",
+    "water_content": "2.5g",
+    "energy": "2522kJ"
+  },
+  {
+    "food_name": "花生(烤，密日兴牌)",
+    "edible_portion": "71%",
+    "water_content": "3.1g",
+    "energy": "2058kJ"
+  },
+  {
+    "food_name": "花生仁(油炸)",
+    "edible_portion": "100%",
+    "water_content": "1.3g",
+    "energy": "2566kJ"
+  },
+  {
+    "food_name": "猪肉(肥瘦)(均值)",
+    "edible_portion": "100%",
+    "water_content": "46.8g",
+    "energy": "1634kJ"
+  },
+  {
+    "food_name": "猪肉(肥)",
+    "edible_portion": "100%",
+    "water_content": "8.8g",
+    "energy": "3319kJ"
+  },
+  {
+    "food_name": "猪肉(后臀尖)",
+    "edible_portion": "97%",
+    "water_content": "54.0g",
+    "energy": "1388kJ"
+  },
+  {
+    "food_name": "猪肉(后肘)",
+    "edible_portion": "73%",
+    "water_content": "57.6g",
+    "energy": "1325kJ"
+  },
+  {
+    "food_name": "猪肉(肋条肉)",
+    "edible_portion": "96%",
+    "water_content": "31.1g",
+    "energy": "2341kJ"
+  },
+  {
+    "food_name": "猪肉(里脊)",
+    "edible_portion": "100%",
+    "water_content": "70.3g",
+    "energy": "648kJ"
+  },
+  {
+    "food_name": "猪肉(奶脯)[软五花，猪夹心]",
+    "edible_portion": "85%",
+    "water_content": "56.8g",
+    "energy": "1437kJ"
+  },
+  {
+    "food_name": "猪肉(奶面)[硬五花]",
+    "edible_portion": "79%",
+    "water_content": "53.0g",
+    "energy": "1401kJ"
+  },
+  {
+    "food_name": "猪肉(前肘)",
+    "edible_portion": "77%",
+    "water_content": "56.2g",
+    "energy": "1191kJ"
+  },
+  {
+    "food_name": "猪肉(瘦)",
+    "edible_portion": "100%",
+    "water_content": "71.0g",
+    "energy": "600kJ"
+  },
+  {
+    "food_name": "猪肉(腿)",
+    "edible_portion": "100%",
+    "water_content": "67.6g",
+    "energy": "792kJ"
+  },
+  {
+    "food_name": "猪大肠",
+    "edible_portion": "100%",
+    "water_content": "73.6g",
+    "energy": "809kJ"
+  },
+  {
+    "food_name": "猪大排",
+    "edible_portion": "68%",
+    "water_content": "58.8g",
+    "energy": "1095kJ"
+  },
+  {
+    "food_name": "猪耳",
+    "edible_portion": "100%",
+    "water_content": "69.4g",
+    "energy": "735kJ"
+  },
+  {
+    "food_name": "猪蹄",
+    "edible_portion": "60%",
+    "water_content": "58.2g",
+    "energy": "1080kJ"
+  },
+  {
+    "food_name": "猪小排",
+    "edible_portion": "72%",
+    "water_content": "58.1g",
+    "energy": "1151kJ"
+  },
+  {
+    "food_name": "猪肚",
+    "edible_portion": "96%",
+    "water_content": "78.2g",
+    "energy": "459kJ"
+  },
+  {
+    "food_name": "猪肺",
+    "edible_portion": "97%",
+    "water_content": "83.1g",
+    "energy": "353kJ"
+  },
+  {
+    "food_name": "猪肝",
+    "edible_portion": "99%",
+    "water_content": "70.7g",
+    "energy": "543kJ"
+  },
+  {
+    "food_name": "猪脑",
+    "edible_portion": "100%",
+    "water_content": "78.0g",
+    "energy": "546kJ"
+  },
+  {
+    "food_name": "猪舌[口条]",
+    "edible_portion": "94%",
+    "water_content": "63.7g",
+    "energy": "966kJ"
+  },
+  {
+    "food_name": "猪肾[猪腰子]",
+    "edible_portion": "93%",
+    "water_content": "78.8g",
+    "energy": "404kJ"
+  },
+  {
+    "food_name": "猪小肠",
+    "edible_portion": "100%",
+    "water_content": "85.4g",
+    "energy": "273kJ"
+  },
+  {
+    "food_name": "猪心",
+    "edible_portion": "97%",
+    "water_content": "76.0g",
+    "energy": "497kJ"
+  },
+  {
+    "food_name": "猪血",
+    "edible_portion": "100%",
+    "water_content": "85.8g",
+    "energy": "234kJ"
+  },
+  {
+    "food_name": "叉烧肉",
+    "edible_portion": "100%",
+    "water_content": "49.2g",
+    "energy": "1164kJ"
+  },
+  {
+    "food_name": "腊肉(培根)",
+    "edible_portion": "100%",
+    "water_content": "63.1g",
+    "energy": "756kJ"
+  },
+  {
+    "food_name": "腊肉(生)",
+    "edible_portion": "100%",
+    "water_content": "31.1g",
+    "energy": "2056kJ"
+  },
+  {
+    "food_name": "午餐肉",
+    "edible_portion": "100%",
+    "water_content": "59.9g",
+    "energy": "952kJ"
+  },
+  {
+    "food_name": "咸肉",
+    "edible_portion": "100%",
+    "water_content": "40.4g",
+    "energy": "1613kJ"
+  },
+  {
+    "food_name": "猪肝(卤煮)",
+    "edible_portion": "100%",
+    "water_content": "56.4g",
+    "energy": "851kJ"
+  },
+  {
+    "food_name": "猪蹄(熟)",
+    "edible_portion": "43%",
+    "water_content": "55.8g",
+    "energy": "1085kJ"
+  },
+  {
+    "food_name": "猪肉松(均值)",
+    "edible_portion": "100%",
+    "water_content": "9.4g",
+    "energy": "1668kJ"
+  },
+  {
+    "food_name": "酱排骨",
+    "edible_portion": "80%",
+    "water_content": "39.0g",
+    "energy": "1520kJ"
+  },
+  {
+    "food_name": "蛋清肠",
+    "edible_portion": "100%",
+    "water_content": "55.1g",
+    "energy": "1155kJ"
+  },
+  {
+    "food_name": "风干肠",
+    "edible_portion": "100%",
+    "water_content": "55.8g",
+    "energy": "1173kJ"
+  },
+  {
+    "food_name": "广东香肠",
+    "edible_portion": "100%",
+    "water_content": "33.5g",
+    "energy": "1795kJ"
+  },
+  {
+    "food_name": "火腿肠",
+    "edible_portion": "100%",
+    "water_content": "57.4g",
+    "energy": "888kJ"
+  },
+  {
+    "food_name": "腊肠",
+    "edible_portion": "100%",
+    "water_content": "8.4g",
+    "energy": "2421kJ"
+  },
+  {
+    "food_name": "蒜肠",
+    "edible_portion": "100%",
+    "water_content": "52.5g",
+    "energy": "1283kJ"
+  },
+  {
+    "food_name": "香肠",
+    "edible_portion": "100%",
+    "water_content": "19.2g",
+    "energy": "2106kJ"
+  },
+  {
+    "food_name": "小泥肠",
+    "edible_portion": "100%",
+    "water_content": "56.4g",
+    "energy": "1220kJ"
+  },
+  {
+    "food_name": "午餐肚",
+    "edible_portion": "100%",
+    "water_content": "50.5g",
+    "energy": "767kJ"
+  },
+  {
+    "food_name": "火腿",
+    "edible_portion": "100%",
+    "water_content": "47.9g",
+    "energy": "1369kJ"
+  },
+  {
+    "food_name": "金华火腿",
+    "edible_portion": "100%",
+    "water_content": "48.7g",
+    "energy": "1317kJ"
+  },
+  {
+    "food_name": "牛肉(肥瘦)(均值)",
+    "edible_portion": "99%",
+    "water_content": "72.8g",
+    "energy": "528kJ"
+  },
+  {
+    "food_name": "牛肉(腑肋)",
+    "edible_portion": "100%",
+    "water_content": "75.1g",
+    "energy": "516kJ"
+  },
+  {
+    "food_name": "牛肉(后腿)",
+    "edible_portion": "100%",
+    "water_content": "74.9g",
+    "energy": "448kJ"
+  },
+  {
+    "food_name": "牛肉(后腱)",
+    "edible_portion": "94%",
+    "water_content": "75.6g",
+    "energy": "416kJ"
+  },
+  {
+    "food_name": "牛肉(里脊)",
+    "edible_portion": "100%",
+    "water_content": "73.2g",
+    "energy": "451kJ"
+  },
+  {
+    "food_name": "牛肉(前腿)",
+    "edible_portion": "100%",
+    "water_content": "74.9g",
+    "energy": "442kJ"
+  },
+  {
+    "food_name": "牛肉(前腱)",
+    "edible_portion": "95%",
+    "water_content": "72.2g",
+    "energy": "480kJ"
+  },
+  {
+    "food_name": "牛肉(瘦)",
+    "edible_portion": "100%",
+    "water_content": "75.2g",
+    "energy": "449kJ"
+  },
+  {
+    "food_name": "牛蹄筋",
+    "edible_portion": "100%",
+    "water_content": "62.0g",
+    "energy": "642kJ"
+  },
+  {
+    "food_name": "牛鞭(泡发)",
+    "edible_portion": "100%",
+    "water_content": "71.8g",
+    "energy": "496kJ"
+  },
+  {
+    "food_name": "牛大肠",
+    "edible_portion": "100%",
+    "water_content": "85.9g",
+    "energy": "279kJ"
+  },
+  {
+    "food_name": "牛肚",
+    "edible_portion": "100%",
+    "water_content": "83.4g",
+    "energy": "306kJ"
+  },
+  {
+    "food_name": "牛肺",
+    "edible_portion": "100%",
+    "water_content": "78.6g",
+    "energy": "399kJ"
+  },
+  {
+    "food_name": "牛肝",
+    "edible_portion": "100%",
+    "water_content": "68.7g",
+    "energy": "586kJ"
+  },
+  {
+    "food_name": "牛脑",
+    "edible_portion": "100%",
+    "water_content": "75.1g",
+    "energy": "621kJ"
+  },
+  {
+    "food_name": "牛舌",
+    "edible_portion": "100%",
+    "water_content": "66.7g",
+    "energy": "815kJ"
+  },
+  {
+    "food_name": "牛肾",
+    "edible_portion": "89%",
+    "water_content": "78.3g",
+    "energy": "398kJ"
+  },
+  {
+    "food_name": "牛心",
+    "edible_portion": "100%",
+    "water_content": "77.2g",
+    "energy": "444kJ"
+  },
+  {
+    "food_name": "酱牛肉",
+    "edible_portion": "100%",
+    "water_content": "50.7g",
+    "energy": "1029kJ"
+  },
+  {
+    "food_name": "牛肉干",
+    "edible_portion": "100%",
+    "water_content": "9.3g",
+    "energy": "2288kJ"
+  },
+  {
+    "food_name": "牛肉松",
+    "edible_portion": "100%",
+    "water_content": "2.7g",
+    "energy": "1871kJ"
+  },
+  {
+    "food_name": "羊肉(肥瘦)(均值)",
+    "edible_portion": "90%",
+    "water_content": "65.7g",
+    "energy": "845kJ"
+  },
+  {
+    "food_name": "羊肉(后腿)",
+    "edible_portion": "77%",
+    "water_content": "75.8g",
+    "energy": "462kJ"
+  },
+  {
+    "food_name": "羊肉(颈)",
+    "edible_portion": "74%",
+    "water_content": "71.0g",
+    "energy": "570kJ"
+  },
+  {
+    "food_name": "羊肉(里脊)",
+    "edible_portion": "100%",
+    "water_content": "75.4g",
+    "energy": "435kJ"
+  },
+  {
+    "food_name": "羊肉(前腿)",
+    "edible_portion": "71%",
+    "water_content": "75.7g",
+    "energy": "462kJ"
+  },
+  {
+    "food_name": "羊肉(青羊)",
+    "edible_portion": "100%",
+    "water_content": "75.3g",
+    "energy": "420kJ"
+  },
+  {
+    "food_name": "羊肉(瘦)",
+    "edible_portion": "90%",
+    "water_content": "74.2g",
+    "energy": "496kJ"
+  },
+  {
+    "food_name": "羊肉(胸脯)",
+    "edible_portion": "81%",
+    "water_content": "73.6g",
+    "energy": "559kJ"
+  },
+  {
+    "food_name": "山羊肉(冻)",
+    "edible_portion": "100%",
+    "water_content": "56.4g",
+    "energy": "1214kJ"
+  },
+  {
+    "food_name": "羊蹄筋(生)",
+    "edible_portion": "100%",
+    "water_content": "62.8g",
+    "energy": "672kJ"
+  },
+  {
+    "food_name": "羊大肠",
+    "edible_portion": "100%",
+    "water_content": "83.4g",
+    "energy": "317kJ"
+  },
+  {
+    "food_name": "羊肚",
+    "edible_portion": "100%",
+    "water_content": "81.7g",
+    "energy": "364kJ"
+  },
+  {
+    "food_name": "羊肺",
+    "edible_portion": "100%",
+    "water_content": "77.7g",
+    "energy": "407kJ"
+  },
+  {
+    "food_name": "羊肝",
+    "edible_portion": "100%",
+    "water_content": "69.7g",
+    "energy": "563kJ"
+  },
+  {
+    "food_name": "鸡(均值)",
+    "edible_portion": "66%",
+    "water_content": "69.0g",
+    "energy": "698kJ"
+  },
+  {
+    "food_name": "鸡(土鸡，家养)",
+    "edible_portion": "58%",
+    "water_content": "73.5g",
+    "energy": "520kJ"
+  },
+  {
+    "food_name": "肉鸡(肥)",
+    "edible_portion": "74%",
+    "water_content": "46.1g",
+    "energy": "1609kJ"
+  },
+  {
+    "food_name": "鸡(乌骨鸡)",
+    "edible_portion": "48%",
+    "water_content": "73.9g",
+    "energy": "469kJ"
+  },
+  {
+    "food_name": "鸡胸脯肉",
+    "edible_portion": "100%",
+    "water_content": "72.0g",
+    "energy": "557kJ"
+  },
+  {
+    "food_name": "鸡翅",
+    "edible_portion": "69%",
+    "water_content": "65.4g",
+    "energy": "811kJ"
+  },
+  {
+    "food_name": "鸡腿",
+    "edible_portion": "69%",
+    "water_content": "70.2g",
+    "energy": "753kJ"
+  },
+  {
+    "food_name": "鸡爪",
+    "edible_portion": "60%",
+    "water_content": "56.4g",
+    "energy": "1059kJ"
+  },
+  {
+    "food_name": "鸡肝",
+    "edible_portion": "100%",
+    "water_content": "74.4g",
+    "energy": "507kJ"
+  },
+  {
+    "food_name": "鸡心",
+    "edible_portion": "100%",
+    "water_content": "70.8g",
+    "energy": "717kJ"
+  },
+  {
+    "food_name": "鸡血",
+    "edible_portion": "100%",
+    "water_content": "87.0g",
+    "energy": "210kJ"
+  },
+  {
+    "food_name": "鸡肫[鸡胗]",
+    "edible_portion": "100%",
+    "water_content": "73.1g",
+    "energy": "498kJ"
+  },
+  {
+    "food_name": "扒鸡",
+    "edible_portion": "66%",
+    "water_content": "56.0g",
+    "energy": "910kJ"
+  },
+  {
+    "food_name": "烤鸡",
+    "edible_portion": "73%",
+    "water_content": "59.0g",
+    "energy": "1000kJ"
+  },
+  {
+    "food_name": "鸡肉松",
+    "edible_portion": "100%",
+    "water_content": "4.9g",
+    "energy": "1848kJ"
+  },
+  {
+    "food_name": "鸭(均值)",
+    "edible_portion": "68%",
+    "water_content": "63.9g",
+    "energy": "996kJ"
+  },
+  {
+    "food_name": "鸭胸脯肉",
+    "edible_portion": "100%",
+    "water_content": "78.6g",
+    "energy": "379kJ"
+  },
+  {
+    "food_name": "鸭翅",
+    "edible_portion": "67%",
+    "water_content": "70.6g",
+    "energy": "613kJ"
+  },
+  {
+    "food_name": "鸭掌",
+    "edible_portion": "59%",
+    "water_content": "64.7g",
+    "energy": "633kJ"
+  },
+  {
+    "food_name": "鸭肠",
+    "edible_portion": "53%",
+    "water_content": "77.0g",
+    "energy": "537kJ"
+  },
+  {
+    "food_name": "鸭肝",
+    "edible_portion": "100%",
+    "water_content": "76.3g",
+    "energy": "533kJ"
+  },
+  {
+    "food_name": "鸭舌[鸭条]",
+    "edible_portion": "61%",
+    "water_content": "62.6g",
+    "energy": "1018kJ"
+  },
+  {
+    "food_name": "鸭心",
+    "edible_portion": "100%",
+    "water_content": "74.5g",
+    "energy": "596kJ"
+  },
+  {
+    "food_name": "鸭血(白鸭)",
+    "edible_portion": "100%",
+    "water_content": "72.6g",
+    "energy": "457kJ"
+  },
+  {
+    "food_name": "鸭肫",
+    "edible_portion": "93%",
+    "water_content": "77.8g",
+    "energy": "388kJ"
+  },
+  {
+    "food_name": "北京烤鸭",
+    "edible_portion": "80%",
+    "water_content": "38.2g",
+    "energy": "1805kJ"
+  },
+  {
+    "food_name": "酱鸭",
+    "edible_portion": "80%",
+    "water_content": "53.6g",
+    "energy": "1109kJ"
+  },
+  {
+    "food_name": "盐水鸭(熟)",
+    "edible_portion": "81%",
+    "water_content": "51.7g",
+    "energy": "1296kJ"
+  },
+  {
+    "food_name": "鹅",
+    "edible_portion": "63%",
+    "water_content": "61.4g",
+    "energy": "1041kJ"
+  },
+  {
+    "food_name": "鹅肝",
+    "edible_portion": "100%",
+    "water_content": "70.7g",
+    "energy": "542kJ"
+  },
+  {
+    "food_name": "鹅肫",
+    "edible_portion": "100%",
+    "water_content": "76.3g",
+    "energy": "422kJ"
+  },
+  {
+    "food_name": "烧鹅",
+    "edible_portion": "73%",
+    "water_content": "52.8g",
+    "energy": "1202kJ"
+  },
+  {
+    "food_name": "火鸡腿",
+    "edible_portion": "100%",
+    "water_content": "77.8g",
+    "energy": "384kJ"
+  },
+  {
+    "food_name": "火鸡胸脯肉",
+    "edible_portion": "100%",
+    "water_content": "73.6g",
+    "energy": "436kJ"
+  },
+  {
+    "food_name": "火鸡肝",
+    "edible_portion": "100%",
+    "water_content": "69.9g",
+    "energy": "600kJ"
+  },
+  {
+    "food_name": "火鸡肫",
+    "edible_portion": "100%",
+    "water_content": "76.5g",
+    "energy": "387kJ"
+  },
+  {
+    "food_name": "鸽",
+    "edible_portion": "42%",
+    "water_content": "66.6g",
+    "energy": "835kJ"
+  },
+  {
+    "food_name": "鹌鹑",
+    "edible_portion": "58%",
+    "water_content": "75.1g",
+    "energy": "462kJ"
+  },
+  {
+    "food_name": "乳鸽",
+    "edible_portion": "56%",
+    "water_content": "57.5g",
+    "energy": "1454kJ"
+  },
+  {
+    "food_name": "乳鸽(红烧)",
+    "edible_portion": "82%",
+    "water_content": "59.0g",
+    "energy": "1057kJ"
+  },
+  {
+    "food_name": "蛋（鸡蛋，均值)",
+    "edible_portion": "88%",
+    "water_content": "74.1g",
+    "energy": "599kJ"
+  },
+  {
+    "food_name": "鸡蛋(白皮)",
+    "edible_portion": "87%",
+    "water_content": "75.8g",
+    "energy": "574kJ"
+  },
+  {
+    "food_name": "鸡蛋(红皮)",
+    "edible_portion": "88%",
+    "water_content": "73.8g",
+    "energy": "650kJ"
+  },
+  {
+    "food_name": "鸡蛋(土鸡)",
+    "edible_portion": "88%",
+    "water_content": "72.6g",
+    "energy": "577kJ"
+  },
+  {
+    "food_name": "鸡蛋白",
+    "edible_portion": "100%",
+    "water_content": "84.4g",
+    "energy": "254kJ"
+  },
+  {
+    "food_name": "鸡蛋白(乌骨鸡)",
+    "edible_portion": "100%",
+    "water_content": "88.4g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "蛋黄（鸡蛋黄）",
+    "edible_portion": "100%",
+    "water_content": "51.5g",
+    "energy": "1360kJ"
+  },
+  {
+    "food_name": "鸡蛋黄(乌骨鸡)",
+    "edible_portion": "100%",
+    "water_content": "57.8g",
+    "energy": "1092kJ"
+  },
+  {
+    "food_name": "鸡蛋黄粉",
+    "edible_portion": "100%",
+    "water_content": "4.6g",
+    "energy": "2666kJ"
+  },
+  {
+    "food_name": "蛋（松花蛋，鸡蛋)",
+    "edible_portion": "83%",
+    "water_content": "66.4g",
+    "energy": "742kJ"
+  },
+  {
+    "food_name": "毛蛋",
+    "edible_portion": "87%",
+    "water_content": "72.3g",
+    "energy": "730kJ"
+  },
+  {
+    "food_name": "荷包蛋(油煎)",
+    "edible_portion": "100%",
+    "water_content": "68.6g",
+    "energy": "807kJ"
+  },
+  {
+    "food_name": "荷包蛋(煮)",
+    "edible_portion": "100%",
+    "water_content": "74.9g",
+    "energy": "645kJ"
+  },
+  {
+    "food_name": "蛋（鸭蛋）",
+    "edible_portion": "87%",
+    "water_content": "70.3g",
+    "energy": "748kJ"
+  },
+  {
+    "food_name": "鸭蛋白",
+    "edible_portion": "100%",
+    "water_content": "87.7g",
+    "energy": "199kJ"
+  },
+  {
+    "food_name": "鸭蛋黄",
+    "edible_portion": "100%",
+    "water_content": "44.9g",
+    "energy": "1565kJ"
+  },
+  {
+    "food_name": "海鸭蛋",
+    "edible_portion": "87%",
+    "water_content": "55.6g",
+    "energy": "1014kJ"
+  },
+  {
+    "food_name": "蛋（松花蛋，鸭蛋)[皮蛋]",
+    "edible_portion": "90%",
+    "water_content": "68.4g",
+    "energy": "714kJ"
+  },
+  {
+    "food_name": "咸鸭蛋",
+    "edible_portion": "88%",
+    "water_content": "61.3g",
+    "energy": "793kJ"
+  },
+  {
+    "food_name": "咸鸭蛋(煮)",
+    "edible_portion": "84%",
+    "water_content": "70.0g",
+    "energy": "734kJ"
+  },
+  {
+    "food_name": "蛋（鹅蛋）",
+    "edible_portion": "87%",
+    "water_content": "69.3g",
+    "energy": "814kJ"
+  },
+  {
+    "food_name": "鹅蛋白",
+    "edible_portion": "100%",
+    "water_content": "87.2g",
+    "energy": "206kJ"
+  },
+  {
+    "food_name": "蛋黄（鹅蛋黄）",
+    "edible_portion": "100%",
+    "water_content": "50.1g",
+    "energy": "1346kJ"
+  },
+  {
+    "food_name": "鹅蛋(煮)",
+    "edible_portion": "85%",
+    "water_content": "71.9g",
+    "energy": "736kJ"
+  },
+  {
+    "food_name": "蛋（鹌鹑蛋）",
+    "edible_portion": "86%",
+    "water_content": "73.0g",
+    "energy": "664kJ"
+  },
+  {
+    "food_name": "白条鱼(裸鱼)",
+    "edible_portion": "59%",
+    "water_content": "76.8g",
+    "energy": "432kJ"
+  },
+  {
+    "food_name": "草鱼[白鲩，草包鱼]",
+    "edible_portion": "58%",
+    "water_content": "77.3g",
+    "energy": "475kJ"
+  },
+  {
+    "food_name": "赤眼鳟[金目鱼]",
+    "edible_portion": "59%",
+    "water_content": "76.5g",
+    "energy": "459kJ"
+  },
+  {
+    "food_name": "感鱼[猴鱼]",
+    "edible_portion": "54%",
+    "water_content": "76.0g",
+    "energy": "477kJ"
+  },
+  {
+    "food_name": "胡子鲇[塘虱(鱼)]",
+    "edible_portion": "50%",
+    "water_content": "72.6g",
+    "energy": "611kJ"
+  },
+  {
+    "food_name": "黄颡鱼[戈牙鱼，黄鳍鱼]",
+    "edible_portion": "52%",
+    "water_content": "71.6g",
+    "energy": "523kJ"
+  },
+  {
+    "food_name": "鱼（黄鳝）[鳝鱼]",
+    "edible_portion": "67%",
+    "water_content": "78.0g",
+    "energy": "378kJ"
+  },
+  {
+    "food_name": "黄鳝丝",
+    "edible_portion": "88%",
+    "water_content": "83.2g",
+    "energy": "291kJ"
+  },
+  {
+    "food_name": "尖嘴白",
+    "edible_portion": "80%",
+    "water_content": "68.6g",
+    "energy": "578kJ"
+  },
+  {
+    "food_name": "口头鱼",
+    "edible_portion": "56%",
+    "water_content": "70.3g",
+    "energy": "565kJ"
+  },
+  {
+    "food_name": "鲤鱼[鲤拐子]",
+    "edible_portion": "54%",
+    "water_content": "76.7g",
+    "energy": "459kJ"
+  },
+  {
+    "food_name": "罗非鱼",
+    "edible_portion": "55%",
+    "water_content": "76.0g",
+    "energy": "416kJ"
+  },
+  {
+    "food_name": "青鱼[青皮鱼，青鳞鱼，青混]",
+    "edible_portion": "63%",
+    "water_content": "73.9g",
+    "energy": "497kJ"
+  },
+  {
+    "food_name": "乌鳢[黑鱼，石斑鱼，生鱼]",
+    "edible_portion": "57%",
+    "water_content": "78.7g",
+    "energy": "359kJ"
+  },
+  {
+    "food_name": "鱼（银鱼）[面条鱼]",
+    "edible_portion": "100%",
+    "water_content": "76.2g",
+    "energy": "440kJ"
+  },
+  {
+    "food_name": "湟鱼(裸鲤鱼)",
+    "edible_portion": "56%",
+    "water_content": "71.3g",
+    "energy": "523kJ"
+  },
+  {
+    "food_name": "鲇鱼[胡子鲇，鲢胡，旺虾]",
+    "edible_portion": "65%",
+    "water_content": "78.0g",
+    "energy": "431kJ"
+  },
+  {
+    "food_name": "鲒花",
+    "edible_portion": "63%",
+    "water_content": "76.7g",
+    "energy": "491kJ"
+  },
+  {
+    "food_name": "鲢鱼[白鲢，胖子，连子鱼]",
+    "edible_portion": "61%",
+    "water_content": "77.4g",
+    "energy": "436kJ"
+  },
+  {
+    "food_name": "鲫鱼[喜头鱼，海附鱼]",
+    "edible_portion": "54%",
+    "water_content": "75.4g",
+    "energy": "455kJ"
+  },
+  {
+    "food_name": "鲮鱼[雪鲮]",
+    "edible_portion": "57%",
+    "water_content": "77.7g",
+    "energy": "402kJ"
+  },
+  {
+    "food_name": "鳊鱼[鲂鱼，武昌鱼]",
+    "edible_portion": "59%",
+    "water_content": "73.1g",
+    "energy": "565kJ"
+  },
+  {
+    "food_name": "鳗鲡[鳗鱼，河鳗]",
+    "edible_portion": "84%",
+    "water_content": "67.1g",
+    "energy": "755kJ"
+  },
+  {
+    "food_name": "鳙鱼[胖头鱼，摆佳鱼，花鲢鱼]",
+    "edible_portion": "61%",
+    "water_content": "76.5g",
+    "energy": "421kJ"
+  },
+  {
+    "food_name": "鳜鱼[桂鱼，花鲫鱼]",
+    "edible_portion": "61%",
+    "water_content": "74.5g",
+    "energy": "494kJ"
+  },
+  {
+    "food_name": "鳟鱼[红鳟鱼]",
+    "edible_portion": "57%",
+    "water_content": "77.0g",
+    "energy": "416kJ"
+  },
+  {
+    "food_name": "白姑鱼[白米子(鱼)]",
+    "edible_portion": "67%",
+    "water_content": "71.5g",
+    "energy": "628kJ"
+  },
+  {
+    "food_name": "参鱼[蓝圆参，边鱼]",
+    "edible_portion": "70%",
+    "water_content": "72.0g",
+    "energy": "522kJ"
+  },
+  {
+    "food_name": "带鱼[白带鱼，刀鱼]",
+    "edible_portion": "76%",
+    "water_content": "73.3g",
+    "energy": "535kJ"
+  },
+  {
+    "food_name": "堤鱼",
+    "edible_portion": "64%",
+    "water_content": "66.9g",
+    "energy": "795kJ"
+  },
+  {
+    "food_name": "狗母鱼[大头狗母鱼]",
+    "edible_portion": "67%",
+    "water_content": "76.5g",
+    "energy": "420kJ"
+  },
+  {
+    "food_name": "海鲫鱼[九九鱼]",
+    "edible_portion": "60%",
+    "water_content": "64.3g",
+    "energy": "857kJ"
+  },
+  {
+    "food_name": "海鳗[鲫勾]",
+    "edible_portion": "67%",
+    "water_content": "74.6g",
+    "energy": "513kJ"
+  },
+  {
+    "food_name": "红娘鱼[翼红娘鱼]",
+    "edible_portion": "55%",
+    "water_content": "76.1g",
+    "energy": "442kJ"
+  },
+  {
+    "food_name": "黄姑鱼[黄婆鸡(鱼)]",
+    "edible_portion": "63%",
+    "water_content": "74.0g",
+    "energy": "572kJ"
+  },
+  {
+    "food_name": "黄鱼(大黄花鱼)",
+    "edible_portion": "66%",
+    "water_content": "77.7g",
+    "energy": "407kJ"
+  },
+  {
+    "food_name": "黄鱼(小黄花鱼)",
+    "edible_portion": "63%",
+    "water_content": "77.9g",
+    "energy": "417kJ"
+  },
+  {
+    "food_name": "黄鲂[赤虹，老板鱼]",
+    "edible_portion": "75%",
+    "water_content": "77.8g",
+    "energy": "343kJ"
+  },
+  {
+    "food_name": "金线鱼[红三鱼]",
+    "edible_portion": "40%",
+    "water_content": "77.1g",
+    "energy": "424kJ"
+  },
+  {
+    "food_name": "绿鳍马面豚[面包鱼，橡皮鱼]",
+    "edible_portion": "52%",
+    "water_content": "78.9g",
+    "energy": "350kJ"
+  },
+  {
+    "food_name": "梅童鱼[大头仔鱼，丁珠鱼]",
+    "edible_portion": "63%",
+    "water_content": "74.8g",
+    "energy": "506kJ"
+  },
+  {
+    "food_name": "沙丁鱼[沙鲻]",
+    "edible_portion": "67%",
+    "water_content": "78.0g",
+    "energy": "377kJ"
+  },
+  {
+    "food_name": "沙钻鱼[多鳞喜，沙梭，麦穗鱼]",
+    "edible_portion": "63%",
+    "water_content": "78.5g",
+    "energy": "355kJ"
+  },
+  {
+    "food_name": "舌鳎[花纹舌头，舌头鱼]",
+    "edible_portion": "68%",
+    "water_content": "79.8g",
+    "energy": "353kJ"
+  },
+  {
+    "food_name": "油抒[香梭鱼]",
+    "edible_portion": "74%",
+    "water_content": "74.2g",
+    "energy": "603kJ"
+  },
+  {
+    "food_name": "颚针鱼[针量鱼]",
+    "edible_portion": "75%",
+    "water_content": "66.5g",
+    "energy": "752kJ"
+  },
+  {
+    "food_name": "鲅鱼[马鲛鱼，燕鲅鱼，巴鱼]",
+    "edible_portion": "80%",
+    "water_content": "72.5g",
+    "energy": "511kJ"
+  },
+  {
+    "food_name": "鲆[片口鱼，比目鱼]",
+    "edible_portion": "68%",
+    "water_content": "75.9g",
+    "energy": "472kJ"
+  },
+  {
+    "food_name": "鲈鱼[鲈花]",
+    "edible_portion": "58%",
+    "water_content": "76.5g",
+    "energy": "442kJ"
+  },
+  {
+    "food_name": "鲐鱼[青鲐鱼，鲐巴鱼，青砖鱼]",
+    "edible_portion": "66%",
+    "water_content": "69.1g",
+    "energy": "650kJ"
+  },
+  {
+    "food_name": "鲑鱼[大麻哈鱼]",
+    "edible_portion": "72%",
+    "water_content": "74.1g",
+    "energy": "581kJ"
+  },
+  {
+    "food_name": "鲑鱼籽酱[大麻哈鱼籽酱]",
+    "edible_portion": "100%",
+    "water_content": "49.4g",
+    "energy": "1052kJ"
+  },
+  {
+    "food_name": "鲚鱼(大)[大凤尾鱼]",
+    "edible_portion": "79%",
+    "water_content": "77.5g",
+    "energy": "442kJ"
+  },
+  {
+    "food_name": "鲚鱼(小)[小凤尾鱼]",
+    "edible_portion": "90%",
+    "water_content": "72.7g",
+    "energy": "520kJ"
+  },
+  {
+    "food_name": "鲳鱼[平鱼，银鲳，刺鲳]",
+    "edible_portion": "70%",
+    "water_content": "72.8g",
+    "energy": "585kJ"
+  },
+  {
+    "food_name": "鲷[黑鲷，铜盆鱼，大目鱼]",
+    "edible_portion": "65%",
+    "water_content": "75.2g",
+    "energy": "446kJ"
+  },
+  {
+    "food_name": "鲻鱼[白眼棱鱼]",
+    "edible_portion": "57%",
+    "water_content": "75.3g",
+    "energy": "499kJ"
+  },
+  {
+    "food_name": "鲽[比目鱼，凸眼鱼]",
+    "edible_portion": "72%",
+    "water_content": "74.6g",
+    "energy": "452kJ"
+  },
+  {
+    "food_name": "鳐鱼[夫鱼]",
+    "edible_portion": "59%",
+    "water_content": "77.4g",
+    "energy": "380kJ"
+  },
+  {
+    "food_name": "鳓鱼[快鱼，力鱼]",
+    "edible_portion": "71%",
+    "water_content": "71.9g",
+    "energy": "666kJ"
+  },
+  {
+    "food_name": "鳕鱼[鳕狭，明太鱼]",
+    "edible_portion": "45%",
+    "water_content": "77.4g",
+    "energy": "374kJ"
+  },
+  {
+    "food_name": "鳘鱼",
+    "edible_portion": "76%",
+    "water_content": "77.6g",
+    "energy": "377kJ"
+  },
+  {
+    "food_name": "双髻鲨",
+    "edible_portion": "38%",
+    "water_content": "73.6g",
+    "energy": "469kJ"
+  },
+  {
+    "food_name": "鱼片干",
+    "edible_portion": "100%",
+    "water_content": "20.2g",
+    "energy": "1284kJ"
+  },
+  {
+    "food_name": "金鲨鱼翅(干)",
+    "edible_portion": "100%",
+    "water_content": "12.0g",
+    "energy": "1487kJ"
+  },
+  {
+    "food_name": "鱼排",
+    "edible_portion": "100%",
+    "water_content": "61.2g",
+    "energy": "677kJ"
+  },
+  {
+    "food_name": "鱼丸",
+    "edible_portion": "100%",
+    "water_content": "72.5g",
+    "energy": "453kJ"
+  },
+  {
+    "food_name": "鱼子酱",
+    "edible_portion": "100%",
+    "water_content": "55.9g",
+    "energy": "846kJ"
+  },
+  {
+    "food_name": "凤尾鱼(熟)",
+    "edible_portion": "100%",
+    "water_content": "19.5g",
+    "energy": "2155kJ"
+  },
+  {
+    "food_name": "箭鱼(炸)",
+    "edible_portion": "100%",
+    "water_content": "47.8g",
+    "energy": "1131kJ"
+  },
+  {
+    "food_name": "金枪鱼(盐水浸)",
+    "edible_portion": "81%",
+    "water_content": "74.6g",
+    "energy": "444kJ"
+  },
+  {
+    "food_name": "金枪鱼(油浸)",
+    "edible_portion": "79%",
+    "water_content": "63.3g",
+    "energy": "804kJ"
+  },
+  {
+    "food_name": "鲮鱼(豆豉，熟)",
+    "edible_portion": "100%",
+    "water_content": "18.8g",
+    "energy": "1963kJ"
+  },
+  {
+    "food_name": "鳗鱼(红烧)",
+    "edible_portion": "100%",
+    "water_content": "55.4g",
+    "energy": "886kJ"
+  },
+  {
+    "food_name": "鲭鱼(烤，150℃，10分)",
+    "edible_portion": "100%",
+    "water_content": "45.8g",
+    "energy": "1679kJ"
+  },
+  {
+    "food_name": "鲭鱼(烤，150℃，20分)",
+    "edible_portion": "100%",
+    "water_content": "45.7g",
+    "energy": "1612kJ"
+  },
+  {
+    "food_name": "鲭鱼(烤，150℃，30分)",
+    "edible_portion": "100%",
+    "water_content": "32.0g",
+    "energy": "2188kJ"
+  },
+  {
+    "food_name": "鲭鱼(烤，180℃，10分)",
+    "edible_portion": "100%",
+    "water_content": "47.3g",
+    "energy": "1520kJ"
+  },
+  {
+    "food_name": "鲭鱼(烤，210℃，10分)",
+    "edible_portion": "100%",
+    "water_content": "39.0g",
+    "energy": "1929kJ"
+  },
+  {
+    "food_name": "鲭鱼(炸)",
+    "edible_portion": "100%",
+    "water_content": "28.3g",
+    "energy": "2270kJ"
+  },
+  {
+    "food_name": "艾窝窝",
+    "edible_portion": "100%",
+    "water_content": "52.1g",
+    "energy": "811kJ"
+  },
+  {
+    "food_name": "白水羊头",
+    "edible_portion": "100%",
+    "water_content": "61.9g",
+    "energy": "808kJ"
+  },
+  {
+    "food_name": "茶汤",
+    "edible_portion": "100%",
+    "water_content": "75.2g",
+    "energy": "395kJ"
+  },
+  {
+    "food_name": "炒肝",
+    "edible_portion": "100%",
+    "water_content": "84.8g",
+    "energy": "400kJ"
+  },
+  {
+    "food_name": "春卷",
+    "edible_portion": "100%",
+    "water_content": "23.5g",
+    "energy": "1942kJ"
+  },
+  {
+    "food_name": "豆腐脑(带卤)",
+    "edible_portion": "100%",
+    "water_content": "88.1g",
+    "energy": "203kJ"
+  },
+  {
+    "food_name": "灌肠",
+    "edible_portion": "100%",
+    "water_content": "66.1g",
+    "energy": "572kJ"
+  },
+  {
+    "food_name": "煎饼",
+    "edible_portion": "100%",
+    "water_content": "6.8g",
+    "energy": "1580kJ"
+  },
+  {
+    "food_name": "焦圈",
+    "edible_portion": "100%",
+    "water_content": "5.7g",
+    "energy": "2240kJ"
+  },
+  {
+    "food_name": "京八件",
+    "edible_portion": "100%",
+    "water_content": "8.3g",
+    "energy": "1878kJ"
+  },
+  {
+    "food_name": "栗羊羹",
+    "edible_portion": "100%",
+    "water_content": "24.1g",
+    "energy": "1290kJ"
+  },
+  {
+    "food_name": "凉粉",
+    "edible_portion": "100%",
+    "water_content": "90.5g",
+    "energy": "166kJ"
+  },
+  {
+    "food_name": "凉面",
+    "edible_portion": "100%",
+    "water_content": "59.8g",
+    "energy": "711kJ"
+  },
+  {
+    "food_name": "龙虾片",
+    "edible_portion": "100%",
+    "water_content": "11.1g",
+    "energy": "1467kJ"
+  },
+  {
+    "food_name": "驴打滚",
+    "edible_portion": "100%",
+    "water_content": "48.5g",
+    "energy": "857kJ"
+  },
+  {
+    "food_name": "密三刀",
+    "edible_portion": "100%",
+    "water_content": "10.3g",
+    "energy": "1802kJ"
+  },
+  {
+    "food_name": "年糕",
+    "edible_portion": "100%",
+    "water_content": "60.9g",
+    "energy": "668kJ"
+  },
+  {
+    "food_name": "青稞炒面",
+    "edible_portion": "100%",
+    "water_content": "6.8g",
+    "energy": "1591kJ"
+  },
+  {
+    "food_name": "热干面",
+    "edible_portion": "100%",
+    "water_content": "63.0g",
+    "energy": "648kJ"
+  },
+  {
+    "food_name": "豌豆黄",
+    "edible_portion": "100%",
+    "water_content": "63.7g",
+    "energy": "604kJ"
+  },
+  {
+    "food_name": "油茶",
+    "edible_portion": "100%",
+    "water_content": "76.3g",
+    "energy": "414kJ"
+  },
+  {
+    "food_name": "油炸豆瓣",
+    "edible_portion": "100%",
+    "water_content": "8.1g",
+    "energy": "1719kJ"
+  },
+  {
+    "food_name": "炸糕",
+    "edible_portion": "100%",
+    "water_content": "43.6g",
+    "energy": "1193kJ"
+  },
+  {
+    "food_name": "糌粑(稞麦熟品)",
+    "edible_portion": "100%",
+    "water_content": "49.3g",
+    "energy": "1107kJ"
+  },
+  {
+    "food_name": "春卷(素馅)",
+    "edible_portion": "100%",
+    "water_content": "55.2g",
+    "energy": "797kJ"
+  },
+  {
+    "food_name": "黑芝麻汤圆",
+    "edible_portion": "100%",
+    "water_content": "37.2g",
+    "energy": "1319kJ"
+  },
+  {
+    "food_name": "醪糟",
+    "edible_portion": "100%",
+    "water_content": "74.7g",
+    "energy": "428kJ"
+  },
+  {
+    "food_name": "过桥米线",
+    "edible_portion": "100%",
+    "water_content": "79.4g",
+    "energy": "409kJ"
+  },
+  {
+    "food_name": "蛋糕(均值)",
+    "edible_portion": "100%",
+    "water_content": "18.6g",
+    "energy": "1476kJ"
+  },
+  {
+    "food_name": "蛋糕(巧克力)",
+    "edible_portion": "100%",
+    "water_content": "24.1g",
+    "energy": "1888kJ"
+  },
+  {
+    "food_name": "蛋糕(水果)",
+    "edible_portion": "100%",
+    "water_content": "25.3g",
+    "energy": "1435kJ"
+  },
+  {
+    "food_name": "月饼(豆沙)",
+    "edible_portion": "100%",
+    "water_content": "11.7g",
+    "energy": "1758kJ"
+  },
+  {
+    "food_name": "月饼(五仁)",
+    "edible_portion": "100%",
+    "water_content": "11.3g",
+    "energy": "1816kJ"
+  },
+  {
+    "food_name": "月饼(枣泥)",
+    "edible_portion": "100%",
+    "water_content": "11.7g",
+    "energy": "1805kJ"
+  },
+  {
+    "food_name": "月饼(蛋黄)",
+    "edible_portion": "100%",
+    "water_content": "23.0g",
+    "energy": "1682kJ"
+  },
+  {
+    "food_name": "月饼(桂花板栗)",
+    "edible_portion": "100%",
+    "water_content": "20.8g",
+    "energy": "1432kJ"
+  },
+  {
+    "food_name": "月饼(奶油莲芸)",
+    "edible_portion": "100%",
+    "water_content": "20.5g",
+    "energy": "1601kJ"
+  },
+  {
+    "food_name": "板油酥饼",
+    "edible_portion": "100%",
+    "water_content": "27.4g",
+    "energy": "1520kJ"
+  },
+  {
+    "food_name": "蛋黄酥",
+    "edible_portion": "100%",
+    "water_content": "6.3g",
+    "energy": "1651kJ"
+  },
+  {
+    "food_name": "夹心酥饼",
+    "edible_portion": "100%",
+    "water_content": "9.8g",
+    "energy": "2019kJ"
+  },
+  {
+    "food_name": "江米条",
+    "edible_portion": "100%",
+    "water_content": "4.0g",
+    "energy": "1857kJ"
+  },
+  {
+    "food_name": "开口笑",
+    "edible_portion": "100%",
+    "water_content": "5.3g",
+    "energy": "2193kJ"
+  },
+  {
+    "food_name": "绿豆糕",
+    "edible_portion": "100%",
+    "water_content": "11.5g",
+    "energy": "1502kJ"
+  },
+  {
+    "food_name": "麻烘糕",
+    "edible_portion": "100%",
+    "water_content": "4.4g",
+    "energy": "1688kJ"
+  },
+  {
+    "food_name": "麻花",
+    "edible_portion": "100%",
+    "water_content": "6.0g",
+    "energy": "2214kJ"
+  },
+  {
+    "food_name": "米花糖",
+    "edible_portion": "100%",
+    "water_content": "7.3g",
+    "energy": "1633kJ"
+  },
+  {
+    "food_name": "酥皮糕点",
+    "edible_portion": "100%",
+    "water_content": "10.7g",
+    "energy": "1816kJ"
+  },
+  {
+    "food_name": "桃酥",
+    "edible_portion": "100%",
+    "water_content": "5.4g",
+    "energy": "2034kJ"
+  },
+  {
+    "food_name": "芝麻桃酥",
+    "edible_portion": "100%",
+    "water_content": "4.9g",
+    "energy": "1966kJ"
+  },
+  {
+    "food_name": "茯苓夹饼",
+    "edible_portion": "100%",
+    "water_content": "10.0g",
+    "energy": "1523kJ"
+  },
+  {
+    "food_name": "沙琪玛蛋酥",
+    "edible_portion": "100%",
+    "water_content": "8.0g",
+    "energy": "2135kJ"
+  },
+  {
+    "food_name": "香橙水果馅饼",
+    "edible_portion": "100%",
+    "water_content": "10.7g",
+    "energy": "1876kJ"
+  },
+  {
+    "food_name": "啤酒(均值)",
+    "edible_portion": "100%",
+    "water_content": "95.1g",
+    "energy": "80kJ"
+  },
+  {
+    "food_name": "啤酒(4.3％，青岛牌)",
+    "edible_portion": "100%",
+    "water_content": "92.9g",
+    "energy": "117kJ"
+  },
+  {
+    "food_name": "啤酒(4％，燕京牌)",
+    "edible_portion": "100%",
+    "water_content": "95.6g",
+    "energy": "73kJ"
+  },
+  {
+    "food_name": "啤酒(5.1％，生力牌)",
+    "edible_portion": "100%",
+    "water_content": "92.4g",
+    "energy": "126kJ"
+  },
+  {
+    "food_name": "葡萄酒(均值)",
+    "edible_portion": "100%",
+    "water_content": "89.6g",
+    "energy": "175kJ"
+  },
+  {
+    "food_name": "白葡萄酒",
+    "edible_portion": "100%",
+    "water_content": "90.4g",
+    "energy": "161kJ"
+  },
+  {
+    "food_name": "红葡萄酒",
+    "edible_portion": "100%",
+    "water_content": "89.3g",
+    "energy": "180kJ"
+  },
+  {
+    "food_name": "葡萄酒(干白，11％，长城牌)",
+    "edible_portion": "100%",
+    "water_content": "89.6g",
+    "energy": "173kJ"
+  },
+  {
+    "food_name": "葡萄酒(干白，12％，张裕牌)",
+    "edible_portion": "100%",
+    "water_content": "88.3g",
+    "energy": "196kJ"
+  },
+  {
+    "food_name": "葡萄酒(半干白，11.5％，王朝牌)",
+    "edible_portion": "100%",
+    "water_content": "88.6g",
+    "energy": "190kJ"
+  },
+  {
+    "food_name": "葡萄酒(干红，11.5％，长城牌)",
+    "edible_portion": "100%",
+    "water_content": "88.7g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "葡萄酒(干红，11.5％，王朝牌)",
+    "edible_portion": "100%",
+    "water_content": "88.5g",
+    "energy": "192kJ"
+  },
+  {
+    "food_name": "葡萄酒(干红，12％，张裕牌)",
+    "edible_portion": "100%",
+    "water_content": "88.2g",
+    "energy": "195kJ"
+  },
+  {
+    "food_name": "黑加仑酒(8％)",
+    "edible_portion": "100%",
+    "water_content": "92.1g",
+    "energy": "137kJ"
+  },
+  {
+    "food_name": "雪利酒",
+    "edible_portion": "100%",
+    "water_content": "78.8g",
+    "energy": "360kJ"
+  },
+  {
+    "food_name": "黄酒",
+    "edible_portion": "100%",
+    "water_content": "89.5g",
+    "energy": "173kJ"
+  },
+  {
+    "food_name": "加饭黄酒",
+    "edible_portion": "100%",
+    "water_content": "94.0g",
+    "energy": "102kJ"
+  },
+  {
+    "food_name": "江米酒",
+    "edible_portion": "100%",
+    "water_content": "86.2g",
+    "energy": "233kJ"
+  },
+  {
+    "food_name": "绍兴黄酒(15度)",
+    "edible_portion": "100%",
+    "water_content": "87.7g",
+    "energy": "206kJ"
+  },
+  {
+    "food_name": "花雕酒(16.5％)",
+    "edible_portion": "100%",
+    "water_content": "78.8g",
+    "energy": "355kJ"
+  },
+  {
+    "food_name": "崇明老白酒",
+    "edible_portion": "100%",
+    "water_content": "57.3g",
+    "energy": "724kJ"
+  },
+  {
+    "food_name": "低度汉酒(37.2度)",
+    "edible_portion": "100%",
+    "water_content": "69.2g",
+    "energy": "524kJ"
+  },
+  {
+    "food_name": "二锅头(58度)",
+    "edible_portion": "100%",
+    "water_content": "49.7g",
+    "energy": "852kJ"
+  },
+  {
+    "food_name": "甘州大曲",
+    "edible_portion": "100%",
+    "water_content": "55.4g",
+    "energy": "758kJ"
+  },
+  {
+    "food_name": "汉口白酒(49.6度)",
+    "edible_portion": "100%",
+    "water_content": "57.9g",
+    "energy": "716kJ"
+  },
+  {
+    "food_name": "汉口小麦酒(40.7度)",
+    "edible_portion": "100%",
+    "water_content": "66.1g",
+    "energy": "576kJ"
+  },
+  {
+    "food_name": "黄鹤楼酒(39度)",
+    "edible_portion": "100%",
+    "water_content": "67.6g",
+    "energy": "551kJ"
+  },
+  {
+    "food_name": "精制小麦酒",
+    "edible_portion": "100%",
+    "water_content": "66.0g",
+    "energy": "578kJ"
+  },
+  {
+    "food_name": "景泰大曲",
+    "edible_portion": "100%",
+    "water_content": "56.6g",
+    "energy": "738kJ"
+  },
+  {
+    "food_name": "景泰二曲",
+    "edible_portion": "100%",
+    "water_content": "59.0g",
+    "energy": "697kJ"
+  },
+  {
+    "food_name": "酒泉酒",
+    "edible_portion": "100%",
+    "water_content": "51.0g",
+    "energy": "833kJ"
+  },
+  {
+    "food_name": "凉洲曲酒",
+    "edible_portion": "100%",
+    "water_content": "55.0g",
+    "energy": "765kJ"
+  },
+  {
+    "food_name": "宁河大曲",
+    "edible_portion": "100%",
+    "water_content": "55.2g",
+    "energy": "762kJ"
+  },
+  {
+    "food_name": "宁河二曲",
+    "edible_portion": "100%",
+    "water_content": "55.1g",
+    "energy": "763kJ"
+  },
+  {
+    "food_name": "曲酒(55度)",
+    "edible_portion": "100%",
+    "water_content": "52.8g",
+    "energy": "802kJ"
+  },
+  {
+    "food_name": "三粮小麦(55度)",
+    "edible_portion": "100%",
+    "water_content": "52.8g",
+    "energy": "802kJ"
+  },
+  {
+    "food_name": "丝路春酒",
+    "edible_portion": "100%",
+    "water_content": "55.0g",
+    "energy": "765kJ"
+  },
+  {
+    "food_name": "特制汉酒(59.9度)",
+    "edible_portion": "100%",
+    "water_content": "48.0g",
+    "energy": "884kJ"
+  },
+  {
+    "food_name": "特制三粮酒(56.2度)",
+    "edible_portion": "100%",
+    "water_content": "51.6g",
+    "energy": "823kJ"
+  },
+  {
+    "food_name": "乌林春酒(青稞酒)",
+    "edible_portion": "100%",
+    "water_content": "51.0g",
+    "energy": "833kJ"
+  },
+  {
+    "food_name": "五酿春(44.4度)",
+    "edible_portion": "100%",
+    "water_content": "62.8g",
+    "energy": "632kJ"
+  },
+  {
+    "food_name": "小麦酒(48度)",
+    "edible_portion": "100%",
+    "water_content": "59.5g",
+    "energy": "689kJ"
+  },
+  {
+    "food_name": "小麦酒(50度)",
+    "edible_portion": "100%",
+    "water_content": "57.6g",
+    "energy": "721kJ"
+  },
+  {
+    "food_name": "燕岭春(57度)",
+    "edible_portion": "100%",
+    "water_content": "50.9g",
+    "energy": "835kJ"
+  },
+  {
+    "food_name": "醉流霞(57度)",
+    "edible_portion": "100%",
+    "water_content": "50.9g",
+    "energy": "835kJ"
+  },
+  {
+    "food_name": "董酒(浓香型，46％)",
+    "edible_portion": "100%",
+    "water_content": "61.2g",
+    "energy": "660kJ"
+  },
+  {
+    "food_name": "二锅头(56%)",
+    "edible_portion": "100%",
+    "water_content": "51.8g",
+    "energy": "819kJ"
+  },
+  {
+    "food_name": "汾酒(清香型，53％)",
+    "edible_portion": "100%",
+    "water_content": "54.7g",
+    "energy": "770kJ"
+  },
+  {
+    "food_name": "古井贡酒(浓香型，38％)",
+    "edible_portion": "100%",
+    "water_content": "68.2g",
+    "energy": "541kJ"
+  },
+  {
+    "food_name": "剑南春(52％)",
+    "edible_portion": "100%",
+    "water_content": "55.4g",
+    "energy": "758kJ"
+  },
+  {
+    "food_name": "剑南春(浓香型，38％)",
+    "edible_portion": "100%",
+    "water_content": "68.2g",
+    "energy": "541kJ"
+  },
+  {
+    "food_name": "京酒(浓香型，38％)",
+    "edible_portion": "100%",
+    "water_content": "68.4g",
+    "energy": "537kJ"
+  },
+  {
+    "food_name": "茅台酒(53％)",
+    "edible_portion": "100%",
+    "water_content": "54.7g",
+    "energy": "770kJ"
+  },
+  {
+    "food_name": "五粮液(52％)",
+    "edible_portion": "100%",
+    "water_content": "55.6g",
+    "energy": "755kJ"
+  },
+  {
+    "food_name": "竹叶青酒(45％)",
+    "edible_portion": "100%",
+    "water_content": "51.7g",
+    "energy": "821kJ"
+  },
+  {
+    "food_name": "金奖白兰地(38％)",
+    "edible_portion": "100%",
+    "water_content": "67.3g",
+    "energy": "556kJ"
+  },
+  {
+    "food_name": "伏特加",
+    "edible_portion": "100%",
+    "water_content": "66.6g",
+    "energy": "568kJ"
+  },
+  {
+    "food_name": "威士忌",
+    "edible_portion": "100%",
+    "water_content": "63.9g",
+    "energy": "614kJ"
+  },
+  {
+    "food_name": "苹果酒(干型)",
+    "edible_portion": "100%",
+    "water_content": "92.5g",
+    "energy": "128kJ"
+  },
+  {
+    "food_name": "苹果酒(甜)",
+    "edible_portion": "100%",
+    "water_content": "91.2g",
+    "energy": "150kJ"
+  },
+  {
+    "food_name": "果汁朗姆酒(9.9%)",
+    "edible_portion": "100%",
+    "water_content": "65.1g",
+    "energy": "630kJ"
+  },
+  {
+    "food_name": "鸡尾酒",
+    "edible_portion": "100%",
+    "water_content": "86.9g",
+    "energy": "221kJ"
+  },
+  {
+    "food_name": "马提尼酒(32%)",
+    "edible_portion": "100%",
+    "water_content": "64.0g",
+    "energy": "610kJ"
+  },
+  {
+    "food_name": "曼哈顿酒(30.6%)",
+    "edible_portion": "100%",
+    "water_content": "66.1g",
+    "energy": "575kJ"
+  },
+  {
+    "food_name": "酸味威士忌(16.8%)",
+    "edible_portion": "100%",
+    "water_content": "76.9g",
+    "energy": "391kJ"
+  },
+  {
+    "food_name": "糖（白砂糖）",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "1698kJ"
+  },
+  {
+    "food_name": "糖（绵白糖）",
+    "edible_portion": "100%",
+    "water_content": "0.9g",
+    "energy": "1683kJ"
+  },
+  {
+    "food_name": "糖（冰糖）",
+    "edible_portion": "100%",
+    "water_content": "0.6g",
+    "energy": "1688kJ"
+  },
+  {
+    "food_name": "糖（红糖）",
+    "edible_portion": "100%",
+    "water_content": "1.9g",
+    "energy": "1654kJ"
+  },
+  {
+    "food_name": "花生牛轧糖",
+    "edible_portion": "100%",
+    "water_content": "6.5g",
+    "energy": "1820kJ"
+  },
+  {
+    "food_name": "奶糖",
+    "edible_portion": "100%",
+    "water_content": "5.6g",
+    "energy": "1723kJ"
+  },
+  {
+    "food_name": "巧克力",
+    "edible_portion": "100%",
+    "water_content": "1.0g",
+    "energy": "2465kJ"
+  },
+  {
+    "food_name": "巧克力(维夫)[朱古力威化]",
+    "edible_portion": "100%",
+    "water_content": "2.1g",
+    "energy": "2405kJ"
+  },
+  {
+    "food_name": "酥糖",
+    "edible_portion": "100%",
+    "water_content": "3.3g",
+    "energy": "1902kJ"
+  },
+  {
+    "food_name": "酸三色糖",
+    "edible_portion": "100%",
+    "water_content": "0.7g",
+    "energy": "1688kJ"
+  },
+  {
+    "food_name": "夹心糖",
+    "edible_portion": "100%",
+    "water_content": "1.1g",
+    "energy": "2072kJ"
+  },
+  {
+    "food_name": "水果味软糖",
+    "edible_portion": "100%",
+    "water_content": "8.0g",
+    "energy": "1567kJ"
+  },
+  {
+    "food_name": "牛奶糖",
+    "edible_portion": "100%",
+    "water_content": "0.7g",
+    "energy": "1840kJ"
+  },
+  {
+    "food_name": "酸奶软糖",
+    "edible_portion": "100%",
+    "water_content": "1.0g",
+    "energy": "1713kJ"
+  },
+  {
+    "food_name": "太妃糖",
+    "edible_portion": "100%",
+    "water_content": "6.0g",
+    "energy": "1911kJ"
+  },
+  {
+    "food_name": "巧克力(充气)",
+    "edible_portion": "100%",
+    "water_content": "1.1g",
+    "energy": "2303kJ"
+  },
+  {
+    "food_name": "巧克力(果仁)",
+    "edible_portion": "100%",
+    "water_content": "1.0g",
+    "energy": "2317kJ"
+  },
+  {
+    "food_name": "巧克力(黑)",
+    "edible_portion": "100%",
+    "water_content": "—",
+    "energy": "2247kJ"
+  },
+  {
+    "food_name": "巧克力(牛奶)",
+    "edible_portion": "100%",
+    "water_content": "0.9g",
+    "energy": "2438kJ"
+  },
+  {
+    "food_name": "海棠脯",
+    "edible_portion": "100%",
+    "water_content": "25.8g",
+    "energy": "1252kJ"
+  },
+  {
+    "food_name": "李广杏脯",
+    "edible_portion": "100%",
+    "water_content": "23.7g",
+    "energy": "1284kJ"
+  },
+  {
+    "food_name": "苹果脯",
+    "edible_portion": "100%",
+    "water_content": "14.2g",
+    "energy": "1457kJ"
+  },
+  {
+    "food_name": "桃脯",
+    "edible_portion": "100%",
+    "water_content": "19.2g",
+    "energy": "1358kJ"
+  },
+  {
+    "food_name": "杏脯",
+    "edible_portion": "100%",
+    "water_content": "15.3g",
+    "energy": "1430kJ"
+  },
+  {
+    "food_name": "金糕条[山楂条]",
+    "edible_portion": "100%",
+    "water_content": "22.6g",
+    "energy": "1301kJ"
+  },
+  {
+    "food_name": "山楂果丹皮",
+    "edible_portion": "100%",
+    "water_content": "16.7g",
+    "energy": "1407kJ"
+  },
+  {
+    "food_name": "冰糖酸角",
+    "edible_portion": "67%",
+    "water_content": "27.0g",
+    "energy": "1148kJ"
+  },
+  {
+    "food_name": "甘草杏",
+    "edible_portion": "60%",
+    "water_content": "42.1g",
+    "energy": "758kJ"
+  },
+  {
+    "food_name": "清凉杏肉",
+    "edible_portion": "100%",
+    "water_content": "16.4g",
+    "energy": "1384kJ"
+  },
+  {
+    "food_name": "雪梅",
+    "edible_portion": "70%",
+    "water_content": "17.2g",
+    "energy": "1207kJ"
+  },
+  {
+    "food_name": "九制梅肉",
+    "edible_portion": "100%",
+    "water_content": "15.0g",
+    "energy": "1226kJ"
+  },
+  {
+    "food_name": "九制西梅",
+    "edible_portion": "73%",
+    "water_content": "28.7g",
+    "energy": "1082kJ"
+  },
+  {
+    "food_name": "九制应子",
+    "edible_portion": "83%",
+    "water_content": "28.7g",
+    "energy": "770kJ"
+  },
+  {
+    "food_name": "梅脯",
+    "edible_portion": "100%",
+    "water_content": "19.4g",
+    "energy": "1345kJ"
+  },
+  {
+    "food_name": "阿胶枣",
+    "edible_portion": "100%",
+    "water_content": "14.7g",
+    "energy": "1444kJ"
+  },
+  {
+    "food_name": "黑贡枣",
+    "edible_portion": "100%",
+    "water_content": "17.3g",
+    "energy": "1348kJ"
+  },
+  {
+    "food_name": "多味山楂",
+    "edible_portion": "89%",
+    "water_content": "30.9g",
+    "energy": "1152kJ"
+  },
+  {
+    "food_name": "山楂脯",
+    "edible_portion": "100%",
+    "water_content": "35.6g",
+    "energy": "1100kJ"
+  },
+  {
+    "food_name": "地瓜干",
+    "edible_portion": "100%",
+    "water_content": "12.1g",
+    "energy": "1471kJ"
+  },
+  {
+    "food_name": "蜂蜜",
+    "edible_portion": "100%",
+    "water_content": "22.0g",
+    "energy": "1362kJ"
+  },
+  {
+    "food_name": "蜂蜜(槐花)",
+    "edible_portion": "100%",
+    "water_content": "10.0g",
+    "energy": "1536kJ"
+  },
+  {
+    "food_name": "蜂蜜(天麻)",
+    "edible_portion": "100%",
+    "water_content": "18.2g",
+    "energy": "1386kJ"
+  },
+  {
+    "food_name": "蜂蜜(硬蜜)",
+    "edible_portion": "100%",
+    "water_content": "18.5g",
+    "energy": "1392kJ"
+  },
+  {
+    "food_name": "蜂蜜(油菜花)",
+    "edible_portion": "100%",
+    "water_content": "15.8g",
+    "energy": "1437kJ"
+  },
+  {
+    "food_name": "牛油",
+    "edible_portion": "100%",
+    "water_content": "6.2g",
+    "energy": "3435kJ"
+  },
+  {
+    "food_name": "羊油",
+    "edible_portion": "100%",
+    "water_content": "4.0g",
+    "energy": "3392kJ"
+  },
+  {
+    "food_name": "猪油(炼)",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "3689kJ"
+  },
+  {
+    "food_name": "油（菜籽油)[青油]",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3696kJ"
+  },
+  {
+    "food_name": "油（茶油)",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3696kJ"
+  },
+  {
+    "food_name": "豆油",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3696kJ"
+  },
+  {
+    "food_name": "油（红花油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3698kJ"
+  },
+  {
+    "food_name": "油（胡麻油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3700kJ"
+  },
+  {
+    "food_name": "花生油",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3696kJ"
+  },
+  {
+    "food_name": "葵花籽油",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3696kJ"
+  },
+  {
+    "food_name": "油（辣椒油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3700kJ"
+  },
+  {
+    "food_name": "油（麦芽油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3698kJ"
+  },
+  {
+    "food_name": "油（棉籽油)",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3694kJ"
+  },
+  {
+    "food_name": "色拉油",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "3693kJ"
+  },
+  {
+    "food_name": "油（椰子油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3698kJ"
+  },
+  {
+    "food_name": "玉米油",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "3679kJ"
+  },
+  {
+    "food_name": "芝麻油[香油]",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3692kJ"
+  },
+  {
+    "food_name": "油（棕榈油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3700kJ"
+  },
+  {
+    "food_name": "油（橄榄油)",
+    "edible_portion": "100%",
+    "water_content": "",
+    "energy": "3698kJ"
+  },
+  {
+    "food_name": "核桃油",
+    "edible_portion": "100%",
+    "water_content": "0.1g",
+    "energy": "3680kJ"
+  },
+  {
+    "food_name": "栗米油[玉米胚芽油]",
+    "edible_portion": "100%",
+    "water_content": "0.0g",
+    "energy": "3700kJ"
+  },
+  {
+    "food_name": "米糠油",
+    "edible_portion": "100%",
+    "water_content": "Tr",
+    "energy": "3674kJ"
+  },
+  {
+    "food_name": "油茶籽油",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "3693kJ"
+  },
+  {
+    "food_name": "大豆色拉油",
+    "edible_portion": "100%",
+    "water_content": "0.0g",
+    "energy": "3698kJ"
+  },
+  {
+    "food_name": "可口可乐",
+    "edible_portion": "100%",
+    "water_content": "89.1g",
+    "energy": "184kJ"
+  },
+  {
+    "food_name": "甘蔗汁",
+    "edible_portion": "100%",
+    "water_content": "83.1g",
+    "energy": "283kJ"
+  },
+  {
+    "food_name": "菠萝汁饮料(大湖牌)",
+    "edible_portion": "100%",
+    "water_content": "90.9g",
+    "energy": "153kJ"
+  },
+  {
+    "food_name": "苹果汁饮料(光明牌)",
+    "edible_portion": "100%",
+    "water_content": "86.7g",
+    "energy": "229kJ"
+  },
+  {
+    "food_name": "橙汁饮料(光明牌)",
+    "edible_portion": "100%",
+    "water_content": "88.6g",
+    "energy": "187kJ"
+  },
+  {
+    "food_name": "橙汁饮料(茹梦牌)",
+    "edible_portion": "100%",
+    "water_content": "88.5g",
+    "energy": "194kJ"
+  },
+  {
+    "food_name": "橙汁饮料(汇源牌)",
+    "edible_portion": "100%",
+    "water_content": "88.2g",
+    "energy": "195kJ"
+  },
+  {
+    "food_name": "橙汁饮料(三得利牌)",
+    "edible_portion": "100%",
+    "water_content": "88.2g",
+    "energy": "201kJ"
+  },
+  {
+    "food_name": "山楂果肉饮料",
+    "edible_portion": "100%",
+    "water_content": "86.1g",
+    "energy": "232kJ"
+  },
+  {
+    "food_name": "酸枣果汁饮料",
+    "edible_portion": "100%",
+    "water_content": "93.0g",
+    "energy": "116kJ"
+  },
+  {
+    "food_name": "西番莲汁饮料",
+    "edible_portion": "100%",
+    "water_content": "87.6g",
+    "energy": "211kJ"
+  },
+  {
+    "food_name": "西柚汁饮料",
+    "edible_portion": "100%",
+    "water_content": "91.4g",
+    "energy": "146kJ"
+  },
+  {
+    "food_name": "椰子汁饮料",
+    "edible_portion": "100%",
+    "water_content": "90.2g",
+    "energy": "213kJ"
+  },
+  {
+    "food_name": "杏仁椰汁饮料",
+    "edible_portion": "100%",
+    "water_content": "90.2g",
+    "energy": "167kJ"
+  },
+  {
+    "food_name": "胡萝卜汁饮料",
+    "edible_portion": "100%",
+    "water_content": "93.4g",
+    "energy": "105kJ"
+  },
+  {
+    "food_name": "AD钙奶",
+    "edible_portion": "100%",
+    "water_content": "86.0g",
+    "energy": "232kJ"
+  },
+  {
+    "food_name": "健康快车奶饮料",
+    "edible_portion": "100%",
+    "water_content": "90.9g",
+    "energy": "158kJ"
+  },
+  {
+    "food_name": "酸乳饮料(发酵)",
+    "edible_portion": "100%",
+    "water_content": "86.6g",
+    "energy": "229kJ"
+  },
+  {
+    "food_name": "核桃乳(儿童型)",
+    "edible_portion": "100%",
+    "water_content": "91.6g",
+    "energy": "183kJ"
+  },
+  {
+    "food_name": "核桃乳(女性型)",
+    "edible_portion": "100%",
+    "water_content": "90.0g",
+    "energy": "222kJ"
+  },
+  {
+    "food_name": "核桃乳(中老年型)",
+    "edible_portion": "100%",
+    "water_content": "90.6g",
+    "energy": "216kJ"
+  },
+  {
+    "food_name": "核桃乳(佐餐调和型)",
+    "edible_portion": "100%",
+    "water_content": "90.8g",
+    "energy": "213kJ"
+  },
+  {
+    "food_name": "杏仁露",
+    "edible_portion": "100%",
+    "water_content": "90.3g",
+    "energy": "205kJ"
+  },
+  {
+    "food_name": "茶（绿茶）",
+    "edible_portion": "100%",
+    "water_content": "7.5g",
+    "energy": "1522kJ"
+  },
+  {
+    "food_name": "可可粉",
+    "edible_portion": "100%",
+    "water_content": "7.5g",
+    "energy": "1593kJ"
+  },
+  {
+    "food_name": "麦乳精",
+    "edible_portion": "100%",
+    "water_content": "2.0g",
+    "energy": "1812kJ"
+  },
+  {
+    "food_name": "酸梅晶",
+    "edible_portion": "100%",
+    "water_content": "1.2g",
+    "energy": "1676kJ"
+  },
+  {
+    "food_name": "高乐高营养饮品",
+    "edible_portion": "100%",
+    "water_content": "1.2g",
+    "energy": "1690kJ"
+  },
+  {
+    "food_name": "果珍",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "1727kJ"
+  },
+  {
+    "food_name": "柠檬茶",
+    "edible_portion": "100%",
+    "water_content": "0.2g",
+    "energy": "1724kJ"
+  },
+  {
+    "food_name": "咖啡豆",
+    "edible_portion": "100%",
+    "water_content": "0.7g",
+    "energy": "1292kJ"
+  },
+  {
+    "food_name": "咖啡粉",
+    "edible_portion": "100%",
+    "water_content": "3.1g",
+    "energy": "1508kJ"
+  },
+  {
+    "food_name": "冰棍",
+    "edible_portion": "100%",
+    "water_content": "88.3g",
+    "energy": "200kJ"
+  },
+  {
+    "food_name": "冰淇淋",
+    "edible_portion": "100%",
+    "water_content": "74.4g",
+    "energy": "531kJ"
+  },
+  {
+    "food_name": "冰淇淋(草莓味)",
+    "edible_portion": "100%",
+    "water_content": "64.8g",
+    "energy": "641kJ"
+  },
+  {
+    "food_name": "冰淇淋(苦咖啡味)",
+    "edible_portion": "100%",
+    "water_content": "60.6g",
+    "energy": "858kJ"
+  },
+  {
+    "food_name": "冰淇淋(加奶油)",
+    "edible_portion": "100%",
+    "water_content": "62.4g",
+    "energy": "882kJ"
+  },
+  {
+    "food_name": "冰淇淋(草莓圣代)",
+    "edible_portion": "100%",
+    "water_content": "66.1g",
+    "energy": "616kJ"
+  },
+  {
+    "food_name": "冰淇淋(巧克力圣代)",
+    "edible_portion": "100%",
+    "water_content": "61.7g",
+    "energy": "732kJ"
+  },
+  {
+    "food_name": "冰淇淋(脆皮甜筒)",
+    "edible_portion": "100%",
+    "water_content": "66.2g",
+    "energy": "669kJ"
+  },
+  {
+    "food_name": "冰淇淋(花心筒)",
+    "edible_portion": "100%",
+    "water_content": "45.0g",
+    "energy": "1173kJ"
+  },
+  {
+    "food_name": "冰淇淋(金白合)",
+    "edible_portion": "100%",
+    "water_content": "60.7g",
+    "energy": "854kJ"
+  },
+  {
+    "food_name": "雪糕(百乐宝)",
+    "edible_portion": "100%",
+    "water_content": "70.1g",
+    "energy": "619kJ"
+  },
+  {
+    "food_name": "雪糕(红豆缘)",
+    "edible_portion": "100%",
+    "water_content": "50.7g",
+    "energy": "909kJ"
+  },
+  {
+    "food_name": "棒冰(可乐冰)",
+    "edible_portion": "100%",
+    "water_content": "82.9g",
+    "energy": "311kJ"
+  },
+  {
+    "food_name": "棒冰(七彩旋)",
+    "edible_portion": "100%",
+    "water_content": "77.6g",
+    "energy": "403kJ"
+  },
+  {
+    "food_name": "酸白菜[酸菜]",
+    "edible_portion": "100%",
+    "water_content": "95.2g",
+    "energy": "67kJ"
+  },
+  {
+    "food_name": "小白菜",
+    "edible_portion": "81%",
+    "water_content": "94.5g",
+    "energy": "83kJ"
+  },
+  {
+    "food_name": "白菜薹[菜薹，菜心]",
+    "edible_portion": "84%",
+    "water_content": "91.3g",
+    "energy": "134kJ"
+  },
+  {
+    "food_name": "红菜薹[紫菜薹]",
+    "edible_portion": "52%",
+    "water_content": "91.1g",
+    "energy": "188kJ"
+  },
+  {
+    "food_name": "瓢儿白[瓢儿菜]",
+    "edible_portion": "79%",
+    "water_content": "94.1g",
+    "energy": "91kJ"
+  },
+  {
+    "food_name": "乌菜[乌塌菜，塌棵菜]",
+    "edible_portion": "89%",
+    "water_content": "91.8g",
+    "energy": "130kJ"
+  },
+  {
+    "food_name": "油菜",
+    "edible_portion": "87%",
+    "water_content": "92.9g",
+    "energy": "114kJ"
+  },
+  {
+    "food_name": "油菜薹[菜薹]",
+    "edible_portion": "82%",
+    "water_content": "92.4g",
+    "energy": "120kJ"
+  },
+  {
+    "food_name": "奶白菜",
+    "edible_portion": "100%",
+    "water_content": "92.6g",
+    "energy": "89kJ"
+  },
+  {
+    "food_name": "鸡毛菜",
+    "edible_portion": "100%",
+    "water_content": "93.5g",
+    "energy": "79kJ"
+  },
+  {
+    "food_name": "娃娃菜",
+    "edible_portion": "97%",
+    "water_content": "95.0g",
+    "energy": "52kJ"
+  },
+  {
+    "food_name": "乌塌菜[塌菜、塌棵菜]",
+    "edible_portion": "96%",
+    "water_content": "94.5g",
+    "energy": "55kJ"
+  },
+  {
+    "food_name": "甘蓝[圆白菜，卷心菜]",
+    "edible_portion": "86%",
+    "water_content": "93.2g",
+    "energy": "111kJ"
+  },
+  {
+    "food_name": "菜花[花椰菜]",
+    "edible_portion": "82%",
+    "water_content": "92.4g",
+    "energy": "121kJ"
+  },
+  {
+    "food_name": "西兰花[绿菜花]",
+    "edible_portion": "83%",
+    "water_content": "90.3g",
+    "energy": "165kJ"
+  },
+  {
+    "food_name": "芥菜[雪里红，雪菜](鲜)",
+    "edible_portion": "94%",
+    "water_content": "91.5g",
+    "energy": "129kJ"
+  },
+  {
+    "food_name": "芥菜(大叶，鲜)[盖菜]",
+    "edible_portion": "71%",
+    "water_content": "94.6g",
+    "energy": "79kJ"
+  },
+  {
+    "food_name": "芥蓝[甘蓝菜，盖蓝菜]",
+    "edible_portion": "78%",
+    "water_content": "93.2g",
+    "energy": "107kJ"
+  },
+  {
+    "food_name": "结球甘蓝(紫)",
+    "edible_portion": "86%",
+    "water_content": "91.8g",
+    "energy": "106kJ"
+  },
+  {
+    "food_name": "抱子甘蓝",
+    "edible_portion": "87%",
+    "water_content": "86.7g",
+    "energy": "150kJ"
+  },
+  {
+    "food_name": "羽衣甘蓝",
+    "edible_portion": "100%",
+    "water_content": "87.2g",
+    "energy": "163kJ"
+  },
+  {
+    "food_name": "盖菜",
+    "edible_portion": "94%",
+    "water_content": "94.8g",
+    "energy": "55kJ"
+  },
+  {
+    "food_name": "菠菜[赤根菜](鲜)",
+    "edible_portion": "89%",
+    "water_content": "91.2g",
+    "energy": "132kJ"
+  },
+  {
+    "food_name": "冬寒菜[冬苋菜，冬葵](鲜)",
+    "edible_portion": "58%",
+    "water_content": "89.6g",
+    "energy": "164kJ"
+  },
+  {
+    "food_name": "观达菜[根达菜，牛皮菜]",
+    "edible_portion": "83%",
+    "water_content": "95.1g",
+    "energy": "76kJ"
+  },
+  {
+    "food_name": "胡萝卜缨(红，鲜)",
+    "edible_portion": "100%",
+    "water_content": "82.2g",
+    "energy": "236kJ"
+  },
+  {
+    "food_name": "苦菜[节节花，拒马菜]",
+    "edible_portion": "100%",
+    "water_content": "85.3g",
+    "energy": "240kJ"
+  },
+  {
+    "food_name": "萝卜缨(小萝卜)",
+    "edible_portion": "93%",
+    "water_content": "92.8g",
+    "energy": "108kJ"
+  },
+  {
+    "food_name": "芹菜(白茎)[旱芹，药芹]",
+    "edible_portion": "66%",
+    "water_content": "94.2g",
+    "energy": "84kJ"
+  },
+  {
+    "food_name": "芹菜茎",
+    "edible_portion": "67%",
+    "water_content": "93.1g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "芹菜叶(鲜)",
+    "edible_portion": "100%",
+    "water_content": "89.4g",
+    "energy": "167kJ"
+  },
+  {
+    "food_name": "生菜(牛俐)[油麦菜]",
+    "edible_portion": "81%",
+    "water_content": "95.7g",
+    "energy": "74kJ"
+  },
+  {
+    "food_name": "生菜(叶用莴苣)",
+    "edible_portion": "94%",
+    "water_content": "95.8g",
+    "energy": "67kJ"
+  },
+  {
+    "food_name": "甜菜叶(鲜)",
+    "edible_portion": "100%",
+    "water_content": "92.2g",
+    "energy": "101kJ"
+  },
+  {
+    "food_name": "香菜[芫荽](鲜)",
+    "edible_portion": "81%",
+    "water_content": "90.5g",
+    "energy": "151kJ"
+  },
+  {
+    "food_name": "苋菜(绿，鲜)",
+    "edible_portion": "74%",
+    "water_content": "90.2g",
+    "energy": "144kJ"
+  },
+  {
+    "food_name": "苋菜(紫,鲜)[红苋]",
+    "edible_portion": "73%",
+    "water_content": "88.8g",
+    "energy": "163kJ"
+  },
+  {
+    "food_name": "茼蒿[蓬蒿菜，艾菜](鲜)",
+    "edible_portion": "82%",
+    "water_content": "93.0g",
+    "energy": "110kJ"
+  },
+  {
+    "food_name": "茴香[小茴香](鲜)",
+    "edible_portion": "86%",
+    "water_content": "91.2g",
+    "energy": "129kJ"
+  },
+  {
+    "food_name": "荠菜[蓟菜，菱角菜](鲜)",
+    "edible_portion": "88%",
+    "water_content": "90.6g",
+    "energy": "144kJ"
+  },
+  {
+    "food_name": "莴笋[莴苣](鲜)",
+    "edible_portion": "62%",
+    "water_content": "95.5g",
+    "energy": "68kJ"
+  },
+  {
+    "food_name": "莴笋叶[莴苣叶]",
+    "edible_portion": "89%",
+    "water_content": "94.2g",
+    "energy": "92kJ"
+  },
+  {
+    "food_name": "蕹菜[空心菜，藤藤菜]",
+    "edible_portion": "76%",
+    "water_content": "92.9g",
+    "energy": "110kJ"
+  },
+  {
+    "food_name": "番杏[新西兰菠菜、夏菠菜]",
+    "edible_portion": "100%",
+    "water_content": "94.0g",
+    "energy": "60kJ"
+  },
+  {
+    "food_name": "樱桃萝卜缨",
+    "edible_portion": "100%",
+    "water_content": "94.0g",
+    "energy": "59kJ"
+  },
+  {
+    "food_name": "白凤菜",
+    "edible_portion": "100%",
+    "water_content": "93.4g",
+    "energy": "66kJ"
+  },
+  {
+    "food_name": "紫背天葵[红风菜、血皮菜]",
+    "edible_portion": "100%",
+    "water_content": "93.1g",
+    "energy": "74kJ"
+  },
+  {
+    "food_name": "观达菜[根达菜、牛皮菜]",
+    "edible_portion": "100%",
+    "water_content": "91.8g",
+    "energy": "120kJ"
+  },
+  {
+    "food_name": "竹笋(鲜)",
+    "edible_portion": "63%",
+    "water_content": "92.8g",
+    "energy": "113kJ"
+  },
+  {
+    "food_name": "白笋(干)",
+    "edible_portion": "64%",
+    "water_content": "10.0g",
+    "energy": "1561kJ"
+  },
+  {
+    "food_name": "春笋(鲜)",
+    "edible_portion": "66%",
+    "water_content": "91.4g",
+    "energy": "131kJ"
+  },
+  {
+    "food_name": "冬笋(鲜)",
+    "edible_portion": "39%",
+    "water_content": "88.1g",
+    "energy": "184kJ"
+  },
+  {
+    "food_name": "黑笋(干)",
+    "edible_portion": "76%",
+    "water_content": "14.4g",
+    "energy": "1366kJ"
+  },
+  {
+    "food_name": "毛笋[毛竹笋](鲜)",
+    "edible_portion": "67%",
+    "water_content": "93.1g",
+    "energy": "109kJ"
+  },
+  {
+    "food_name": "玉兰片",
+    "edible_portion": "100%",
+    "water_content": "78.0g",
+    "energy": "375kJ"
+  },
+  {
+    "food_name": "百合(鲜)",
+    "edible_portion": "82%",
+    "water_content": "56.7g",
+    "energy": "718kJ"
+  },
+  {
+    "food_name": "百合(干)",
+    "edible_portion": "100%",
+    "water_content": "10.3g",
+    "energy": "1484kJ"
+  },
+  {
+    "food_name": "金针菜[黄花菜]",
+    "edible_portion": "98%",
+    "water_content": "40.3g",
+    "energy": "975kJ"
+  },
+  {
+    "food_name": "菊苣",
+    "edible_portion": "100%",
+    "water_content": "93.8g",
+    "energy": "86kJ"
+  },
+  {
+    "food_name": "芦笋[石刁柏，龙须菜]",
+    "edible_portion": "90%",
+    "water_content": "93.0g",
+    "energy": "111kJ"
+  },
+  {
+    "food_name": "结球菊苣",
+    "edible_portion": "89%",
+    "water_content": "93.8g",
+    "energy": "72kJ"
+  },
+  {
+    "food_name": "软化白菊苣",
+    "edible_portion": "97%",
+    "water_content": "94.7g",
+    "energy": "70kJ"
+  },
+  {
+    "food_name": "慈菇[乌芋，白地果](鲜)",
+    "edible_portion": "89%",
+    "water_content": "73.6g",
+    "energy": "424kJ"
+  },
+  {
+    "food_name": "豆瓣菜[西洋菜，水田芥](鲜)",
+    "edible_portion": "73%",
+    "water_content": "94.5g",
+    "energy": "93kJ"
+  },
+  {
+    "food_name": "菱角(老,鲜)[龙角]",
+    "edible_portion": "57%",
+    "water_content": "73.0g",
+    "energy": "444kJ"
+  },
+  {
+    "food_name": "藕[莲藕]",
+    "edible_portion": "88%",
+    "water_content": "80.5g",
+    "energy": "319kJ"
+  },
+  {
+    "food_name": "蒲菜[香蒲，甘蒲，野茭白](鲜)",
+    "edible_portion": "12%",
+    "water_content": "95.0g",
+    "energy": "65kJ"
+  },
+  {
+    "food_name": "水芹菜",
+    "edible_portion": "60%",
+    "water_content": "96.2g",
+    "energy": "62kJ"
+  },
+  {
+    "food_name": "茭白[茭笋，茭粑](鲜)",
+    "edible_portion": "74%",
+    "water_content": "92.2g",
+    "energy": "128kJ"
+  },
+  {
+    "food_name": "荸荠[马蹄，地栗](鲜)",
+    "edible_portion": "78%",
+    "water_content": "83.6g",
+    "energy": "269kJ"
+  },
+  {
+    "food_name": "莼菜(瓶装)[花案菜]",
+    "edible_portion": "100%",
+    "water_content": "94.5g",
+    "energy": "92kJ"
+  },
+  {
+    "food_name": "大薯[参薯](鲜)",
+    "edible_portion": "74%",
+    "water_content": "72.1g",
+    "energy": "466kJ"
+  },
+  {
+    "food_name": "豆薯[凉薯，地瓜，沙葛](鲜)",
+    "edible_portion": "91%",
+    "water_content": "85.2g",
+    "energy": "247kJ"
+  },
+  {
+    "food_name": "葛[葛署，粉葛](鲜)",
+    "edible_portion": "90%",
+    "water_content": "60.1g",
+    "energy": "658kJ"
+  },
+  {
+    "food_name": "山药[薯蓣，大薯](鲜)",
+    "edible_portion": "83%",
+    "water_content": "84.8g",
+    "energy": "251kJ"
+  },
+  {
+    "food_name": "芋头[芋艿，毛芋]",
+    "edible_portion": "84%",
+    "water_content": "78.6g",
+    "energy": "353kJ"
+  },
+  {
+    "food_name": "槟榔芋(鲜)",
+    "edible_portion": "87%",
+    "water_content": "76.4g",
+    "energy": "390kJ"
+  },
+  {
+    "food_name": "姜[黄姜](鲜)",
+    "edible_portion": "95%",
+    "water_content": "87.0g",
+    "energy": "219kJ"
+  },
+  {
+    "food_name": "姜(干)",
+    "edible_portion": "95%",
+    "water_content": "14.9g",
+    "energy": "1454kJ"
+  },
+  {
+    "food_name": "姜(子姜，鲜)[嫩姜]",
+    "edible_portion": "82%",
+    "water_content": "94.5g",
+    "energy": "97kJ"
+  },
+  {
+    "food_name": "洋姜[菊芋，鬼子姜](鲜)",
+    "edible_portion": "100%",
+    "water_content": "80.8g",
+    "energy": "309kJ"
+  },
+  {
+    "food_name": "艾蒿",
+    "edible_portion": "100%",
+    "water_content": "86.4g",
+    "energy": "231kJ"
+  },
+  {
+    "food_name": "白花菜",
+    "edible_portion": "100%",
+    "water_content": "93.7g",
+    "energy": "107kJ"
+  },
+  {
+    "food_name": "白花桔梗",
+    "edible_portion": "100%",
+    "water_content": "80.9g",
+    "energy": "325kJ"
+  },
+  {
+    "food_name": "白沙蒿[沙蒿](鲜)",
+    "edible_portion": "100%",
+    "water_content": "84.0g",
+    "energy": "251kJ"
+  },
+  {
+    "food_name": "白薯叶[甘薯叶](鲜)",
+    "edible_portion": "100%",
+    "water_content": "84.0g",
+    "energy": "261kJ"
+  },
+  {
+    "food_name": "百里香(鲜)",
+    "edible_portion": "100%",
+    "water_content": "82.8g",
+    "energy": "292kJ"
+  },
+  {
+    "food_name": "败酱[胭脂麻](鲜)",
+    "edible_portion": "100%",
+    "water_content": "79.0g",
+    "energy": "357kJ"
+  },
+  {
+    "food_name": "扁蓄菜[竹节草](鲜)",
+    "edible_portion": "100%",
+    "water_content": "79.0g",
+    "energy": "335kJ"
+  },
+  {
+    "food_name": "朝鲜蓟(鲜)",
+    "edible_portion": "100%",
+    "water_content": "85.4g",
+    "energy": "239kJ"
+  },
+  {
+    "food_name": "刺儿菜[小蓟，蓟蓟菜](鲜)",
+    "edible_portion": "100%",
+    "water_content": "87.0g",
+    "energy": "192kJ"
+  },
+  {
+    "food_name": "刺楸(鲜)",
+    "edible_portion": "100%",
+    "water_content": "53.9g",
+    "energy": "784kJ"
+  },
+  {
+    "food_name": "达乌里胡枝子[牛枝子，豆豆苗](鲜)",
+    "edible_portion": "100%",
+    "water_content": "67.0g",
+    "energy": "549kJ"
+  },
+  {
+    "food_name": "大玻璃草叶[大车前](鲜)",
+    "edible_portion": "100%",
+    "water_content": "83.0g",
+    "energy": "236kJ"
+  },
+  {
+    "food_name": "大巢菜[野苕子，野豌豆](鲜)",
+    "edible_portion": "100%",
+    "water_content": "80.0g",
+    "energy": "314kJ"
+  },
+  {
+    "food_name": "大蓟叶[飞廉叶](鲜)",
+    "edible_portion": "100%",
+    "water_content": "91.0g",
+    "energy": "171kJ"
+  },
+  {
+    "food_name": "地肤[益明，扫帚苗](鲜)",
+    "edible_portion": "100%",
+    "water_content": "79.0g",
+    "energy": "295kJ"
+  },
+  {
+    "food_name": "地笋[地古牛，地瓜儿苗叶](鲜)",
+    "edible_portion": "100%",
+    "water_content": "79.0g",
+    "energy": "332kJ"
+  },
+  {
+    "food_name": "豆腐柴(鲜)",
+    "edible_portion": "100%",
+    "water_content": "82.1g",
+    "energy": "304kJ"
+  },
+  {
+    "food_name": "独行菜(鲜)",
+    "edible_portion": "100%",
+    "water_content": "86.0g",
+    "energy": "238kJ"
+  },
+  {
+    "food_name": "番杏[夏菠菜，新西兰菠菜]",
+    "edible_portion": "100%",
+    "water_content": "91.4g",
+    "energy": "146kJ"
+  },
+  {
+    "food_name": "槐花[洋槐花，豆槐花](鲜)",
+    "edible_portion": "",
+    "water_content": "78.0g",
+    "energy": "368kJ"
+  },
+  {
+    "food_name": "黄麻叶(鲜)",
+    "edible_portion": "100%",
+    "water_content": "87.7g",
+    "energy": "188kJ"
+  },
+  {
+    "food_name": "苦苦菜(鲜)",
+    "edible_portion": "100%",
+    "water_content": "88.2g",
+    "energy": "191kJ"
+  },
+  {
+    "food_name": "马齿苋[长寿菜，瓜子菜](鲜)",
+    "edible_portion": "",
+    "water_content": "92.0g",
+    "energy": "124kJ"
+  },
+  {
+    "food_name": "马兰头[马兰，鸡儿肠，路边菊](鲜)",
+    "edible_portion": "100%",
+    "water_content": "91.4g",
+    "energy": "134kJ"
+  },
+  {
+    "food_name": "牛至",
+    "edible_portion": "",
+    "water_content": "82.4g",
+    "energy": "299kJ"
+  },
+  {
+    "food_name": "牛蒡叶(鲜)",
+    "edible_portion": "",
+    "water_content": "87.0g",
+    "energy": "196kJ"
+  },
+  {
+    "food_name": "球茎茴香",
+    "edible_portion": "",
+    "water_content": "87.7g",
+    "energy": "209kJ"
+  },
+  {
+    "food_name": "汤菜(鲜)",
+    "edible_portion": "86%",
+    "water_content": "93.2g",
+    "energy": "107kJ"
+  },
+  {
+    "food_name": "夏枯草[铁色草](鲜)",
+    "edible_portion": "",
+    "water_content": "81.0g",
+    "energy": "284kJ"
+  },
+  {
+    "food_name": "香椿[香椿芽](鲜)",
+    "edible_portion": "76%",
+    "water_content": "85.2g",
+    "energy": "229kJ"
+  },
+  {
+    "food_name": "榆钱(鲜)",
+    "edible_portion": "100%",
+    "water_content": "85.2g",
+    "energy": "226kJ"
+  },
+  {
+    "food_name": "苣荬菜(尖叶)[取荬菜，苦麻子]",
+    "edible_portion": "",
+    "water_content": "88.4g",
+    "energy": "197kJ"
+  },
+  {
+    "food_name": "苜蓿[草头，金花菜]",
+    "edible_portion": "100%",
+    "water_content": "81.8g",
+    "energy": "289kJ"
+  },
+  {
+    "food_name": "荞菜[野荞](鲜)",
+    "edible_portion": "65%",
+    "water_content": "95.6g",
+    "energy": "65kJ"
+  },
+  {
+    "food_name": "蕨菜[龙头菜，如意菜](鲜)",
+    "edible_portion": "",
+    "water_content": "88.6g",
+    "energy": "195kJ"
+  },
+  {
+    "food_name": "枸杞菜[枸杞，地骨](鲜)",
+    "edible_portion": "49%",
+    "water_content": "87.8g",
+    "energy": "212kJ"
+  },
+  {
+    "food_name": "酢浆草[酸酸草，酸溜溜](鲜)",
+    "edible_portion": "100%",
+    "water_content": "84.0g",
+    "energy": "282kJ"
+  },
+  {
+    "food_name": "鱼腥草(叶)[蕺菜、臭菜]",
+    "edible_portion": "100%",
+    "water_content": "84.9g",
+    "energy": "131kJ"
+  },
+  {
+    "food_name": "鱼腥草(根)",
+    "edible_portion": "86%",
+    "water_content": "77.4g",
+    "energy": "261kJ"
+  },
+  {
+    "food_name": "桑葚(均值)",
+    "edible_portion": "100%",
+    "water_content": "82.8g",
+    "energy": "278kJ"
+  },
+  {
+    "food_name": "桑葚(白)",
+    "edible_portion": "100%",
+    "water_content": "81.8g",
+    "energy": "295kJ"
+  },
+  {
+    "food_name": "桑葚(红)",
+    "edible_portion": "100%",
+    "water_content": "83.7g",
+    "energy": "261kJ"
+  },
+  {
+    "food_name": "醋栗[灯笼果]",
+    "edible_portion": "100%",
+    "water_content": "87.9g",
+    "energy": "209kJ"
+  },
+  {
+    "food_name": "黑醋栗[黑加仑]",
+    "edible_portion": "",
+    "water_content": "82.0g",
+    "energy": "299kJ"
+  },
+  {
+    "food_name": "沙棘",
+    "edible_portion": "87%",
+    "water_content": "71.0g",
+    "energy": "515kJ"
+  },
+  {
+    "food_name": "无花果",
+    "edible_portion": "100%",
+    "water_content": "81.3g",
+    "energy": "301kJ"
+  },
+  {
+    "food_name": "中华猕猴桃[毛叶猕猴桃]",
+    "edible_portion": "83%",
+    "water_content": "83.4g",
+    "energy": "282kJ"
+  },
+  {
+    "food_name": "草莓[洋莓，凤阳草莓]",
+    "edible_portion": "97%",
+    "water_content": "91.3g",
+    "energy": "145kJ"
+  },
+  {
+    "food_name": "红提子葡萄",
+    "edible_portion": "86%",
+    "water_content": "85.6g",
+    "energy": "229kJ"
+  },
+  {
+    "food_name": "无花果(干)",
+    "edible_portion": "100%",
+    "water_content": "11.5g",
+    "energy": "1422kJ"
+  },
+  {
+    "food_name": "橙",
+    "edible_portion": "74%",
+    "water_content": "87.4g",
+    "energy": "210kJ"
+  },
+  {
+    "food_name": "柑桔(均值)",
+    "edible_portion": "77%",
+    "water_content": "86.9g",
+    "energy": "222kJ"
+  },
+  {
+    "food_name": "桔(金桔)[金枣]",
+    "edible_portion": "89%",
+    "water_content": "84.7g",
+    "energy": "257kJ"
+  },
+  {
+    "food_name": "芦柑",
+    "edible_portion": "77%",
+    "water_content": "88.5g",
+    "energy": "193kJ"
+  },
+  {
+    "food_name": "蜜桔",
+    "edible_portion": "76%",
+    "water_content": "88.2g",
+    "energy": "203kJ"
+  },
+  {
+    "food_name": "小叶桔",
+    "edible_portion": "81%",
+    "water_content": "89.5g",
+    "energy": "176kJ"
+  },
+  {
+    "food_name": "桔饼",
+    "edible_portion": "100%",
+    "water_content": "5.4g",
+    "energy": "1604kJ"
+  },
+  {
+    "food_name": "柚[文旦]",
+    "edible_portion": "69%",
+    "water_content": "89.0g",
+    "energy": "183kJ"
+  },
+  {
+    "food_name": "柠檬",
+    "edible_portion": "66%",
+    "water_content": "91.0g",
+    "energy": "169kJ"
+  },
+  {
+    "food_name": "葡萄柚(台湾)[西柚]",
+    "edible_portion": "73%",
+    "water_content": "90.9g",
+    "energy": "145kJ"
+  },
+  {
+    "food_name": "葡萄柚(以色列)[西柚]",
+    "edible_portion": "65%",
+    "water_content": "88.8g",
+    "energy": "169kJ"
+  },
+  {
+    "food_name": "芭蕉[甘蕉，板蕉，牙蕉]",
+    "edible_portion": "68%",
+    "water_content": "68.9g",
+    "energy": "515kJ"
+  },
+  {
+    "food_name": "菠萝[凤梨，地菠萝]",
+    "edible_portion": "68%",
+    "water_content": "88.4g",
+    "energy": "196kJ"
+  },
+  {
+    "food_name": "菠萝蜜[木菠萝]",
+    "edible_portion": "43%",
+    "water_content": "73.2g",
+    "energy": "451kJ"
+  },
+  {
+    "food_name": "刺梨[茨梨，木梨子]",
+    "edible_portion": "100%",
+    "water_content": "81.0g",
+    "energy": "303kJ"
+  },
+  {
+    "food_name": "番石榴[鸡矢果，番桃]",
+    "edible_portion": "97%",
+    "water_content": "83.9g",
+    "energy": "275kJ"
+  },
+  {
+    "food_name": "桂圆",
+    "edible_portion": "50%",
+    "water_content": "81.4g",
+    "energy": "306kJ"
+  },
+  {
+    "food_name": "桂圆(干)",
+    "edible_portion": "37%",
+    "water_content": "26.9g",
+    "energy": "1194kJ"
+  },
+  {
+    "food_name": "荔枝",
+    "edible_portion": "73%",
+    "water_content": "81.9g",
+    "energy": "305kJ"
+  },
+  {
+    "food_name": "芒果[抹猛果，望果]",
+    "edible_portion": "60%",
+    "water_content": "90.6g",
+    "energy": "159kJ"
+  },
+  {
+    "food_name": "木瓜[番木瓜]",
+    "edible_portion": "86%",
+    "water_content": "92.2g",
+    "energy": "129kJ"
+  },
+  {
+    "food_name": "人参果",
+    "edible_portion": "88%",
+    "water_content": "77.1g",
+    "energy": "397kJ"
+  },
+  {
+    "food_name": "香蕉[甘蕉]",
+    "edible_portion": "59%",
+    "water_content": "75.8g",
+    "energy": "405kJ"
+  },
+  {
+    "food_name": "杨梅[树梅，山杨梅]",
+    "edible_portion": "82%",
+    "water_content": "92.0g",
+    "energy": "135kJ"
+  },
+  {
+    "food_name": "杨桃",
+    "edible_portion": "88%",
+    "water_content": "91.4g",
+    "energy": "143kJ"
+  },
+  {
+    "food_name": "椰子",
+    "edible_portion": "33%",
+    "water_content": "51.8g",
+    "energy": "1048kJ"
+  },
+  {
+    "food_name": "枇杷",
+    "edible_portion": "62%",
+    "water_content": "89.3g",
+    "energy": "179kJ"
+  },
+  {
+    "food_name": "橄榄(白榄)",
+    "edible_portion": "80%",
+    "water_content": "83.1g",
+    "energy": "278kJ"
+  },
+  {
+    "food_name": "余柑子[油柑子]",
+    "edible_portion": "80%",
+    "water_content": "86.6g",
+    "energy": "220kJ"
+  },
+  {
+    "food_name": "红毛丹",
+    "edible_portion": "79%",
+    "water_content": "80.0g",
+    "energy": "345kJ"
+  },
+  {
+    "food_name": "火龙果[仙蜜果、红龙果]",
+    "edible_portion": "69%",
+    "water_content": "84.8g",
+    "energy": "234kJ"
+  },
+  {
+    "food_name": "荔枝(干)",
+    "edible_portion": "56%",
+    "water_content": "15.0g",
+    "energy": "1389kJ"
+  },
+  {
+    "food_name": "榴莲",
+    "edible_portion": "37%",
+    "water_content": "64.5g",
+    "energy": "632kJ"
+  },
+  {
+    "food_name": "白兰瓜",
+    "edible_portion": "55%",
+    "water_content": "93.2g",
+    "energy": "104kJ"
+  },
+  {
+    "food_name": "哈蜜瓜",
+    "edible_portion": "71%",
+    "water_content": "91.0g",
+    "energy": "147kJ"
+  },
+  {
+    "food_name": "甜瓜[香瓜]",
+    "edible_portion": "78%",
+    "water_content": "92.9g",
+    "energy": "116kJ"
+  },
+  {
+    "food_name": "西瓜(均值)",
+    "edible_portion": "56%",
+    "water_content": "93.3g",
+    "energy": "113kJ"
+  },
+  {
+    "food_name": "羊脑",
+    "edible_portion": "100%",
+    "water_content": "76.3g",
+    "energy": "590kJ"
+  },
+  {
+    "food_name": "羊舌",
+    "edible_portion": "100%",
+    "water_content": "60.9g",
+    "energy": "937kJ"
+  },
+  {
+    "food_name": "羊肾",
+    "edible_portion": "95%",
+    "water_content": "78.2g",
+    "energy": "403kJ"
+  },
+  {
+    "food_name": "羊心",
+    "edible_portion": "100%",
+    "water_content": "77.7g",
+    "energy": "472kJ"
+  },
+  {
+    "food_name": "羊血",
+    "edible_portion": "100%",
+    "water_content": "85.0g",
+    "energy": "240kJ"
+  },
+  {
+    "food_name": "腊羊肉",
+    "edible_portion": "100%",
+    "water_content": "47.8g",
+    "energy": "1031kJ"
+  },
+  {
+    "food_name": "羊肉串(烤)",
+    "edible_portion": "100%",
+    "water_content": "58.7g",
+    "energy": "864kJ"
+  },
+  {
+    "food_name": "羊肉串(炸)",
+    "edible_portion": "100%",
+    "water_content": "57.4g",
+    "energy": "907kJ"
+  },
+  {
+    "food_name": "山羊肉(酱)",
+    "edible_portion": "100%",
+    "water_content": "45.7g",
+    "energy": "1139kJ"
+  },
+  {
+    "food_name": "驴肉(瘦)",
+    "edible_portion": "100%",
+    "water_content": "73.8g",
+    "energy": "491kJ"
+  },
+  {
+    "food_name": "驴肉(酱)",
+    "edible_portion": "100%",
+    "water_content": "61.4g",
+    "energy": "677kJ"
+  },
+  {
+    "food_name": "驴肉(卤)",
+    "edible_portion": "100%",
+    "water_content": "63.1g",
+    "energy": "640kJ"
+  },
+  {
+    "food_name": "驴肉(煮)",
+    "edible_portion": "100%",
+    "water_content": "57.7g",
+    "energy": "959kJ"
+  },
+  {
+    "food_name": "马肉",
+    "edible_portion": "100%",
+    "water_content": "74.1g",
+    "energy": "514kJ"
+  },
+  {
+    "food_name": "马心",
+    "edible_portion": "100%",
+    "water_content": "76.3g",
+    "energy": "438kJ"
+  },
+  {
+    "food_name": "马肉(卤)",
+    "edible_portion": "100%",
+    "water_content": "61.9g",
+    "energy": "717kJ"
+  },
+  {
+    "food_name": "狗肉",
+    "edible_portion": "80%",
+    "water_content": "76.0g",
+    "energy": "486kJ"
+  },
+  {
+    "food_name": "兔肉",
+    "edible_portion": "100%",
+    "water_content": "76.2g",
+    "energy": "432kJ"
+  }
+]

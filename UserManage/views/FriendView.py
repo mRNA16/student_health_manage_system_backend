@@ -1,210 +1,227 @@
-from contextlib import nullcontext
-from rest_framework import viewsets, permissions, status
+from rest_framework import viewsets, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from ..models import Friend
-from ..serializers.FriendSerializer import FriendSerializer
-from django.contrib.auth.models import User
-from django.db.models import Q
-from SportManage.models.SportRecord import SportRecord
-from SleepManage.models.SleepRecord import SleepRecord
-from DietManage.models.MealRecord import MealRecord
+from rest_framework.views import APIView
 from django.utils.timezone import localtime
+from django.core.cache import cache
 import os
 import json
+from utils.api_utils import (
+    success_api_response, failed_api_response, ErrorCode, parse_data
+)
+from UserManage import sql
+from utils.cache_utils import invalidate_friend_cache
 
-class FriendViewSet(viewsets.ModelViewSet):
-    queryset = Friend.objects.all()
-    serializer_class = FriendSerializer
+class FriendViewSet(viewsets.ViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
-    def get_queryset(self):
-        # 默认返回当前用户相关的好友关系
-        user = self.request.user
-        return Friend.objects.filter(
-            Q(from_user=user) | Q(to_user=user)
-        )
+    def list(self, request):
+        user_id = request.user.id
+        cache_key = f'friend_list_all_{user_id}'
+        
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response(success_api_response(cached_data, message='获取好友数据成功 (from cache)'))
+            
+        friends_data = sql.get_user_friends_all(user_id)
+        cache.set(cache_key, friends_data, timeout=3600)
+        
+        return Response(success_api_response(friends_data, message='获取好友数据成功'))
 
-    def perform_create(self, serializer):
-        # 确保from_user是当前用户
-        serializer.save(from_user=self.request.user)
+    def retrieve(self, request, pk=None):
+        # pk is friend_id (User ID of the friend)
+        friend_id = pk
+        user_id = request.user.id
+        
+        status_code, friend_user, raw_activities = sql.get_friend_activities_safe(user_id, friend_id)
+        
+        if status_code == 1:
+            return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "用户不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, "无权查看该用户动态"))
 
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        serializer = self.get_serializer(queryset, many=True)
-        return Response({
-            'code': 0,
-            'data': serializer.data,
-            'message': '获取好友数据成功'
-        })
-
-    def retrieve(self, request, *args, **kwargs):
-        # instance = self.get_object()
-        # serializer = self.get_serializer(instance)
-        friend_id = self.kwargs.get('pk')
-        user = User.objects.get(pk = friend_id)
+        # Process activities (mapping sport names, etc.)
         activities = []
-        last_active = None
-        sport_records = SportRecord.objects.filter(user=user)
+        
+        # Load MET data for sport mapping
         met_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), 'SportManage', 'met.json')
-        with open(met_path, 'r', encoding='utf-8') as f:
-            mets = json.load(f)
-        for record in sport_records:
+        try:
+            with open(met_path, 'r', encoding='utf-8') as f:
+                mets = json.load(f)
+        except Exception:
+            mets = {}
+            
+        for record in raw_activities:
+            act_type = record['type']
+            timestamp = record['created_at'].isoformat() if hasattr(record['created_at'], 'isoformat') else str(record['created_at'])
+            
+            content = ""
+            if act_type == 'sport':
+                sport_key = str(record['detail'])
+                sport_info = mets[int(sport_key)] if sport_key.isdigit() else None
+                sport_name = sport_info['name'] if sport_info else "未知运动"
+                # duration in view is hours, convert to minutes for sport
+                duration_min = round(float(record['duration'] or 0) * 60)
+                content = f"进行了{sport_name}，持续{duration_min}分钟"
+            elif act_type == 'sleep':
+                duration_hours = round(float(record['duration'] or 0), 1)
+                content = f"睡眠了{duration_hours}小时"
+            elif act_type == 'meal':
+                meal_names = {'breakfast': '早餐', 'lunch': '午餐', 'dinner': '晚餐', 'extra': '加餐'}
+                meal_name = meal_names.get(record['detail'], record['detail'])
+                calories = round(float(record['duration'] or 0)) # duration field contains total_calories for meals
+                content = f"记录了{meal_name}，摄入约{calories}卡路里"
+                
             activities.append({
-                'id': record.id,
-                'type': 'sport',
-                'content': f"进行了{mets[record.sport]['name']}，持续{record.duration}分钟",
-                'timestamp': localtime(record.created_at).isoformat()
+                'id': record['id'],
+                'type': act_type,
+                'content': content,
+                'timestamp': timestamp
             })
-        sleep_records = SleepRecord.objects.filter(user=user)
-        for record in sleep_records:
-            activities.append({
-                'id': record.id,
-                'type': 'sleep',
-                'content': f"睡眠了{record.duration}小时",
-                'timestamp': localtime(record.created_at).isoformat()
-            })
-
-        meal_records = MealRecord.objects.filter(user=user)
-        for record in meal_records:
-            activities.append({
-                'id': record.id,
-                'type': 'meal',
-                'content': f"记录了{record.meal}",
-                'timestamp': localtime(record.created_at).isoformat()
-            })
-        activities.sort(key=lambda x: x['timestamp'], reverse=True)
-        return Response({
-            'code': 0,
-            'data': {
-                # **serializer.data,
-                'friendId': friend_id,
-                'friendName': user.username,
-                'activities': activities
-            },
-            'message': '获取好友详情成功'
-        })
+        
+        return Response(success_api_response({
+            'friendId': friend_id,
+            'friendName': friend_user['username'],
+            'activities': activities
+        }, message='获取好友详情成功'))
 
     @action(detail=False, methods=['get'])
     def friends(self, request):
-        # 获取当前用户的好友列表（已接受的）
-        user = request.user
-        friends = Friend.objects.filter(
-            Q(from_user=user) | Q(to_user=user),
-            status='accepted'
-        )
-        serializer = self.get_serializer(friends, many=True)
-        return Response({
-            'code': 0,
-            'data': serializer.data,
-            'message': '获取好友列表成功'
-        })
+        # Accepted friends
+        user_id = request.user.id
+        cache_key = f'friend_list_{user_id}'
+        
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response(success_api_response(cached_data, message='获取好友列表成功 (from cache)'))
+            
+        friends = sql.get_friend_requests(user_id, direction='both', status='accepted')
+        cache.set(cache_key, friends, timeout=3600)
+        
+        return Response(success_api_response(friends, message='获取好友列表成功'))
 
     @action(detail=False, methods=['get'])
     def received_requests(self, request):
-        # 获取当前用户收到的好友请求
-        user = request.user
-        requests = Friend.objects.filter(to_user=user, status='pending')
-        serializer = self.get_serializer(requests, many=True)
-        return Response({
-            'code': 0,
-            'data': serializer.data,
-            'message': '获取收到的好友请求成功'
-        })
+        user_id = request.user.id
+        cache_key = f'friend_requests_received_{user_id}'
+        
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response(success_api_response(cached_data, message='获取收到的好友请求成功 (from cache)'))
+            
+        requests = sql.get_friend_requests_v2(user_id, direction='received')
+        cache.set(cache_key, requests, timeout=3600)
+        
+        return Response(success_api_response(requests, message='获取收到的好友请求成功'))
 
     @action(detail=False, methods=['get'])
     def sent_requests(self, request):
-        # 获取当前用户发送的好友请求
-        user = request.user
-        requests = Friend.objects.filter(from_user=user, status='pending')
-        serializer = self.get_serializer(requests, many=True)
-        return Response({
-            'code': 0,
-            'data': serializer.data,
-            'message': '获取发送的好友请求成功'
-        })
+        user_id = request.user.id
+        cache_key = f'friend_requests_sent_{user_id}'
+        
+        cached_data = cache.get(cache_key)
+        if cached_data:
+            return Response(success_api_response(cached_data, message='获取发送的好友请求成功 (from cache)'))
+            
+        requests = sql.get_friend_requests_v2(user_id, direction='sent')
+        cache.set(cache_key, requests, timeout=3600)
+        
+        return Response(success_api_response(requests, message='获取发送的好友请求成功'))
 
     @action(detail=True, methods=['post'])
     def accept(self, request, pk=None):
-        # 接受好友请求
-        friend_request = self.get_object()
-        if friend_request.to_user != request.user:
-            return Response({
-                'code': 1,
-                'message': '无权接受此请求'
-            }, status=status.HTTP_403_FORBIDDEN)
+        status_code = sql.handle_friend_request_safe(pk, request.user.id, 'accept')
+        
+        if status_code == 1:
+            return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "请求不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, '无权接受此请求'))
 
-        friend_request.status = 'accepted'
-        friend_request.save()
-        return Response({
-            'code': 0,
-            'message': '接受好友请求成功'
-        })
+        # Invalidate cache for both users
+        friend_rel = sql.get_friend_relationship(pk)
+        if friend_rel:
+            invalidate_friend_cache(friend_rel['from_user_id'])
+            invalidate_friend_cache(friend_rel['to_user_id'])
+            cache.delete(f'friend_list_all_{friend_rel["from_user_id"]}')
+            cache.delete(f'friend_list_all_{friend_rel["to_user_id"]}')
+
+        return Response(success_api_response(None, message='接受好友请求成功'))
 
     @action(detail=True, methods=['post'])
     def reject(self, request, pk=None):
-        # 拒绝好友请求
-        friend_request = self.get_object()
-        if friend_request.to_user != request.user:
-            return Response({
-                'code': 1,
-                'message': '无权拒绝此请求'
-            }, status=status.HTTP_403_FORBIDDEN)
+        status_code = sql.handle_friend_request_safe(pk, request.user.id, 'reject')
+        
+        if status_code == 1:
+             return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "请求不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, '无权拒绝此请求'))
 
-        friend_request.status = 'rejected'
-        friend_request.save()
-        return Response({
-            'code': 0,
-            'message': '拒绝好友请求成功'
-        })
+        # Invalidate cache
+        friend_rel = sql.get_friend_relationship(pk)
+        if friend_rel:
+            invalidate_friend_cache(friend_rel['from_user_id'])
+            invalidate_friend_cache(friend_rel['to_user_id'])
+
+        return Response(success_api_response(None, message='拒绝好友请求成功'))
 
     @action(detail=False, methods=['post'])
     def send(self, request):
-        to_user_id = request.data.get('to_user')
+        data = parse_data(request)
+        to_user_id = data.get('to_user')
         if not to_user_id:
-            return Response({'code': 1, 'message': '缺少 to_user_id'}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(failed_api_response(ErrorCode.INVALID_REQUEST_ARGS, '缺少 to_user_id'))
 
-        from_user = request.user
+        status_code, new_request = sql.send_friend_request_safe(request.user.id, to_user_id)
+        
+        if status_code == 1:
+            return Response(failed_api_response(ErrorCode.INVALID_REQUEST_ARGS, '不能添加自己为好友'))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.INVALID_REQUEST_ARGS, '已存在好友关系或请求'))
 
-        if str(from_user.id) == str(to_user_id):
-            return Response({'code': 1, 'message': '不能添加自己为好友'}, status=status.HTTP_400_BAD_REQUEST)
+        # Invalidate cache
+        invalidate_friend_cache(request.user.id)
+        invalidate_friend_cache(to_user_id)
 
-        # 检查是否已有请求或已是好友
-        if Friend.objects.filter(
-            (Q(from_user=from_user, to_user_id=to_user_id) |
-            Q(from_user_id=to_user_id, to_user=from_user)) &
-            (Q(status = 'pending') | Q(status = 'accepted'))
-        ).exists():
-            return Response({'code': 1, 'message': '已存在好友关系或请求'}, status=status.HTTP_400_BAD_REQUEST)
-
-        # 创建好友请求
-        friend_request = Friend.objects.create(from_user=from_user, to_user_id=to_user_id)
-        serializer = self.get_serializer(friend_request)
-        return Response({'code': 0, 'message': '好友请求已发送', 'data': serializer.data})
+        return Response(success_api_response(new_request, message='好友请求已发送'))
 
     @action(detail=True, methods=['delete'])
     def cancel(self, request, pk=None):
-        friend_request = self.get_object()
-        if friend_request.from_user != request.user:
-            return Response({'code': 1, 'message': '无权取消该请求'}, status=status.HTTP_403_FORBIDDEN)
-        if friend_request.status != 'pending':
-            return Response({'code': 1, 'message': '只有待处理的请求才能取消'}, status=status.HTTP_400_BAD_REQUEST)
-        friend_request.delete()
-        return Response({'code': 0, 'message': '好友请求已取消'})
+        # Get relationship info before deletion for cache invalidation
+        friend_rel = sql.get_friend_relationship(pk)
+        
+        status_code = sql.cancel_friend_request_safe(pk, request.user.id)
+        
+        if status_code == 1:
+             return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "请求不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, '无权取消该请求'))
+        elif status_code == 3:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, '只有待处理的请求才能取消'))
 
+        # Invalidate cache
+        if friend_rel:
+            invalidate_friend_cache(friend_rel['from_user_id'])
+            invalidate_friend_cache(friend_rel['to_user_id'])
+
+        return Response(success_api_response(None, message='取消好友请求成功'))
 
     @action(detail=True, methods=['delete'])
     def remove(self, request, pk=None):
-        # 移除好友
-        friend = self.get_object()
-        if friend.from_user != request.user and friend.to_user != request.user:
-            return Response({
-                'code': 1,
-                'message': '无权移除此好友'
-            }, status=status.HTTP_403_FORBIDDEN)
+        # Get relationship info before deletion for cache invalidation
+        friend_rel = sql.get_friend_relationship(pk)
+        
+        status_code = sql.remove_friend_relationship_safe(pk, request.user.id)
 
-        friend.delete()
-        return Response({
-            'code': 0,
-            'message': '移除好友成功'
-        })
+        if status_code == 1:
+            return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "请求不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, '无权删除该请求'))
+
+        # Invalidate cache
+        if friend_rel:
+            invalidate_friend_cache(friend_rel['from_user_id'])
+            invalidate_friend_cache(friend_rel['to_user_id'])
+            cache.delete(f'friend_list_all_{friend_rel["from_user_id"]}')
+            cache.delete(f'friend_list_all_{friend_rel["to_user_id"]}')
+
+        return Response(success_api_response(None, message='删除好友请求成功'))

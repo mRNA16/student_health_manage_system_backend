@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import yaml
+from datetime import timedelta
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -61,6 +62,13 @@ REST_FRAMEWORK = {
     ),
 }
 
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+    'ROTATE_REFRESH_TOKENS': False,
+    'BLACKLIST_AFTER_ROTATION': True,
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -97,7 +105,7 @@ WSGI_APPLICATION = 'student_health_manage.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': _YAML_CONFIG['DatabaseName'],
         'USER': _YAML_CONFIG['DatabaseUser'],
         'PASSWORD': _YAML_CONFIG['DatabasePassword'],

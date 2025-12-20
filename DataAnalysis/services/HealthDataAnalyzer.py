@@ -1,13 +1,13 @@
 import numpy as np
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from django.contrib.auth.models import User
-from django.db.models import Q, Avg, Count
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import json
 import logging
+from DataAnalysis import sql
 
 logger = logging.getLogger(__name__)
 
@@ -15,162 +15,83 @@ class HealthDataAnalyzer:
     def __init__(self, user):
         self.user = user
         
+    def _format_date(self, d):
+        if isinstance(d, (datetime, date, pd.Timestamp)):
+            return d.strftime('%Y-%m-%d')
+        return str(d)
+
     def get_sleep_data(self, days=30):
         """获取睡眠数据"""
-        from SleepManage.models.SleepRecord import SleepRecord
-        from collections import defaultdict
-        
-        end_date = datetime.now().date()
-        start_date = end_date - timedelta(days=days)
-        
-        sleep_records = SleepRecord.objects.filter(
-            user=self.user,
-            date__gte=start_date,
-            date__lte=end_date
-        ).order_by('date')
-
-        grouped = defaultdict(list)
-        for record in sleep_records:
-            grouped[record.date].append(record)
-        data = []
-        for date, records in grouped.items():
-            durations = [r.duration for r in records]
-            quality_scores = [self._calculate_sleep_quality(r) for r in records]
-            sleep_hours = [r.sleep_time.hour for r in records]
-            wake_hours = [r.wake_time.hour for r in records]
-            sleep_times = [r.sleep_time for r in records]
-            wake_times = [r.wake_time for r in records]
-
-            data.append({
-                'date': date.isoformat(),
-                'duration': sum(durations),
-                'quality_score': np.mean(quality_scores),
-                'sleep_hour': int(np.mean(sleep_hours)),
-                'wake_hour': int(np.mean(wake_hours)),
-                'sleep_time': min(sleep_times).isoformat(),  # 最早入睡时间
-                'wake_time': max(wake_times).isoformat(),    # 最晚起床时间
-            })
-
+        data = sql.get_sleep_data_for_analysis(self.user.id, days)
+        if not data:
+            return pd.DataFrame()
+            
+        # Format dates and times for pandas
+        for d in data:
+            d['date'] = self._format_date(d['date'])
+            if d['sleep_time'] and hasattr(d['sleep_time'], 'isoformat'):
+                d['sleep_time'] = d['sleep_time'].isoformat()
+            if d['wake_time'] and hasattr(d['wake_time'], 'isoformat'):
+                d['wake_time'] = d['wake_time'].isoformat()
+            d['sleep_hour'] = float(d['sleep_hour'] or 0)
+            d['wake_hour'] = float(d['wake_hour'] or 0)
+            d['duration'] = float(d['duration'] or 0)
+            d['quality_score'] = float(d['quality_score'] or 0)
+            
         return pd.DataFrame(data)
     
     def get_sport_data(self, days=30):
         """获取运动数据"""
-        from SportManage.models.SportRecord import SportRecord
-        
-        end_date = datetime.now().date()
-        start_date = end_date - timedelta(days=days)
-        
-        sport_records = SportRecord.objects.filter(
-            user=self.user,
-            date__gte=start_date,
-            date__lte=end_date
-        ).order_by('date')
-        
-        # 按日期聚合运动数据
-        daily_sport = {}
-        for record in sport_records:
-            date_str = record.date.isoformat()
-            if date_str not in daily_sport:
-                daily_sport[date_str] = {
-                    'total_duration': 0,
-                    'total_calories': 0,
-                    'sport_count': 0,
-                    'avg_intensity': 0
-                }
-            daily_sport[date_str]['total_duration'] += record.duration
-            daily_sport[date_str]['total_calories'] += record.calories
-            daily_sport[date_str]['sport_count'] += 1
-        
-        # 计算平均强度
-        for date_str in daily_sport:
-            if daily_sport[date_str]['total_duration'] > 0:
-                daily_sport[date_str]['avg_intensity'] = (
-                    daily_sport[date_str]['total_calories'] / 
-                    daily_sport[date_str]['total_duration']
-                )
-        
-        return pd.DataFrame(list(daily_sport.values()), index=list(daily_sport.keys()))
+        data = sql.get_sport_data_for_analysis(self.user.id, days)
+        if not data:
+            return pd.DataFrame()
+            
+        # Format dates for pandas index
+        formatted_data = []
+        for d in data:
+            date_str = self._format_date(d['date'])
+            duration = float(d['total_duration'] or 0)
+            calories = float(d['total_calories'] or 0)
+            formatted_data.append({
+                'date': date_str,
+                'total_duration': duration,
+                'total_calories': calories,
+                'sport_count': float(d['sport_count'] or 0),
+                'avg_intensity': calories / duration if duration > 0 else 0
+            })
+            
+        df = pd.DataFrame(formatted_data)
+        if not df.empty:
+            df.set_index('date', inplace=True)
+        return df
     
     def get_diet_data(self, days=30):
         """获取饮食数据"""
-        from DietManage.models.MealRecord import MealRecord
-        
-        end_date = datetime.now().date()
-        start_date = end_date - timedelta(days=days)
-        
-        meal_records = MealRecord.objects.filter(
-            user=self.user,
-            date__gte=start_date,
-            date__lte=end_date
-        ).order_by('date')
-        
-        # 按日期聚合饮食数据
-        daily_diet = {}
-        for record in meal_records:
-            date_str = record.date.isoformat()
-            if date_str not in daily_diet:
-                daily_diet[date_str] = {
-                    'total_calories': 0,
-                    'meal_count': 0,
-                    'food_variety': set()
-                }
+        data = sql.get_diet_data_for_analysis(self.user.id, days)
+        if not data:
+            return pd.DataFrame()
             
-            # 计算该餐的总卡路里
-            meal_calories = sum(item.estimated_calories for item in record.items.all())
-            daily_diet[date_str]['total_calories'] += meal_calories
-            daily_diet[date_str]['meal_count'] += 1
-            daily_diet[date_str]['food_variety'].update(
-                item.food for item in record.items.all()
-            )
-        
-        # 转换set为长度
-        for date_str in daily_diet:
-            daily_diet[date_str]['food_variety'] = len(daily_diet[date_str]['food_variety'])
-        
-        return pd.DataFrame(list(daily_diet.values()), index=list(daily_diet.keys()))
-    
-    def _calculate_sleep_quality(self, sleep_record):
-        """计算睡眠质量评分 (0-100)"""
-        # 基础评分：睡眠时长 (理想7-9小时)
-        duration_score = 0
-        if 7 <= sleep_record.duration <= 9:
-            duration_score = 40
-        elif 6 <= sleep_record.duration <= 10:
-            duration_score = 30
-        elif 5 <= sleep_record.duration <= 11:
-            duration_score = 20
-        else:
-            duration_score = 10
-        
-        # 睡眠时间规律性评分 (理想22:00-23:00)
-        sleep_hour = sleep_record.sleep_time.hour
-        if 22 <= sleep_hour <= 23:
-            regularity_score = 30
-        elif 21 <= sleep_hour <= 24:
-            regularity_score = 20
-        elif 20 <= sleep_hour <= 1:
-            regularity_score = 15
-        else:
-            regularity_score = 10
-        
-        # 起床时间规律性评分 (理想6:00-8:00)
-        wake_hour = sleep_record.wake_time.hour
-        if 6 <= wake_hour <= 8:
-            wake_score = 30
-        elif 5 <= wake_hour <= 9:
-            wake_score = 20
-        elif 4 <= wake_hour <= 10:
-            wake_score = 15
-        else:
-            wake_score = 10
-        
-        return duration_score + regularity_score + wake_score
+        # Format dates for pandas index
+        formatted_data = []
+        for d in data:
+            date_str = self._format_date(d['date'])
+            formatted_data.append({
+                'date': date_str,
+                'total_calories': float(d['total_calories'] or 0),
+                'meal_count': float(d['meal_count'] or 0),
+                'food_variety': float(d['food_variety'] or 0)
+            })
+            
+        df = pd.DataFrame(formatted_data)
+        if not df.empty:
+            df.set_index('date', inplace=True)
+        return df
     
     def analyze_sleep_prediction(self, days=30):
         """基于线性回归预测睡眠质量变化"""
         try:
             sleep_df = self.get_sleep_data(days)
-            if len(sleep_df) < 7:  # 至少需要7天数据
+            if sleep_df.empty or len(sleep_df) < 7:  # 至少需要7天数据
                 return {
                     'success': False,
                     'message': '数据不足，至少需要7天的睡眠记录',
@@ -219,19 +140,19 @@ class HealthDataAnalyzer:
             # 历史趋势
             historical_trend = {
                 'dates': sleep_df['date'].tolist(),
-                'quality_scores': sleep_df['quality_score'].tolist(),
-                'durations': sleep_df['duration'].tolist()
+                'quality_scores': [float(v) for v in sleep_df['quality_score'].tolist()],
+                'durations': [float(v) for v in sleep_df['duration'].tolist()]
             }
             
             # 预测结果
             prediction_data = {
                 'dates': future_dates,
-                'predicted_scores': predictions.tolist(),
-                'confidence': min(0.95, max(0.5, r2))  # 基于R²的置信度
+                'predicted_scores': [float(v) for v in predictions.tolist()],
+                'confidence': float(min(0.95, max(0.5, r2)))  # 基于R²的置信度
             }
             
             # 分析建议
-            avg_quality = sleep_df['quality_score'].mean()
+            avg_quality = float(sleep_df['quality_score'].mean())
             recommendations = self._generate_sleep_recommendations(avg_quality, predictions)
             
             return {
@@ -240,12 +161,12 @@ class HealthDataAnalyzer:
                     'historical_trend': historical_trend,
                     'prediction': prediction_data,
                     'model_performance': {
-                        'r2_score': r2,
-                        'rmse': rmse,
+                        'r2_score': float(r2),
+                        'rmse': float(rmse),
                         'feature_importance': {
-                            'date_trend': abs(model.coef_[0]),
-                            'day_of_week': abs(model.coef_[1]),
-                            'duration': abs(model.coef_[2])
+                            'date_trend': float(abs(model.coef_[0])),
+                            'day_of_week': float(abs(model.coef_[1])),
+                            'duration': float(abs(model.coef_[2]))
                         }
                     },
                     'recommendations': recommendations
@@ -263,13 +184,13 @@ class HealthDataAnalyzer:
     def analyze_sleep_sport_correlation(self, days=30):
         def safe_mean(series):
             m = series.mean()
-            return 0 if pd.isna(m) else m
+            return 0.0 if pd.isna(m) else float(m)
         """分析运动时长与睡眠质量关联性"""
         try:
             sleep_df = self.get_sleep_data(days)
             sport_df = self.get_sport_data(days)
             
-            if len(sleep_df) < 5 or len(sport_df) < 5:
+            if sleep_df.empty or sport_df.empty or len(sleep_df) < 5 or len(sport_df) < 5:
                 return {
                     'success': False,
                     'message': '数据不足，至少需要5天的睡眠和运动记录',
@@ -295,8 +216,8 @@ class HealthDataAnalyzer:
             correlation_data = []
             for i in range(len(all_dates)):
                 if i > 0:  # 分析前一天运动对当天睡眠的影响
-                    prev_sport_duration = sport_filled.iloc[i-1]['total_duration'] if i > 0 else 0
-                    current_sleep_quality = sleep_filled.iloc[i]['quality_score']
+                    prev_sport_duration = float(sport_filled.iloc[i-1]['total_duration'] if i > 0 else 0)
+                    current_sleep_quality = float(sleep_filled.iloc[i]['quality_score'])
                     
                     if not pd.isna(current_sleep_quality):
                         correlation_data.append({
@@ -313,7 +234,6 @@ class HealthDataAnalyzer:
                 }
             
             corr_df = pd.DataFrame(correlation_data)
-            print(corr_df)
             
             # 计算相关系数
             correlation = corr_df['prev_sport_duration'].corr(corr_df['sleep_quality'])
@@ -331,8 +251,8 @@ class HealthDataAnalyzer:
             return {
                 'success': True,
                 'data': {
-                    'correlation_coefficient': correlation,
-                    'correlation_strength': self._interpret_correlation(correlation),
+                    'correlation_coefficient': float(correlation) if not pd.isna(correlation) else 0.0,
+                    'correlation_strength': self._interpret_correlation(float(correlation) if not pd.isna(correlation) else 0.0),
                     'group_analysis': sport_groups,
                     'detailed_data': correlation_data,
                     'recommendations': recommendations
@@ -358,34 +278,34 @@ class HealthDataAnalyzer:
             trends = {}
             
             # 睡眠趋势
-            if len(sleep_df) > 0:
-                sleep_trend = self._calculate_trend(sleep_df['quality_score'])
+            if not sleep_df.empty:
+                sleep_trend = float(self._calculate_trend(sleep_df['quality_score']))
                 trends['sleep'] = {
                     'trend': sleep_trend,
-                    'avg_score': sleep_df['quality_score'].mean(),
+                    'avg_score': float(sleep_df['quality_score'].mean()),
                     'improvement': bool(sleep_trend > 0)
                 }
             
             # 运动趋势
-            if len(sport_df) > 0:
-                sport_trend = self._calculate_trend(sport_df['total_duration'])
+            if not sport_df.empty:
+                sport_trend = float(self._calculate_trend(sport_df['total_duration']))
                 trends['sport'] = {
                     'trend': sport_trend,
-                    'avg_duration': sport_df['total_duration'].mean(),
+                    'avg_duration': float(sport_df['total_duration'].mean()),
                     'improvement': bool(sport_trend > 0)
                 }
             
             # 饮食趋势
-            if len(diet_df) > 0:
-                diet_trend = self._calculate_trend(diet_df['total_calories'])
+            if not diet_df.empty:
+                diet_trend = float(self._calculate_trend(diet_df['total_calories']))
                 trends['diet'] = {
                     'trend': diet_trend,
-                    'avg_calories': diet_df['total_calories'].mean(),
+                    'avg_calories': float(diet_df['total_calories'].mean()),
                     'improvement': bool(abs(diet_trend) < 0.1)  # 卡路里应该相对稳定
                 }
             
             # 综合健康评分
-            overall_score = self._calculate_overall_health_score(trends)
+            overall_score = float(self._calculate_overall_health_score(trends))
             
             return {
                 'success': True,
@@ -407,29 +327,29 @@ class HealthDataAnalyzer:
     def _calculate_trend(self, series):
         """计算趋势斜率"""
         if len(series) < 2:
-            return 0
+            return 0.0
         
         x = np.arange(len(series))
         y = series.values
         slope = np.polyfit(x, y, 1)[0]
-        return slope
+        return float(slope)
     
     def _calculate_overall_health_score(self, trends):
         """计算综合健康评分"""
-        score = 50  # 基础分
+        score = 50.0  # 基础分
         
         if 'sleep' in trends:
-            score += trends['sleep']['avg_score'] * 0.4
+            score += float(trends['sleep']['avg_score']) * 0.4
         if 'sport' in trends:
             # 运动时长转换为评分 (0-2小时为理想)
-            sport_score = min(100, trends['sport']['avg_duration'] * 50)
+            sport_score = min(100.0, float(trends['sport']['avg_duration']) * 50.0)
             score += sport_score * 0.3
         if 'diet' in trends:
             # 饮食评分 (基于卡路里稳定性)
-            diet_score = 100 - abs(trends['diet']['trend']) * 100
-            score += max(0, diet_score) * 0.3
+            diet_score = 100.0 - abs(float(trends['diet']['trend'])) * 100.0
+            score += max(0.0, diet_score) * 0.3
         
-        return min(100, max(0, score))
+        return min(100.0, max(0.0, score))
     
     def _interpret_correlation(self, correlation):
         """解释相关系数强度"""
@@ -487,7 +407,7 @@ class HealthDataAnalyzer:
             recommendations.append("- 观察运动对睡眠的具体影响")
         
         # 基于分组分析的建议
-        best_group = max(sport_groups.items(), key=lambda x: x[1] if not pd.isna(x[1]) else 0)
+        best_group = max(sport_groups.items(), key=lambda x: x[1] if not pd.isna(x[1]) else 0.0)
         recommendations.append(f"最佳运动时长：{best_group[0]} (平均睡眠质量: {best_group[1]:.1f})")
         
         return recommendations
@@ -507,4 +427,4 @@ class HealthDataAnalyzer:
         if not recommendations:
             recommendations.append("整体健康趋势良好，继续保持！")
         
-        return recommendations 
+        return recommendations

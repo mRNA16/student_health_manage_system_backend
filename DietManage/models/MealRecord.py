@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class MealRecord(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     date = models.DateField()
     meal = models.CharField(
         max_length=10,
@@ -13,7 +13,7 @@ class MealRecord(models.Model):
         choices=[('manual', '手动录入'), ('ai', '系统推荐')],
         default='manual'
     )
-    created_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.user.username} 的 {self.get_meal_display()} ({self.date})"

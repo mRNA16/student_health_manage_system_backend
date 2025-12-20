@@ -40,25 +40,24 @@ def get_sport_record_by_id(record_id):
         rows = dictfetchall(cursor)
         return rows[0] if rows else None
 
-def create_sport_record(user_id, date, sport, begin_time, end_time, note):
+def create_sport_record(user_id, date, sport, begin_time, end_time):
     met_value = get_met_value(sport)
     with connection.cursor() as cursor:
-        cursor.callproc('sp_create_sport_record', [user_id, date, sport, begin_time, end_time, met_value, note])
+        cursor.callproc('sp_create_sport_record', [user_id, date, sport, begin_time, end_time, met_value])
         rows = dictfetchall(cursor)
         return rows[0] if rows else None
 
-def update_sport_record_safe(record_id, user_id, date, sport, begin_time, end_time, note):
+def update_sport_record_safe(record_id, user_id, date, sport, begin_time, end_time):
     met_value = None
     if sport is not None:
         met_value = get_met_value(sport)
     else:
-        # 这里不会调用，不过为了完整性保留
         record = get_sport_record_by_id(record_id)
         if record:
             met_value = get_met_value(record['sport'])
 
     with connection.cursor() as cursor:
-        cursor.callproc('sp_update_sport_record_safe', [record_id, user_id, date, sport, begin_time, end_time, met_value, note])
+        cursor.callproc('sp_update_sport_record_safe', [record_id, user_id, date, sport, begin_time, end_time, met_value])
         
         status_row = cursor.fetchone()
         status_code = status_row[0] if status_row else 1

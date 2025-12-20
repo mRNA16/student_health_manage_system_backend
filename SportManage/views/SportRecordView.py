@@ -41,8 +41,7 @@ class SportRecordViewSet(viewsets.ViewSet):
             data.get('date'),
             data.get('sport'),
             data.get('begin_time'),
-            data.get('end_time'),
-            data.get('note')
+            data.get('end_time')
         )
         
         # Invalidate health cache
@@ -64,8 +63,7 @@ class SportRecordViewSet(viewsets.ViewSet):
             data.get('date'),
             data.get('sport'),
             data.get('begin_time'),
-            data.get('end_time'),
-            data.get('note')
+            data.get('end_time')
         )
         
         if status_code == 1:

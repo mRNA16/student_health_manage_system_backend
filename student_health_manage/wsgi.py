@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'student_health_manage_system_backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'student_health_manage.settings')
 
 application = get_wsgi_application()

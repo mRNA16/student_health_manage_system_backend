@@ -48,6 +48,35 @@ class MealRecordViewSet(viewsets.ViewSet):
         
         return Response(success_api_response(new_record, message='创建成功'))
 
+    def update(self, request, pk=None):
+        return self.partial_update(request, pk)
+
+    def partial_update(self, request, pk=None):
+        data = parse_data(request)
+        if not data:
+            return Response(failed_api_response(ErrorCode.INVALID_REQUEST_ARGS, "无效的请求数据"))
+            
+        status_code, updated_record = sql.update_meal_record_safe(
+            pk,
+            request.user.id,
+            date=data.get('date'),
+            meal=data.get('meal'),
+            source=data.get('source'),
+            items=data.get('items')
+        )
+        
+        if status_code == 1:
+            return Response(failed_api_response(ErrorCode.NOT_FOUND_ERROR, "记录不存在"))
+        elif status_code == 2:
+            return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, "无权修改"))
+        elif status_code == 3:
+            return Response(failed_api_response(ErrorCode.SYSTEM_ERROR, "数据库执行错误"))
+            
+        # Invalidate health cache
+        invalidate_health_cache(request.user.id)
+            
+        return Response(success_api_response(updated_record, message='更新成功'))
+
     def destroy(self, request, pk=None):
         status_code = sql.delete_meal_record_safe(pk, request.user.id)
         

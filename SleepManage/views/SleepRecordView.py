@@ -10,7 +10,7 @@ from SleepManage import sql
 from utils.api_utils import (
     success_api_response, failed_api_response, ErrorCode, parse_data
 )
-from utils.cache_utils import invalidate_health_cache
+from utils.cache_utils import invalidate_health_cache, invalidate_friend_feed_cache
 
 class SleepRecordViewSet(viewsets.ViewSet):
     permission_classes = [permissions.IsAuthenticated]
@@ -43,8 +43,9 @@ class SleepRecordViewSet(viewsets.ViewSet):
             data.get('wake_time')
         )
         
-        # Invalidate health cache
+        # Invalidate health and friend feed cache
         invalidate_health_cache(user_id)
+        invalidate_friend_feed_cache(user_id)
         
         return Response(success_api_response(new_record, message='创建成功'))
 
@@ -69,8 +70,9 @@ class SleepRecordViewSet(viewsets.ViewSet):
         elif status_code == 2:
             return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, "无权修改"))
             
-        # Invalidate health cache
+        # Invalidate health and friend feed cache
         invalidate_health_cache(request.user.id)
+        invalidate_friend_feed_cache(request.user.id)
             
         return Response(success_api_response(updated_record, message='更新成功'))
 
@@ -82,8 +84,9 @@ class SleepRecordViewSet(viewsets.ViewSet):
         elif status_code == 2:
             return Response(failed_api_response(ErrorCode.REFUSE_ACCESS_ERROR, "无权删除"))
             
-        # Invalidate health cache
+        # Invalidate health and friend feed cache
         invalidate_health_cache(request.user.id)
+        invalidate_friend_feed_cache(request.user.id)
             
         return Response(success_api_response(None, message='删除成功'))
 

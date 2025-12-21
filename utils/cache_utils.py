@@ -14,3 +14,7 @@ def invalidate_friend_cache(user_id):
     cache.delete(f'friend_list_{user_id}')
     cache.delete(f'friend_requests_received_{user_id}')
     cache.delete(f'friend_requests_sent_{user_id}')
+
+def invalidate_friend_feed_cache(user_id):
+    """Invalidate friend activities feed cache for a user."""
+    cache.delete(f'friend_activities_feed_{user_id}')

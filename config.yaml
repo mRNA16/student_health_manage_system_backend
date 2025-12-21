@@ -1,0 +1,21 @@
+Debug: true # Set to true for development
+
+# Postgres
+DatabaseHost: 124.70.86.207
+DatabasePort: 3306
+DatabaseUser: u23373052
+DatabasePassword: "Aa688484"
+DatabaseName: h_db23373052
+
+# Redis
+RedisAddress: 121.43.40.77:6379
+RedisPassword: ""
+RedisDatabase: 0
+
+
+# Django specific
+DjangoSecretKey: 2bd+82%dkqf6=xv4*!e8%74$73j_w5s57_5llu8_s9)3yl^$rr
+
+# Application settings
+MaxUploadSize : 10485760
+LogPath: ./ll.log # LOG_PATH is optional

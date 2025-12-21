@@ -8,5 +8,10 @@ class SleepRecord(models.Model):
     wake_time = models.TimeField()
     created_at = models.DateTimeField(null=True, blank=True)
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['user', 'date']),
+        ]
+
     def __str__(self):
         return f"{self.user.username} - {self.date}"

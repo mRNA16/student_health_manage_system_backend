@@ -7,3 +7,8 @@ class ActivityComment(models.Model):
     activity_id = models.IntegerField()  # 对应 SportRecord / SleepRecord / MealRecord 的 ID
     content = models.TextField()
     created_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        indexes = [
+            models.Index(fields=['activity_type', 'activity_id']),
+        ]

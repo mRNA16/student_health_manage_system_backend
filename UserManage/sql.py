@@ -48,41 +48,24 @@ def create_user(username, password, profile_data):
         return row[0] if row else None
 
 def update_user_profile(user_id, profile_data):
-    # Construct update query dynamically based on provided fields
-    fields = []
-    params = []
-    
-    allowed_fields = [
-        'height', 'weight', 'gender', 'birthday', 'realName', 'roles',
-        'daily_calories_burn_goal', 'daily_calories_intake_goal', 'daily_sleep_hours_goal'
-    ]
-    
-    for field in allowed_fields:
-        if field in profile_data:
-            # Handle camelCase to snake_case or quoted identifiers if needed
-            # MySQL uses backticks for identifiers
-            db_field = f'`{field}`' if field == 'realName' else field
-            fields.append(f"{db_field} = %s")
-            
-            value = profile_data[field]
-            # Serialize roles to JSON string if it's being updated
-            if field == 'roles' and not isinstance(value, str):
-                value = json.dumps(value)
-                
-            params.append(value)
-            
-    if not fields:
-        return False
-        
-    params.append(user_id)
-    sql = f"""
-        UPDATE `usermanage_userprofile`
-        SET {', '.join(fields)}
-        WHERE user_id = %s
-    """
-    
+    # Prepare roles data: ensure it is a valid JSON string if provided
+    roles_data = profile_data.get('roles')
+    if roles_data is not None and not isinstance(roles_data, str):
+        roles_data = json.dumps(roles_data)
+
     with connection.cursor() as cursor:
-        cursor.execute(sql, params)
+        cursor.callproc('sp_update_user_profile', [
+            user_id,
+            profile_data.get('height'),
+            profile_data.get('weight'),
+            profile_data.get('gender'),
+            profile_data.get('birthday'),
+            profile_data.get('realName'),
+            roles_data,
+            profile_data.get('daily_calories_burn_goal'),
+            profile_data.get('daily_calories_intake_goal'),
+            profile_data.get('daily_sleep_hours_goal')
+        ])
         return True
 
 def search_users(username_query=None):

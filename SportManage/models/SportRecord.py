@@ -13,6 +13,9 @@ class SportRecord(models.Model):
 
     class Meta:
         ordering = ['-date']
+        indexes = [
+            models.Index(fields=['user', 'date']),
+        ]
 
     def __str__(self):
         return f"{self.user.username} - {self.sport} - {self.date}"

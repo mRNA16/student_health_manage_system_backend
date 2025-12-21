@@ -15,5 +15,10 @@ class MealRecord(models.Model):
     )
     created_at = models.DateTimeField(null=True, blank=True)
 
+    class Meta:
+        indexes = [
+            models.Index(fields=['user', 'date']),
+        ]
+
     def __str__(self):
         return f"{self.user.username} 的 {self.get_meal_display()} ({self.date})"

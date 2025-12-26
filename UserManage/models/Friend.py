@@ -14,7 +14,7 @@ class Friend(models.Model):
     created_at = models.DateTimeField(null=True, blank=True)
 
     class Meta:
-        unique_together = ('from_user', 'to_user', 'status')
+        unique_together = ('from_user', 'to_user', 'status', 'created_at')
 
     def __str__(self):
         return f'{self.from_user.username} -> {self.to_user.username}: {self.status}'
